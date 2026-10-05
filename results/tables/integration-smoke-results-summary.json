@@ -1,0 +1,15 @@
+{
+  "comparison_count": 8,
+  "manifest_id": "integration-smoke-v1",
+  "schema_version": 1,
+  "sign_semantics": {
+    "+": "reference significantly better after Holm correction",
+    "-": "reference significantly worse after Holm correction",
+    "=": "no significant corrected difference"
+  },
+  "win_tie_loss": {
+    "losses": 0,
+    "ties": 8,
+    "wins": 0
+  }
+}

@@ -1,0 +1,8 @@
+# Define which algorithms are active
+HLDBEA: true
+NSGA2: true
+SPEA2: false
+NSGA3: true
+RVEA: true
+MOEAD: true
+AGEMOEA: true

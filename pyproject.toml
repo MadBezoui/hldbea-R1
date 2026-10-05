@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hldbea"
+version = "0.1.0"
+description = "Evidence-oriented implementation of Hybrid Local Dominance-Based Evolutionary Algorithm"
+requires-python = ">=3.10"
+dependencies = [
+  "matplotlib>=3.10.7,<4",
+  "numba==0.61.2",
+  "numpy>=1.26.4,<2",
+  "pandas>=2.3.3,<3",
+  "pymoo==0.6.1.3",
+  "PyYAML>=6,<7",
+  "scipy==1.14.1",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["ibea", "ibea_callbacks", "ibea_recorder", "ibea_selection", "ibea_stats", "idea1_util"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["hldbea*", "ibeas*", "util*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

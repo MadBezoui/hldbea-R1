@@ -1,0 +1,15 @@
+{
+  "comparison_count": 40,
+  "manifest_id": "reviewer-rotation-validation-v3",
+  "schema_version": 1,
+  "sign_semantics": {
+    "+": "reference significantly better after Holm correction",
+    "-": "reference significantly worse after Holm correction",
+    "=": "no significant corrected difference"
+  },
+  "win_tie_loss": {
+    "losses": 19,
+    "ties": 21,
+    "wins": 0
+  }
+}

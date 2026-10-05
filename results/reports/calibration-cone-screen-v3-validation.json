@@ -1,0 +1,412 @@
+{
+  "artifact_root": "results/raw",
+  "counts": {
+    "completed": 96,
+    "duplicate": 0,
+    "failed": 0,
+    "invalid": 0,
+    "missing": 0,
+    "planned": 96,
+    "valid": 96
+  },
+  "evidence": {
+    "dependency_versions": {
+      "llvmlite": "0.44.0",
+      "matplotlib": "3.10.7",
+      "numba": "0.61.2",
+      "numpy": "1.26.4",
+      "pandas": "2.3.3",
+      "pymoo": "0.6.1.3",
+      "python": "3.10.1",
+      "pyyaml": "6.0.2",
+      "scipy": "1.14.1"
+    },
+    "evaluation_totals": {
+      "calibration-cone-screen-v3__calibration-dtlz1-m10__hldbea-cone-fixed-0p1__s41001__036da94c6b4b": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m10__hldbea-cone-fixed-0p1__s41002__32e587d5c66d": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m10__hldbea-cone-fixed-0p1__s41003__3b892a03ac4f": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m10__hldbea-cone-linear__s41001__d18fb57e5238": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m10__hldbea-cone-linear__s41002__76eae283ee55": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m10__hldbea-cone-linear__s41003__89d4f995d3e5": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m10__hldbea-cone-saturating__s41001__412bd667c9f7": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m10__hldbea-cone-saturating__s41002__b5c5e52c1c49": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m10__hldbea-cone-saturating__s41003__79327c1d5436": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m10__hldbea-cone-strict__s41001__8f705e1fb9d3": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m10__hldbea-cone-strict__s41002__7242a36178f8": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m10__hldbea-cone-strict__s41003__2a2c8b80e3e1": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m15__hldbea-cone-fixed-0p1__s41001__88ef5f181907": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m15__hldbea-cone-fixed-0p1__s41002__d22b187d45e4": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m15__hldbea-cone-fixed-0p1__s41003__52d3ec59ce38": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m15__hldbea-cone-linear__s41001__7a6c27ef14aa": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m15__hldbea-cone-linear__s41002__451ae9cf8be2": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m15__hldbea-cone-linear__s41003__f2618e9eb4a4": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m15__hldbea-cone-saturating__s41001__043dd143c6e2": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m15__hldbea-cone-saturating__s41002__2ac6c6e9f8cd": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m15__hldbea-cone-saturating__s41003__7f5f201cb82a": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m15__hldbea-cone-strict__s41001__3eedee50f0cd": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m15__hldbea-cone-strict__s41002__2abb77ccf38e": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m15__hldbea-cone-strict__s41003__85298f0fecd5": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m5__hldbea-cone-fixed-0p1__s41001__e333dac97dad": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m5__hldbea-cone-fixed-0p1__s41002__32013b669f68": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m5__hldbea-cone-fixed-0p1__s41003__b4d77f76d650": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m5__hldbea-cone-linear__s41001__f7e91218e70d": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m5__hldbea-cone-linear__s41002__75edc64d68c5": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m5__hldbea-cone-linear__s41003__3015b86c63f2": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m5__hldbea-cone-saturating__s41001__2efd750fd94e": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m5__hldbea-cone-saturating__s41002__c227af87fd76": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m5__hldbea-cone-saturating__s41003__c0b2d54e2e59": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m5__hldbea-cone-strict__s41001__4bd652159572": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m5__hldbea-cone-strict__s41002__e8538d5f4581": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m5__hldbea-cone-strict__s41003__6a31496001ce": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m8__hldbea-cone-fixed-0p1__s41001__ea6a98b0bb9a": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m8__hldbea-cone-fixed-0p1__s41002__4051c6be8661": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m8__hldbea-cone-fixed-0p1__s41003__9063dc2211b5": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m8__hldbea-cone-linear__s41001__63a6a7c04652": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m8__hldbea-cone-linear__s41002__85b49dcacc7d": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m8__hldbea-cone-linear__s41003__92e17960fab0": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m8__hldbea-cone-saturating__s41001__e9b56b546507": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m8__hldbea-cone-saturating__s41002__dd1e5cbce024": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m8__hldbea-cone-saturating__s41003__70d70bded8a2": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m8__hldbea-cone-strict__s41001__72ee5a34c923": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m8__hldbea-cone-strict__s41002__3aa30ae43e29": 2000,
+      "calibration-cone-screen-v3__calibration-dtlz1-m8__hldbea-cone-strict__s41003__f0fbd3eabdd3": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m10__hldbea-cone-fixed-0p1__s41001__cf9a8a4e7fb7": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m10__hldbea-cone-fixed-0p1__s41002__9f1e62b096ef": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m10__hldbea-cone-fixed-0p1__s41003__44c5ca1b1a91": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m10__hldbea-cone-linear__s41001__f825c9da7bed": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m10__hldbea-cone-linear__s41002__c0279b699df7": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m10__hldbea-cone-linear__s41003__8ea79a9464b9": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m10__hldbea-cone-saturating__s41001__7eacd89aceab": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m10__hldbea-cone-saturating__s41002__0a116561b588": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m10__hldbea-cone-saturating__s41003__aca045b877f9": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m10__hldbea-cone-strict__s41001__183ea2906a19": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m10__hldbea-cone-strict__s41002__013e6803b35d": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m10__hldbea-cone-strict__s41003__a7fba3859bf9": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m15__hldbea-cone-fixed-0p1__s41001__56c238b39773": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m15__hldbea-cone-fixed-0p1__s41002__e84d57b9da2c": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m15__hldbea-cone-fixed-0p1__s41003__53cf9304b9dc": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m15__hldbea-cone-linear__s41001__278a6d391c0c": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m15__hldbea-cone-linear__s41002__08665225798d": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m15__hldbea-cone-linear__s41003__82e57ac85047": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m15__hldbea-cone-saturating__s41001__18f5c15cb6b5": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m15__hldbea-cone-saturating__s41002__31bd11826cd4": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m15__hldbea-cone-saturating__s41003__70176c82c0bc": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m15__hldbea-cone-strict__s41001__8bed67ae456e": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m15__hldbea-cone-strict__s41002__a6277eb9890a": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m15__hldbea-cone-strict__s41003__dda63d9fb614": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m5__hldbea-cone-fixed-0p1__s41001__643cc053813f": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m5__hldbea-cone-fixed-0p1__s41002__8ee6c9640412": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m5__hldbea-cone-fixed-0p1__s41003__08725cd69288": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m5__hldbea-cone-linear__s41001__b9205e9615c2": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m5__hldbea-cone-linear__s41002__5de31b4f0813": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m5__hldbea-cone-linear__s41003__60ea3c102b90": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m5__hldbea-cone-saturating__s41001__f463e117b08b": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m5__hldbea-cone-saturating__s41002__5f663a3b2256": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m5__hldbea-cone-saturating__s41003__07482470dc7d": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m5__hldbea-cone-strict__s41001__391b31cbdc63": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m5__hldbea-cone-strict__s41002__a75caa192fd3": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m5__hldbea-cone-strict__s41003__817c0b08fcbf": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m8__hldbea-cone-fixed-0p1__s41001__dd72b1572876": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m8__hldbea-cone-fixed-0p1__s41002__b3e37ece0c1d": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m8__hldbea-cone-fixed-0p1__s41003__9bd7e594b7cc": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m8__hldbea-cone-linear__s41001__f03fec80cf40": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m8__hldbea-cone-linear__s41002__d54b9aa1125d": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m8__hldbea-cone-linear__s41003__ac967c193c45": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m8__hldbea-cone-saturating__s41001__ab520796742c": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m8__hldbea-cone-saturating__s41002__e43a87932cc4": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m8__hldbea-cone-saturating__s41003__eb9d2eef2d15": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m8__hldbea-cone-strict__s41001__997f18fdb7bb": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m8__hldbea-cone-strict__s41002__acb4f935b4d5": 2000,
+      "calibration-cone-screen-v3__calibration-wfg1-m8__hldbea-cone-strict__s41003__842ab1993295": 2000
+    },
+    "geometry_hashes": {
+      "calibration-dtlz1-m10": "8b5eae96959deb0b8cdb7b17accdaab3a957b87b0d04f3b682c2cb94e484d87d",
+      "calibration-dtlz1-m15": "fd24d834d053bc660e4a951361944a8116f0f172de112e7d557b2f261c470c83",
+      "calibration-dtlz1-m5": "8638a66189eb201f2fa22715fb25e92880ae9f5eb74a5f236c84e58a081e8258",
+      "calibration-dtlz1-m8": "ff869b70da9355ffd952f8ee0c951aa16eba1ebc303f10a50e205c57fb1dfaa0",
+      "calibration-wfg1-m10": "d7034bbc072222214a9c963dc6cf07b2c459f51df33e93902e2f4d2b96cc5bfc",
+      "calibration-wfg1-m15": "ae9779573ad15451874a22f4419467f88246068a3ee34dcc1ccafa811f369ae3",
+      "calibration-wfg1-m5": "6d5e139e694e4fba9c1122385f7046167617e3c3d000708245aacad020d87638",
+      "calibration-wfg1-m8": "f48a049d296e42cb9f0455d9010c1f39221fcaf23291a76a15c06b295e63f6bb"
+    },
+    "paired_seeds": {
+      "calibration-dtlz1-m10/hldbea/cone-fixed-0p1": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m10/hldbea/cone-linear": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m10/hldbea/cone-saturating": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m10/hldbea/cone-strict": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m15/hldbea/cone-fixed-0p1": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m15/hldbea/cone-linear": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m15/hldbea/cone-saturating": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m15/hldbea/cone-strict": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m5/hldbea/cone-fixed-0p1": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m5/hldbea/cone-linear": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m5/hldbea/cone-saturating": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m5/hldbea/cone-strict": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m8/hldbea/cone-fixed-0p1": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m8/hldbea/cone-linear": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m8/hldbea/cone-saturating": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m8/hldbea/cone-strict": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m10/hldbea/cone-fixed-0p1": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m10/hldbea/cone-linear": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m10/hldbea/cone-saturating": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m10/hldbea/cone-strict": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m15/hldbea/cone-fixed-0p1": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m15/hldbea/cone-linear": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m15/hldbea/cone-saturating": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m15/hldbea/cone-strict": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m5/hldbea/cone-fixed-0p1": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m5/hldbea/cone-linear": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m5/hldbea/cone-saturating": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m5/hldbea/cone-strict": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m8/hldbea/cone-fixed-0p1": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m8/hldbea/cone-linear": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m8/hldbea/cone-saturating": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m8/hldbea/cone-strict": [
+        41001,
+        41002,
+        41003
+      ]
+    },
+    "valid_run_ids": [
+      "calibration-cone-screen-v3__calibration-dtlz1-m10__hldbea-cone-fixed-0p1__s41001__036da94c6b4b",
+      "calibration-cone-screen-v3__calibration-dtlz1-m10__hldbea-cone-fixed-0p1__s41002__32e587d5c66d",
+      "calibration-cone-screen-v3__calibration-dtlz1-m10__hldbea-cone-fixed-0p1__s41003__3b892a03ac4f",
+      "calibration-cone-screen-v3__calibration-dtlz1-m10__hldbea-cone-linear__s41001__d18fb57e5238",
+      "calibration-cone-screen-v3__calibration-dtlz1-m10__hldbea-cone-linear__s41002__76eae283ee55",
+      "calibration-cone-screen-v3__calibration-dtlz1-m10__hldbea-cone-linear__s41003__89d4f995d3e5",
+      "calibration-cone-screen-v3__calibration-dtlz1-m10__hldbea-cone-saturating__s41001__412bd667c9f7",
+      "calibration-cone-screen-v3__calibration-dtlz1-m10__hldbea-cone-saturating__s41002__b5c5e52c1c49",
+      "calibration-cone-screen-v3__calibration-dtlz1-m10__hldbea-cone-saturating__s41003__79327c1d5436",
+      "calibration-cone-screen-v3__calibration-dtlz1-m10__hldbea-cone-strict__s41001__8f705e1fb9d3",
+      "calibration-cone-screen-v3__calibration-dtlz1-m10__hldbea-cone-strict__s41002__7242a36178f8",
+      "calibration-cone-screen-v3__calibration-dtlz1-m10__hldbea-cone-strict__s41003__2a2c8b80e3e1",
+      "calibration-cone-screen-v3__calibration-dtlz1-m15__hldbea-cone-fixed-0p1__s41001__88ef5f181907",
+      "calibration-cone-screen-v3__calibration-dtlz1-m15__hldbea-cone-fixed-0p1__s41002__d22b187d45e4",
+      "calibration-cone-screen-v3__calibration-dtlz1-m15__hldbea-cone-fixed-0p1__s41003__52d3ec59ce38",
+      "calibration-cone-screen-v3__calibration-dtlz1-m15__hldbea-cone-linear__s41001__7a6c27ef14aa",
+      "calibration-cone-screen-v3__calibration-dtlz1-m15__hldbea-cone-linear__s41002__451ae9cf8be2",
+      "calibration-cone-screen-v3__calibration-dtlz1-m15__hldbea-cone-linear__s41003__f2618e9eb4a4",
+      "calibration-cone-screen-v3__calibration-dtlz1-m15__hldbea-cone-saturating__s41001__043dd143c6e2",
+      "calibration-cone-screen-v3__calibration-dtlz1-m15__hldbea-cone-saturating__s41002__2ac6c6e9f8cd",
+      "calibration-cone-screen-v3__calibration-dtlz1-m15__hldbea-cone-saturating__s41003__7f5f201cb82a",
+      "calibration-cone-screen-v3__calibration-dtlz1-m15__hldbea-cone-strict__s41001__3eedee50f0cd",
+      "calibration-cone-screen-v3__calibration-dtlz1-m15__hldbea-cone-strict__s41002__2abb77ccf38e",
+      "calibration-cone-screen-v3__calibration-dtlz1-m15__hldbea-cone-strict__s41003__85298f0fecd5",
+      "calibration-cone-screen-v3__calibration-dtlz1-m5__hldbea-cone-fixed-0p1__s41001__e333dac97dad",
+      "calibration-cone-screen-v3__calibration-dtlz1-m5__hldbea-cone-fixed-0p1__s41002__32013b669f68",
+      "calibration-cone-screen-v3__calibration-dtlz1-m5__hldbea-cone-fixed-0p1__s41003__b4d77f76d650",
+      "calibration-cone-screen-v3__calibration-dtlz1-m5__hldbea-cone-linear__s41001__f7e91218e70d",
+      "calibration-cone-screen-v3__calibration-dtlz1-m5__hldbea-cone-linear__s41002__75edc64d68c5",
+      "calibration-cone-screen-v3__calibration-dtlz1-m5__hldbea-cone-linear__s41003__3015b86c63f2",
+      "calibration-cone-screen-v3__calibration-dtlz1-m5__hldbea-cone-saturating__s41001__2efd750fd94e",
+      "calibration-cone-screen-v3__calibration-dtlz1-m5__hldbea-cone-saturating__s41002__c227af87fd76",
+      "calibration-cone-screen-v3__calibration-dtlz1-m5__hldbea-cone-saturating__s41003__c0b2d54e2e59",
+      "calibration-cone-screen-v3__calibration-dtlz1-m5__hldbea-cone-strict__s41001__4bd652159572",
+      "calibration-cone-screen-v3__calibration-dtlz1-m5__hldbea-cone-strict__s41002__e8538d5f4581",
+      "calibration-cone-screen-v3__calibration-dtlz1-m5__hldbea-cone-strict__s41003__6a31496001ce",
+      "calibration-cone-screen-v3__calibration-dtlz1-m8__hldbea-cone-fixed-0p1__s41001__ea6a98b0bb9a",
+      "calibration-cone-screen-v3__calibration-dtlz1-m8__hldbea-cone-fixed-0p1__s41002__4051c6be8661",
+      "calibration-cone-screen-v3__calibration-dtlz1-m8__hldbea-cone-fixed-0p1__s41003__9063dc2211b5",
+      "calibration-cone-screen-v3__calibration-dtlz1-m8__hldbea-cone-linear__s41001__63a6a7c04652",
+      "calibration-cone-screen-v3__calibration-dtlz1-m8__hldbea-cone-linear__s41002__85b49dcacc7d",
+      "calibration-cone-screen-v3__calibration-dtlz1-m8__hldbea-cone-linear__s41003__92e17960fab0",
+      "calibration-cone-screen-v3__calibration-dtlz1-m8__hldbea-cone-saturating__s41001__e9b56b546507",
+      "calibration-cone-screen-v3__calibration-dtlz1-m8__hldbea-cone-saturating__s41002__dd1e5cbce024",
+      "calibration-cone-screen-v3__calibration-dtlz1-m8__hldbea-cone-saturating__s41003__70d70bded8a2",
+      "calibration-cone-screen-v3__calibration-dtlz1-m8__hldbea-cone-strict__s41001__72ee5a34c923",
+      "calibration-cone-screen-v3__calibration-dtlz1-m8__hldbea-cone-strict__s41002__3aa30ae43e29",
+      "calibration-cone-screen-v3__calibration-dtlz1-m8__hldbea-cone-strict__s41003__f0fbd3eabdd3",
+      "calibration-cone-screen-v3__calibration-wfg1-m10__hldbea-cone-fixed-0p1__s41001__cf9a8a4e7fb7",
+      "calibration-cone-screen-v3__calibration-wfg1-m10__hldbea-cone-fixed-0p1__s41002__9f1e62b096ef",
+      "calibration-cone-screen-v3__calibration-wfg1-m10__hldbea-cone-fixed-0p1__s41003__44c5ca1b1a91",
+      "calibration-cone-screen-v3__calibration-wfg1-m10__hldbea-cone-linear__s41001__f825c9da7bed",
+      "calibration-cone-screen-v3__calibration-wfg1-m10__hldbea-cone-linear__s41002__c0279b699df7",
+      "calibration-cone-screen-v3__calibration-wfg1-m10__hldbea-cone-linear__s41003__8ea79a9464b9",
+      "calibration-cone-screen-v3__calibration-wfg1-m10__hldbea-cone-saturating__s41001__7eacd89aceab",
+      "calibration-cone-screen-v3__calibration-wfg1-m10__hldbea-cone-saturating__s41002__0a116561b588",
+      "calibration-cone-screen-v3__calibration-wfg1-m10__hldbea-cone-saturating__s41003__aca045b877f9",
+      "calibration-cone-screen-v3__calibration-wfg1-m10__hldbea-cone-strict__s41001__183ea2906a19",
+      "calibration-cone-screen-v3__calibration-wfg1-m10__hldbea-cone-strict__s41002__013e6803b35d",
+      "calibration-cone-screen-v3__calibration-wfg1-m10__hldbea-cone-strict__s41003__a7fba3859bf9",
+      "calibration-cone-screen-v3__calibration-wfg1-m15__hldbea-cone-fixed-0p1__s41001__56c238b39773",
+      "calibration-cone-screen-v3__calibration-wfg1-m15__hldbea-cone-fixed-0p1__s41002__e84d57b9da2c",
+      "calibration-cone-screen-v3__calibration-wfg1-m15__hldbea-cone-fixed-0p1__s41003__53cf9304b9dc",
+      "calibration-cone-screen-v3__calibration-wfg1-m15__hldbea-cone-linear__s41001__278a6d391c0c",
+      "calibration-cone-screen-v3__calibration-wfg1-m15__hldbea-cone-linear__s41002__08665225798d",
+      "calibration-cone-screen-v3__calibration-wfg1-m15__hldbea-cone-linear__s41003__82e57ac85047",
+      "calibration-cone-screen-v3__calibration-wfg1-m15__hldbea-cone-saturating__s41001__18f5c15cb6b5",
+      "calibration-cone-screen-v3__calibration-wfg1-m15__hldbea-cone-saturating__s41002__31bd11826cd4",
+      "calibration-cone-screen-v3__calibration-wfg1-m15__hldbea-cone-saturating__s41003__70176c82c0bc",
+      "calibration-cone-screen-v3__calibration-wfg1-m15__hldbea-cone-strict__s41001__8bed67ae456e",
+      "calibration-cone-screen-v3__calibration-wfg1-m15__hldbea-cone-strict__s41002__a6277eb9890a",
+      "calibration-cone-screen-v3__calibration-wfg1-m15__hldbea-cone-strict__s41003__dda63d9fb614",
+      "calibration-cone-screen-v3__calibration-wfg1-m5__hldbea-cone-fixed-0p1__s41001__643cc053813f",
+      "calibration-cone-screen-v3__calibration-wfg1-m5__hldbea-cone-fixed-0p1__s41002__8ee6c9640412",
+      "calibration-cone-screen-v3__calibration-wfg1-m5__hldbea-cone-fixed-0p1__s41003__08725cd69288",
+      "calibration-cone-screen-v3__calibration-wfg1-m5__hldbea-cone-linear__s41001__b9205e9615c2",
+      "calibration-cone-screen-v3__calibration-wfg1-m5__hldbea-cone-linear__s41002__5de31b4f0813",
+      "calibration-cone-screen-v3__calibration-wfg1-m5__hldbea-cone-linear__s41003__60ea3c102b90",
+      "calibration-cone-screen-v3__calibration-wfg1-m5__hldbea-cone-saturating__s41001__f463e117b08b",
+      "calibration-cone-screen-v3__calibration-wfg1-m5__hldbea-cone-saturating__s41002__5f663a3b2256",
+      "calibration-cone-screen-v3__calibration-wfg1-m5__hldbea-cone-saturating__s41003__07482470dc7d",
+      "calibration-cone-screen-v3__calibration-wfg1-m5__hldbea-cone-strict__s41001__391b31cbdc63",
+      "calibration-cone-screen-v3__calibration-wfg1-m5__hldbea-cone-strict__s41002__a75caa192fd3",
+      "calibration-cone-screen-v3__calibration-wfg1-m5__hldbea-cone-strict__s41003__817c0b08fcbf",
+      "calibration-cone-screen-v3__calibration-wfg1-m8__hldbea-cone-fixed-0p1__s41001__dd72b1572876",
+      "calibration-cone-screen-v3__calibration-wfg1-m8__hldbea-cone-fixed-0p1__s41002__b3e37ece0c1d",
+      "calibration-cone-screen-v3__calibration-wfg1-m8__hldbea-cone-fixed-0p1__s41003__9bd7e594b7cc",
+      "calibration-cone-screen-v3__calibration-wfg1-m8__hldbea-cone-linear__s41001__f03fec80cf40",
+      "calibration-cone-screen-v3__calibration-wfg1-m8__hldbea-cone-linear__s41002__d54b9aa1125d",
+      "calibration-cone-screen-v3__calibration-wfg1-m8__hldbea-cone-linear__s41003__ac967c193c45",
+      "calibration-cone-screen-v3__calibration-wfg1-m8__hldbea-cone-saturating__s41001__ab520796742c",
+      "calibration-cone-screen-v3__calibration-wfg1-m8__hldbea-cone-saturating__s41002__e43a87932cc4",
+      "calibration-cone-screen-v3__calibration-wfg1-m8__hldbea-cone-saturating__s41003__eb9d2eef2d15",
+      "calibration-cone-screen-v3__calibration-wfg1-m8__hldbea-cone-strict__s41001__997f18fdb7bb",
+      "calibration-cone-screen-v3__calibration-wfg1-m8__hldbea-cone-strict__s41002__acb4f935b4d5",
+      "calibration-cone-screen-v3__calibration-wfg1-m8__hldbea-cone-strict__s41003__842ab1993295"
+    ]
+  },
+  "gates": {
+    "analysis": true,
+    "artifacts": true
+  },
+  "issues": {
+    "dependency_gates": [],
+    "duplicate_runs": [],
+    "event_inconsistencies": [],
+    "failed_runs": [],
+    "fe_violations": [],
+    "geometry_mismatches": [],
+    "invalid_runs": [],
+    "missing_runs": [],
+    "nonfinite_metrics": [],
+    "seed_pairing": [],
+    "unexpected_runs": []
+  },
+  "manifest_id": "calibration-cone-screen-v3",
+  "stage": "calibration"
+}

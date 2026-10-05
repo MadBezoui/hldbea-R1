@@ -1,0 +1,85 @@
+schema_version: 1
+manifest_id: calibration-core-screen-v1
+stage: calibration
+
+seeds: [41001, 41002, 41003]
+
+problems:
+  - id: calibration-dtlz1-m3
+    name: dtlz1
+    n_obj: 3
+    n_var: 7
+    parameters: {}
+    transform: {kind: identity}
+  - id: calibration-dtlz5-m5
+    name: dtlz5
+    n_obj: 5
+    n_var: 14
+    parameters: {}
+    transform: {kind: identity}
+  - id: calibration-wfg1-m5
+    name: wfg1
+    n_obj: 5
+    n_var: 24
+    parameters: {}
+    transform: {kind: identity}
+
+algorithms:
+  - id: hldbea
+    variant: baseline
+    parameters: &baseline
+      k: 1.0
+      lambda: 0.1
+      cone_epsilon: 0.0
+      selection_mode: local
+      objective_policy: round_robin
+      tau: 1
+      local_search_max_iter: 2
+      restart: true
+      restart_theta_zero: 0.95
+      restart_window: 20
+      restart_delta_hv: 0.0001
+      restart_fraction: 0.2
+      crossover_probability: 0.9
+      crossover_eta: 20
+      mutation_probability: inverse_n_var
+      mutation_eta: 20
+  - id: hldbea
+    variant: lambda-0
+    parameters: {<<: *baseline, lambda: 0.0}
+  - id: hldbea
+    variant: lambda-0p01
+    parameters: {<<: *baseline, lambda: 0.01}
+  - id: hldbea
+    variant: lambda-0p05
+    parameters: {<<: *baseline, lambda: 0.05}
+  - id: hldbea
+    variant: lambda-0p2
+    parameters: {<<: *baseline, lambda: 0.2}
+  - id: hldbea
+    variant: lambda-0p5
+    parameters: {<<: *baseline, lambda: 0.5}
+  - id: hldbea
+    variant: k-0p5
+    parameters: {<<: *baseline, k: 0.5}
+  - id: hldbea
+    variant: k-2
+    parameters: {<<: *baseline, k: 2.0}
+  - id: hldbea
+    variant: selection-global
+    parameters: {<<: *baseline, selection_mode: global}
+  - id: hldbea
+    variant: no-local-search
+    parameters: {<<: *baseline, local_search_max_iter: 0}
+  - id: hldbea
+    variant: objective-adaptive
+    parameters: {<<: *baseline, objective_policy: adaptive}
+  - id: hldbea
+    variant: objective-random
+    parameters: {<<: *baseline, objective_policy: random}
+
+execution:
+  population_size: 100
+  evaluation_budget: 2000
+  checkpoints: [100, 500, 1000, 2000]
+  save_history: false

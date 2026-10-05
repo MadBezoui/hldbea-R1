@@ -1,0 +1,9 @@
+# Problem set and run configuration
+name: "ZDT_Benchmark"
+n_samp: 30
+stop_criterion: "n_gen"
+probs: 
+  - ["ZDT1", 30]
+  - ["ZDT2", 30]
+  - ["ZDT3", 30]
+probs_config: [250, 100] # [NIter, NPop] applied to all

@@ -1,0 +1,30 @@
+\begin{tabular}{llllrrc}
+\toprule
+Problem & Metric & Reference & Comparator & $p_{Holm}$ & $A_{12}$ & Sign \\
+\midrule
+validation-dtlz3-m3 & hv & hldbea:core-no-ls: 0.6099 [0, 0.6454]; CI [0.1189, 0.6426] & hldbea:augmented-no-ls: 0.6 [0.4846, 0.6458]; CI [0.5217, 0.6368] & 0.7317 & 0.496 & = \\
+validation-dtlz3-m3 & hv & hldbea:core-no-ls: 0.6099 [0, 0.6454]; CI [0.1189, 0.6426] & hldbea:augmented-restart-no-ls: 0.6024 [0.4462, 0.6549]; CI [0.5379, 0.645] & 0.2521 & 0.421 & = \\
+validation-dtlz3-m3 & hv & hldbea:core-no-ls: 0.6099 [0, 0.6454]; CI [0.1189, 0.6426] & hldbea:augmented-with-ls: 0 [0, 0.1622]; CI [0, 0.1391] & 0.1312 & 0.666 & = \\
+validation-dtlz3-m3 & hv & hldbea:core-no-ls: 0.6099 [0, 0.6454]; CI [0.1189, 0.6426] & hldbea:core-with-ls: 0 [0, 0]; CI [0, 0] & 0.01449 & 0.737 & + \\
+validation-dtlz3-m3 & hv & hldbea:core-no-ls: 0.6099 [0, 0.6454]; CI [0.1189, 0.6426] & hldbea:full: 0 [0, 0.5811]; CI [0, 0.2547] & 0.2518 & 0.614 & = \\
+validation-dtlz3-m3 & hv & hldbea:core-no-ls: 0.6099 [0, 0.6454]; CI [0.1189, 0.6426] & \textbf{nsga3:standard: 0.6729 [0.4277, 0.7053]; CI [0.6198, 0.6953]} & 0.1805 & 0.291 & = \\
+validation-dtlz3-m3 & igd\_plus & hldbea:core-no-ls: 0.0748 [0.05975, 1.027]; CI [0.06053, 0.5969] & hldbea:augmented-no-ls: 0.07881 [0.06127, 0.1295]; CI [0.06355, 0.1069] & 0.7766 & 0.519 & = \\
+validation-dtlz3-m3 & igd\_plus & hldbea:core-no-ls: 0.0748 [0.05975, 1.027]; CI [0.06053, 0.5969] & hldbea:augmented-restart-no-ls: 0.0792 [0.05823, 0.2298]; CI [0.06397, 0.1324] & 0.3819 & 0.453 & = \\
+validation-dtlz3-m3 & igd\_plus & hldbea:core-no-ls: 0.0748 [0.05975, 1.027]; CI [0.06053, 0.5969] & hldbea:augmented-with-ls: 1.016 [0.5124, 2.011]; CI [0.5209, 1.518] & 0.06981 & 0.690 & = \\
+validation-dtlz3-m3 & igd\_plus & hldbea:core-no-ls: 0.0748 [0.05975, 1.027]; CI [0.06053, 0.5969] & hldbea:core-with-ls: 1.107 [0.8488, 2.215]; CI [1.035, 2.033] & 0.0005314 & 0.802 & + \\
+validation-dtlz3-m3 & igd\_plus & hldbea:core-no-ls: 0.0748 [0.05975, 1.027]; CI [0.06053, 0.5969] & hldbea:full: 1.039 [0.08519, 2.037]; CI [0.4034, 1.508] & 0.04071 & 0.666 & + \\
+validation-dtlz3-m3 & igd\_plus & hldbea:core-no-ls: 0.0748 [0.05975, 1.027]; CI [0.06053, 0.5969] & \textbf{nsga3:standard: 0.04934 [0.03516, 0.1132]; CI [0.03734, 0.06878]} & 0.1153 & 0.277 & = \\
+validation-dtlz3-m3 & phi\_nz & \textbf{hldbea:core-no-ls: 0 [0, 0]; CI [0, 0]} & \textbf{hldbea:augmented-no-ls: 0 [0, 0]; CI [0, 0]} & 1 & 0.533 & = \\
+validation-dtlz3-m3 & phi\_nz & \textbf{hldbea:core-no-ls: 0 [0, 0]; CI [0, 0]} & \textbf{hldbea:augmented-restart-no-ls: 0 [0, 0]; CI [0, 0]} & 1 & 0.516 & = \\
+validation-dtlz3-m3 & phi\_nz & \textbf{hldbea:core-no-ls: 0 [0, 0]; CI [0, 0]} & \textbf{hldbea:augmented-with-ls: 0 [0, 0]; CI [0, 0]} & 1 & 0.533 & = \\
+validation-dtlz3-m3 & phi\_nz & \textbf{hldbea:core-no-ls: 0 [0, 0]; CI [0, 0]} & \textbf{hldbea:core-with-ls: 0 [0, 0.01087]; CI [0, 0]} & 0.2227 & 0.380 & = \\
+validation-dtlz3-m3 & phi\_nz & \textbf{hldbea:core-no-ls: 0 [0, 0]; CI [0, 0]} & \textbf{hldbea:full: 0 [0, 0]; CI [0, 0]} & 1 & 0.480 & = \\
+validation-dtlz3-m3 & phi\_nz & \textbf{hldbea:core-no-ls: 0 [0, 0]; CI [0, 0]} & \textbf{nsga3:standard: 0 [0, 0]; CI [0, 0]} & 1 & 0.516 & = \\
+validation-dtlz3-m3 & r\_fz & \textbf{hldbea:core-no-ls: 0 [0, 0]; CI [0, 0]} & \textbf{hldbea:augmented-no-ls: 0 [0, 0]; CI [0, 0]} & 1 & 0.483 & = \\
+validation-dtlz3-m3 & r\_fz & \textbf{hldbea:core-no-ls: 0 [0, 0]; CI [0, 0]} & \textbf{hldbea:augmented-restart-no-ls: 0 [0, 0]; CI [0, 0]} & 1 & 0.501 & = \\
+validation-dtlz3-m3 & r\_fz & \textbf{hldbea:core-no-ls: 0 [0, 0]; CI [0, 0]} & \textbf{hldbea:augmented-with-ls: 0 [0, 0]; CI [0, 0]} & 1 & 0.483 & = \\
+validation-dtlz3-m3 & r\_fz & \textbf{hldbea:core-no-ls: 0 [0, 0]; CI [0, 0]} & hldbea:core-with-ls: 0.006667 [0, 0.07505]; CI [0, 0.05422] & 0.009155 & 0.733 & + \\
+validation-dtlz3-m3 & r\_fz & \textbf{hldbea:core-no-ls: 0 [0, 0]; CI [0, 0]} & \textbf{hldbea:full: 0 [0, 0]; CI [0, 0]} & 0.9375 & 0.551 & = \\
+validation-dtlz3-m3 & r\_fz & \textbf{hldbea:core-no-ls: 0 [0, 0]; CI [0, 0]} & \textbf{nsga3:standard: 0 [0, 0]; CI [0, 0]} & 1 & 0.483 & = \\
+\bottomrule
+\end{tabular}

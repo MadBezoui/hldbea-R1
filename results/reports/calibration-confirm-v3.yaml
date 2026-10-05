@@ -1,0 +1,141 @@
+schema_version: 1
+manifest_id: calibration-confirm-v1
+stage: calibration
+seeds:
+- 41001
+- 41002
+- 41003
+- 41004
+- 41005
+problems:
+- id: calibration-dtlz1-m3
+  name: dtlz1
+  n_obj: 3
+  n_var: 7
+  parameters: {}
+  transform:
+    kind: identity
+- id: calibration-dtlz5-m5
+  name: dtlz5
+  n_obj: 5
+  n_var: 14
+  parameters: {}
+  transform:
+    kind: identity
+- id: calibration-dtlz6-m10
+  name: dtlz6
+  n_obj: 10
+  n_var: 19
+  parameters: {}
+  transform:
+    kind: identity
+- id: calibration-wfg1-m5
+  name: wfg1
+  n_obj: 5
+  n_var: 24
+  parameters: {}
+  transform:
+    kind: identity
+- id: calibration-wfg4-m10
+  name: wfg4
+  n_obj: 10
+  n_var: 28
+  parameters: {}
+  transform:
+    kind: identity
+algorithms:
+- id: hldbea
+  variant: baseline
+  parameters:
+    k: 1.0
+    lambda: 0.1
+    cone_epsilon: 0.0
+    selection_mode: local
+    objective_policy: round_robin
+    tau: 1
+    local_search_max_iter: 2
+    local_search_acceptance: feasible_improvement
+    restart: true
+    restart_theta_zero: 0.95
+    restart_window: 20
+    restart_delta_hv: 0.0001
+    restart_fraction: 0.2
+    crossover_probability: 0.9
+    crossover_eta: 20
+    mutation_probability: inverse_n_var
+    mutation_eta: 20
+    mutation_scope: per_variable
+- id: hldbea
+  variant: best-core
+  parameters:
+    k: 1.0
+    lambda: 0.1
+    cone_epsilon: 0.0
+    selection_mode: local
+    objective_policy: round_robin
+    tau: 1
+    local_search_max_iter: 0
+    local_search_acceptance: feasible_improvement
+    restart: true
+    restart_theta_zero: 0.95
+    restart_window: 20
+    restart_delta_hv: 0.0001
+    restart_fraction: 0.2
+    crossover_probability: 0.9
+    crossover_eta: 20
+    mutation_probability: inverse_n_var
+    mutation_eta: 20
+    mutation_scope: per_variable
+- id: hldbea
+  variant: best-restart
+  parameters:
+    k: 1.0
+    lambda: 0.1
+    cone_epsilon: 0.0
+    selection_mode: local
+    objective_policy: round_robin
+    tau: 1
+    local_search_max_iter: 2
+    local_search_acceptance: feasible_improvement
+    restart: true
+    restart_theta_zero: 0.95
+    restart_window: 10
+    restart_delta_hv: 0.0001
+    restart_fraction: 0.2
+    crossover_probability: 0.9
+    crossover_eta: 20
+    mutation_probability: inverse_n_var
+    mutation_eta: 20
+    mutation_scope: per_variable
+- id: hldbea
+  variant: combined-best
+  parameters:
+    k: 1.0
+    lambda: 0.1
+    cone_epsilon: 0.0
+    selection_mode: local
+    objective_policy: round_robin
+    tau: 1
+    local_search_max_iter: 0
+    local_search_acceptance: feasible_improvement
+    restart: true
+    restart_theta_zero: 0.95
+    restart_window: 10
+    restart_delta_hv: 0.0001
+    restart_fraction: 0.2
+    crossover_probability: 0.9
+    crossover_eta: 20
+    mutation_probability: inverse_n_var
+    mutation_eta: 20
+    mutation_scope: per_variable
+execution:
+  population_size: 100
+  evaluation_budget: 10000
+  checkpoints:
+  - 100
+  - 500
+  - 1000
+  - 2000
+  - 5000
+  - 10000
+  save_history: false

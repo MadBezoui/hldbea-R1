@@ -1,0 +1,26 @@
+# Problem set and run configuration
+name: "debug-difficult-evals"
+n_samp: 2
+stop_criterion: "n_eval"
+probs: 
+  - ["ZDT4", 10]
+  - ["DTLZ1", 7, 3]
+  - ["DTLZ2", 12, 3]
+  - ["DTLZ3", 12, 3]
+  - ["DTLZ4", 12, 3]
+  - ["DTLZ7", 22, 3]
+  - ["WFG1", 24, 3]
+  - ["WFG2", 24, 3]
+  - ["WFG3", 24, 3]
+  - ["WFG4", 24, 3]
+probs_config:  
+  - [5000,100]
+  - [5000,92]
+  - [5000,92]
+  - [5000,92]
+  - [5000,92]
+  - [5000,92]
+  - [5000,92]
+  - [5000,92]
+  - [5000,92]
+  - [5000,92]

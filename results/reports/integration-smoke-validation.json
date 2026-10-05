@@ -1,0 +1,120 @@
+{
+  "artifact_root": "results/raw",
+  "counts": {
+    "completed": 16,
+    "duplicate": 0,
+    "failed": 0,
+    "invalid": 0,
+    "missing": 0,
+    "planned": 16,
+    "valid": 16
+  },
+  "evidence": {
+    "dependency_versions": {
+      "llvmlite": "0.44.0",
+      "matplotlib": "3.10.7",
+      "numba": "0.61.2",
+      "numpy": "1.26.4",
+      "pandas": "2.3.3",
+      "pymoo": "0.6.1.3",
+      "python": "3.10.1",
+      "pyyaml": "6.0.2",
+      "scipy": "1.14.1"
+    },
+    "evaluation_totals": {
+      "integration-smoke-v1__dtlz2-m3__hldbea-full__s31001__6f014ed2c931": 80,
+      "integration-smoke-v1__dtlz2-m3__hldbea-full__s31002__db11f6a2f4c9": 80,
+      "integration-smoke-v1__dtlz2-m3__nsga2-standard__s31001__8b9a4733944b": 80,
+      "integration-smoke-v1__dtlz2-m3__nsga2-standard__s31002__34a28f24c5e7": 80,
+      "integration-smoke-v1__dtlz2-m5__hldbea-full__s31001__ed5315dbdedb": 80,
+      "integration-smoke-v1__dtlz2-m5__hldbea-full__s31002__84e8582c6af6": 80,
+      "integration-smoke-v1__dtlz2-m5__nsga2-standard__s31001__ac13d6babd08": 80,
+      "integration-smoke-v1__dtlz2-m5__nsga2-standard__s31002__46458da3e6c1": 80,
+      "integration-smoke-v1__wfg2-m3__hldbea-full__s31001__b6382e7182d6": 80,
+      "integration-smoke-v1__wfg2-m3__hldbea-full__s31002__5906696f6ae4": 80,
+      "integration-smoke-v1__wfg2-m3__nsga2-standard__s31001__26208957250e": 80,
+      "integration-smoke-v1__wfg2-m3__nsga2-standard__s31002__7c4602f96feb": 80,
+      "integration-smoke-v1__wfg2-m5__hldbea-full__s31001__da062f94306b": 80,
+      "integration-smoke-v1__wfg2-m5__hldbea-full__s31002__0b1d8f7b021e": 80,
+      "integration-smoke-v1__wfg2-m5__nsga2-standard__s31001__962c17729bd7": 80,
+      "integration-smoke-v1__wfg2-m5__nsga2-standard__s31002__244c65378606": 80
+    },
+    "geometry_hashes": {
+      "dtlz2-m3": "cbcd339adc6ba8f03bb1a2bc9607047ccf0625abf7f84ac1cf51ff34ff7b3233",
+      "dtlz2-m5": "5d49e7b555aa7480346fd78bac1c35924e110df073f81ad9135093d2932c2ad7",
+      "wfg2-m3": "2cb09f71eba0a9dbe486d90b3c26a2932ed9e49fdff3696b06e6be92603542ac",
+      "wfg2-m5": "531da3a60dc6abe2e1243138ad6b8e29f36b7e590a1880bfa7733c291a1a2539"
+    },
+    "paired_seeds": {
+      "dtlz2-m3/hldbea/full": [
+        31001,
+        31002
+      ],
+      "dtlz2-m3/nsga2/standard": [
+        31001,
+        31002
+      ],
+      "dtlz2-m5/hldbea/full": [
+        31001,
+        31002
+      ],
+      "dtlz2-m5/nsga2/standard": [
+        31001,
+        31002
+      ],
+      "wfg2-m3/hldbea/full": [
+        31001,
+        31002
+      ],
+      "wfg2-m3/nsga2/standard": [
+        31001,
+        31002
+      ],
+      "wfg2-m5/hldbea/full": [
+        31001,
+        31002
+      ],
+      "wfg2-m5/nsga2/standard": [
+        31001,
+        31002
+      ]
+    },
+    "valid_run_ids": [
+      "integration-smoke-v1__dtlz2-m3__hldbea-full__s31001__6f014ed2c931",
+      "integration-smoke-v1__dtlz2-m3__hldbea-full__s31002__db11f6a2f4c9",
+      "integration-smoke-v1__dtlz2-m3__nsga2-standard__s31001__8b9a4733944b",
+      "integration-smoke-v1__dtlz2-m3__nsga2-standard__s31002__34a28f24c5e7",
+      "integration-smoke-v1__dtlz2-m5__hldbea-full__s31001__ed5315dbdedb",
+      "integration-smoke-v1__dtlz2-m5__hldbea-full__s31002__84e8582c6af6",
+      "integration-smoke-v1__dtlz2-m5__nsga2-standard__s31001__ac13d6babd08",
+      "integration-smoke-v1__dtlz2-m5__nsga2-standard__s31002__46458da3e6c1",
+      "integration-smoke-v1__wfg2-m3__hldbea-full__s31001__b6382e7182d6",
+      "integration-smoke-v1__wfg2-m3__hldbea-full__s31002__5906696f6ae4",
+      "integration-smoke-v1__wfg2-m3__nsga2-standard__s31001__26208957250e",
+      "integration-smoke-v1__wfg2-m3__nsga2-standard__s31002__7c4602f96feb",
+      "integration-smoke-v1__wfg2-m5__hldbea-full__s31001__da062f94306b",
+      "integration-smoke-v1__wfg2-m5__hldbea-full__s31002__0b1d8f7b021e",
+      "integration-smoke-v1__wfg2-m5__nsga2-standard__s31001__962c17729bd7",
+      "integration-smoke-v1__wfg2-m5__nsga2-standard__s31002__244c65378606"
+    ]
+  },
+  "gates": {
+    "analysis": true,
+    "artifacts": true
+  },
+  "issues": {
+    "dependency_gates": [],
+    "duplicate_runs": [],
+    "event_inconsistencies": [],
+    "failed_runs": [],
+    "fe_violations": [],
+    "geometry_mismatches": [],
+    "invalid_runs": [],
+    "missing_runs": [],
+    "nonfinite_metrics": [],
+    "seed_pairing": [],
+    "unexpected_runs": []
+  },
+  "manifest_id": "integration-smoke-v1",
+  "stage": "integration"
+}

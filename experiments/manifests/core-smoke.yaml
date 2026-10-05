@@ -1,0 +1,110 @@
+schema_version: 1
+manifest_id: hldbea-core-smoke-v1
+claim_scope: correctness_smoke_only
+description: >-
+  Deterministic coverage matrix for repaired HLDBEA semantics. These cases are
+  smoke checks and must not be reported as comparative performance evidence.
+
+environment:
+  python: 3.10.1
+  numpy: 1.26.4
+  scipy: 1.14.1
+  pandas: 2.3.3
+  pymoo: 0.6.1.3
+  matplotlib: 3.10.7
+  pyyaml: 6.0.2
+  pytest: 8.4.1
+
+defaults:
+  problem: dtlz2
+  generations: 2
+  population_size: 10
+  evaluation_budget: 250
+  k: 1.0
+  lambda: 0.1
+  tau: 1
+  local_search_max_iter: 2
+  metric_reference_margin: 0.1
+  save_history: false
+
+cases:
+  - id: m02-strict-local-restart-off-round-robin
+    n_obj: 2
+    n_var: 11
+    scoring: strict
+    cone_epsilon: 0.0
+    selection_mode: local
+    restart: false
+    objective_policy: round_robin
+    population_size: 10
+    evaluation_budget: 250
+    seed: 1202
+
+  - id: m03-cone-global-restart-on-adaptive
+    n_obj: 3
+    n_var: 12
+    scoring: cone
+    cone_epsilon: 0.1
+    selection_mode: global
+    restart: true
+    objective_policy: adaptive
+    population_size: 10
+    evaluation_budget: 250
+    seed: 1203
+
+  - id: m05-strict-local-restart-on-adaptive
+    n_obj: 5
+    n_var: 14
+    scoring: strict
+    cone_epsilon: 0.0
+    selection_mode: local
+    restart: true
+    objective_policy: adaptive
+    population_size: 10
+    evaluation_budget: 250
+    seed: 1205
+
+  - id: m08-cone-local-restart-off-round-robin
+    n_obj: 8
+    n_var: 17
+    scoring: cone
+    cone_epsilon: 0.1
+    selection_mode: local
+    restart: false
+    objective_policy: round_robin
+    population_size: 10
+    evaluation_budget: 250
+    seed: 1208
+
+  - id: m10-strict-global-restart-off-adaptive
+    n_obj: 10
+    n_var: 19
+    scoring: strict
+    cone_epsilon: 0.0
+    selection_mode: global
+    restart: false
+    objective_policy: adaptive
+    population_size: 10
+    evaluation_budget: 250
+    seed: 1210
+
+  - id: m15-cone-global-restart-on-round-robin
+    n_obj: 15
+    n_var: 24
+    scoring: cone
+    cone_epsilon: 0.1
+    selection_mode: global
+    restart: true
+    objective_policy: round_robin
+    population_size: 10
+    evaluation_budget: 250
+    seed: 1215
+
+verification:
+  test_command: >-
+    MPLBACKEND=Agg PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m pytest -q
+  cli_smoke_command: >-
+    MPLBACKEND=Agg PYTHONDONTWRITEBYTECODE=1 .venv/bin/python nibea_test.py
+    --test-single --pb DTLZ2 --n_var 14 --n_obj 5 --n_gen 2 --n_pop 10
+  performance_claims: false
+

@@ -1,0 +1,451 @@
+{
+  "artifact_root": "results/raw",
+  "counts": {
+    "completed": 108,
+    "duplicate": 0,
+    "failed": 0,
+    "invalid": 0,
+    "missing": 0,
+    "planned": 108,
+    "valid": 108
+  },
+  "evidence": {
+    "dependency_versions": {
+      "llvmlite": "0.44.0",
+      "matplotlib": "3.10.7",
+      "numba": "0.61.2",
+      "numpy": "1.26.4",
+      "pandas": "2.3.3",
+      "pymoo": "0.6.1.3",
+      "python": "3.10.1",
+      "pyyaml": "6.0.2",
+      "scipy": "1.14.1"
+    },
+    "evaluation_totals": {
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-baseline__s41001__8b79cad3217f": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-baseline__s41002__226380163712": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-baseline__s41003__82bdc097c3a6": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-k-0p5__s41001__084b28aa5645": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-k-0p5__s41002__54ff8fa864ba": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-k-0p5__s41003__06793e33f527": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-k-2__s41001__c5c3af2793ed": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-k-2__s41002__f5f0bf6b2fe8": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-k-2__s41003__c3f68851716e": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0__s41001__a3d3a9c4969d": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0__s41002__ce1d06a40f9d": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0__s41003__28442b8ae240": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0p01__s41001__e83953f90883": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0p01__s41002__954f3d04ac78": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0p01__s41003__c4ce1d3d9a63": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0p05__s41001__ca434f40e461": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0p05__s41002__d93ecd5565e8": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0p05__s41003__a09a32de335a": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0p2__s41001__bdfe0cdfa367": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0p2__s41002__c6e24c88fa85": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0p2__s41003__1d81ab16e777": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0p5__s41001__be56064707e9": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0p5__s41002__ae320910d932": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0p5__s41003__282427e25afe": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-no-local-search__s41001__006cfb35db40": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-no-local-search__s41002__11ca7a1304c7": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-no-local-search__s41003__5714c45933b2": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-objective-adaptive__s41001__3a0ce37a4de7": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-objective-adaptive__s41002__4e1ab89fb429": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-objective-adaptive__s41003__b5bb2285c531": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-objective-random__s41001__944dfd10b718": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-objective-random__s41002__e8d97c04b57e": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-objective-random__s41003__0d15029e476f": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-selection-global__s41001__1c99e75d26f9": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-selection-global__s41002__25fd724da29d": 2000,
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-selection-global__s41003__ae304e4f4733": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-baseline__s41001__0db4c01c8012": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-baseline__s41002__d6ac407f7dc3": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-baseline__s41003__12e67f066dde": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-k-0p5__s41001__c5266a1951cb": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-k-0p5__s41002__c4e27952a536": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-k-0p5__s41003__816788149c17": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-k-2__s41001__ba338f6002c7": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-k-2__s41002__9e6fd2d8d099": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-k-2__s41003__82b1bc708d44": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0__s41001__684c8746b68c": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0__s41002__43433994350b": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0__s41003__143380615244": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0p01__s41001__2108564ae093": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0p01__s41002__c1a2b1bd646a": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0p01__s41003__6a7065dbaddb": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0p05__s41001__ac54a63cab74": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0p05__s41002__546ac8f417de": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0p05__s41003__56f46e4adfcc": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0p2__s41001__84efcb327a70": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0p2__s41002__eafae2e9b1e4": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0p2__s41003__87aa0ed48ffd": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0p5__s41001__731252473e63": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0p5__s41002__971c0951b2e4": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0p5__s41003__ee13003a298f": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-no-local-search__s41001__816fd2e00b10": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-no-local-search__s41002__c1f0dfef1727": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-no-local-search__s41003__81442acf6ffc": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-objective-adaptive__s41001__b458064fc9dc": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-objective-adaptive__s41002__19a34e1fc7e8": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-objective-adaptive__s41003__051acd3a0d1d": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-objective-random__s41001__ba034af506e7": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-objective-random__s41002__2923af330dc9": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-objective-random__s41003__5a0caaf6b0b0": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-selection-global__s41001__2e943ed2d525": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-selection-global__s41002__b5a348d7ef35": 2000,
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-selection-global__s41003__d51352a04ad1": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-baseline__s41001__4a5c9dc8a7d4": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-baseline__s41002__232e0795f7a9": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-baseline__s41003__e5b4c1001424": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-k-0p5__s41001__1598fcf24496": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-k-0p5__s41002__2fe136f30633": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-k-0p5__s41003__5ab0afac71b5": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-k-2__s41001__4abf710954b7": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-k-2__s41002__415f54b11a2a": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-k-2__s41003__c232a97ddc44": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0__s41001__1bcc717daac4": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0__s41002__eb4568baf6c1": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0__s41003__41a437453b6b": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0p01__s41001__05f0c5573b44": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0p01__s41002__1f49f7be216a": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0p01__s41003__3c7bdd43bfb2": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0p05__s41001__baee4eb342b6": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0p05__s41002__1d32385b00ec": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0p05__s41003__de7c82dbdf75": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0p2__s41001__adb4791f993f": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0p2__s41002__cd4195fccf45": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0p2__s41003__8868e53cf3b0": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0p5__s41001__73c3a1e52ac5": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0p5__s41002__46869c815bfb": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0p5__s41003__486ea52a9ece": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-no-local-search__s41001__6b61a286c45e": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-no-local-search__s41002__4a9707614385": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-no-local-search__s41003__9b525ab8919c": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-objective-adaptive__s41001__033f66cea32b": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-objective-adaptive__s41002__09d03ef61e38": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-objective-adaptive__s41003__9b1d9ec1acc9": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-objective-random__s41001__abbf9d4f34aa": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-objective-random__s41002__0a6788506304": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-objective-random__s41003__73bef355abd5": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-selection-global__s41001__7c33e4f72113": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-selection-global__s41002__48889ab26283": 2000,
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-selection-global__s41003__d3d2ca3fc020": 2000
+    },
+    "geometry_hashes": {
+      "calibration-dtlz1-m3": "dfaf737f5d3f599443df49303ea1da4dc8dd773e073fae94f703025294e997b3",
+      "calibration-dtlz5-m5": "22a6047d7f8225a20e4842866c9603d0a360f9ee119ebe4b0b1c043e2de54a54",
+      "calibration-wfg1-m5": "6d5e139e694e4fba9c1122385f7046167617e3c3d000708245aacad020d87638"
+    },
+    "paired_seeds": {
+      "calibration-dtlz1-m3/hldbea/baseline": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m3/hldbea/k-0p5": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m3/hldbea/k-2": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m3/hldbea/lambda-0": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m3/hldbea/lambda-0p01": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m3/hldbea/lambda-0p05": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m3/hldbea/lambda-0p2": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m3/hldbea/lambda-0p5": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m3/hldbea/no-local-search": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m3/hldbea/objective-adaptive": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m3/hldbea/objective-random": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz1-m3/hldbea/selection-global": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz5-m5/hldbea/baseline": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz5-m5/hldbea/k-0p5": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz5-m5/hldbea/k-2": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz5-m5/hldbea/lambda-0": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz5-m5/hldbea/lambda-0p01": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz5-m5/hldbea/lambda-0p05": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz5-m5/hldbea/lambda-0p2": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz5-m5/hldbea/lambda-0p5": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz5-m5/hldbea/no-local-search": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz5-m5/hldbea/objective-adaptive": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz5-m5/hldbea/objective-random": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-dtlz5-m5/hldbea/selection-global": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m5/hldbea/baseline": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m5/hldbea/k-0p5": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m5/hldbea/k-2": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m5/hldbea/lambda-0": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m5/hldbea/lambda-0p01": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m5/hldbea/lambda-0p05": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m5/hldbea/lambda-0p2": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m5/hldbea/lambda-0p5": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m5/hldbea/no-local-search": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m5/hldbea/objective-adaptive": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m5/hldbea/objective-random": [
+        41001,
+        41002,
+        41003
+      ],
+      "calibration-wfg1-m5/hldbea/selection-global": [
+        41001,
+        41002,
+        41003
+      ]
+    },
+    "valid_run_ids": [
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-baseline__s41001__8b79cad3217f",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-baseline__s41002__226380163712",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-baseline__s41003__82bdc097c3a6",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-k-0p5__s41001__084b28aa5645",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-k-0p5__s41002__54ff8fa864ba",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-k-0p5__s41003__06793e33f527",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-k-2__s41001__c5c3af2793ed",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-k-2__s41002__f5f0bf6b2fe8",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-k-2__s41003__c3f68851716e",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0__s41001__a3d3a9c4969d",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0__s41002__ce1d06a40f9d",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0__s41003__28442b8ae240",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0p01__s41001__e83953f90883",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0p01__s41002__954f3d04ac78",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0p01__s41003__c4ce1d3d9a63",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0p05__s41001__ca434f40e461",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0p05__s41002__d93ecd5565e8",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0p05__s41003__a09a32de335a",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0p2__s41001__bdfe0cdfa367",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0p2__s41002__c6e24c88fa85",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0p2__s41003__1d81ab16e777",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0p5__s41001__be56064707e9",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0p5__s41002__ae320910d932",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-lambda-0p5__s41003__282427e25afe",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-no-local-search__s41001__006cfb35db40",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-no-local-search__s41002__11ca7a1304c7",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-no-local-search__s41003__5714c45933b2",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-objective-adaptive__s41001__3a0ce37a4de7",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-objective-adaptive__s41002__4e1ab89fb429",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-objective-adaptive__s41003__b5bb2285c531",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-objective-random__s41001__944dfd10b718",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-objective-random__s41002__e8d97c04b57e",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-objective-random__s41003__0d15029e476f",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-selection-global__s41001__1c99e75d26f9",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-selection-global__s41002__25fd724da29d",
+      "calibration-core-screen-v3__calibration-dtlz1-m3__hldbea-selection-global__s41003__ae304e4f4733",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-baseline__s41001__0db4c01c8012",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-baseline__s41002__d6ac407f7dc3",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-baseline__s41003__12e67f066dde",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-k-0p5__s41001__c5266a1951cb",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-k-0p5__s41002__c4e27952a536",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-k-0p5__s41003__816788149c17",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-k-2__s41001__ba338f6002c7",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-k-2__s41002__9e6fd2d8d099",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-k-2__s41003__82b1bc708d44",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0__s41001__684c8746b68c",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0__s41002__43433994350b",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0__s41003__143380615244",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0p01__s41001__2108564ae093",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0p01__s41002__c1a2b1bd646a",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0p01__s41003__6a7065dbaddb",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0p05__s41001__ac54a63cab74",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0p05__s41002__546ac8f417de",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0p05__s41003__56f46e4adfcc",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0p2__s41001__84efcb327a70",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0p2__s41002__eafae2e9b1e4",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0p2__s41003__87aa0ed48ffd",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0p5__s41001__731252473e63",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0p5__s41002__971c0951b2e4",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-lambda-0p5__s41003__ee13003a298f",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-no-local-search__s41001__816fd2e00b10",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-no-local-search__s41002__c1f0dfef1727",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-no-local-search__s41003__81442acf6ffc",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-objective-adaptive__s41001__b458064fc9dc",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-objective-adaptive__s41002__19a34e1fc7e8",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-objective-adaptive__s41003__051acd3a0d1d",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-objective-random__s41001__ba034af506e7",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-objective-random__s41002__2923af330dc9",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-objective-random__s41003__5a0caaf6b0b0",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-selection-global__s41001__2e943ed2d525",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-selection-global__s41002__b5a348d7ef35",
+      "calibration-core-screen-v3__calibration-dtlz5-m5__hldbea-selection-global__s41003__d51352a04ad1",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-baseline__s41001__4a5c9dc8a7d4",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-baseline__s41002__232e0795f7a9",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-baseline__s41003__e5b4c1001424",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-k-0p5__s41001__1598fcf24496",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-k-0p5__s41002__2fe136f30633",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-k-0p5__s41003__5ab0afac71b5",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-k-2__s41001__4abf710954b7",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-k-2__s41002__415f54b11a2a",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-k-2__s41003__c232a97ddc44",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0__s41001__1bcc717daac4",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0__s41002__eb4568baf6c1",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0__s41003__41a437453b6b",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0p01__s41001__05f0c5573b44",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0p01__s41002__1f49f7be216a",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0p01__s41003__3c7bdd43bfb2",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0p05__s41001__baee4eb342b6",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0p05__s41002__1d32385b00ec",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0p05__s41003__de7c82dbdf75",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0p2__s41001__adb4791f993f",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0p2__s41002__cd4195fccf45",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0p2__s41003__8868e53cf3b0",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0p5__s41001__73c3a1e52ac5",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0p5__s41002__46869c815bfb",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-lambda-0p5__s41003__486ea52a9ece",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-no-local-search__s41001__6b61a286c45e",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-no-local-search__s41002__4a9707614385",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-no-local-search__s41003__9b525ab8919c",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-objective-adaptive__s41001__033f66cea32b",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-objective-adaptive__s41002__09d03ef61e38",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-objective-adaptive__s41003__9b1d9ec1acc9",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-objective-random__s41001__abbf9d4f34aa",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-objective-random__s41002__0a6788506304",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-objective-random__s41003__73bef355abd5",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-selection-global__s41001__7c33e4f72113",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-selection-global__s41002__48889ab26283",
+      "calibration-core-screen-v3__calibration-wfg1-m5__hldbea-selection-global__s41003__d3d2ca3fc020"
+    ]
+  },
+  "gates": {
+    "analysis": true,
+    "artifacts": true
+  },
+  "issues": {
+    "dependency_gates": [],
+    "duplicate_runs": [],
+    "event_inconsistencies": [],
+    "failed_runs": [],
+    "fe_violations": [],
+    "geometry_mismatches": [],
+    "invalid_runs": [],
+    "missing_runs": [],
+    "nonfinite_metrics": [],
+    "seed_pairing": [],
+    "unexpected_runs": []
+  },
+  "manifest_id": "calibration-core-screen-v3",
+  "stage": "calibration"
+}

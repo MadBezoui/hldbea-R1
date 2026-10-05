@@ -1,0 +1,83 @@
+{
+  "artifact_root": "results/raw",
+  "kind": "figures",
+  "manifest_id": "integration-smoke-v1",
+  "median_run_ids": {
+    "hldbea:full": "integration-smoke-v1__dtlz2-m5__hldbea-full__s31002__84e8582c6af6",
+    "nsga2:standard": "integration-smoke-v1__dtlz2-m5__nsga2-standard__s31001__ac13d6babd08"
+  },
+  "median_run_policy": "ascending HV rank, lower median, run-id tie break",
+  "outputs": {
+    "box-violin__dtlz2-m5__hv.png": "25b17fcc1d69ea452137fad2f2fbddfccfc5614803bb745f3d662da10aa157e7",
+    "box-violin__dtlz2-m5__igd-plus.png": "e393a38aed51cad198a43641ce99e28150244bdee1b029abe5ccbca39ecbed7a",
+    "convergence__dtlz2-m5__hv.png": "d0c6ebf189cd7c938c01b11d895849cf146084cc4c00b3be0d9ff93a957e9652",
+    "convergence__dtlz2-m5__igd-plus.png": "718c2d6f59ce561d15a9bc20c2243b9149f4e2cab0d29b71556875d17f80bc25",
+    "heatmap__dtlz2-m5__hldbea-full.png": "757bed04bd69d8cc61c87a92996688e1d3a3abddebf0276f8ede763f1b80b077",
+    "heatmap__dtlz2-m5__nsga2-standard.png": "b26224db303a2c70cef7d4cc3e3f10de151a0a7a23475ec1865c979f007eb96a",
+    "parallel-coordinates__dtlz2-m5__hldbea-full.png": "8b09679757d9c7be2c6edf7695b2a6dc61f6f665539a4b614de8c93887d8948d",
+    "parallel-coordinates__dtlz2-m5__nsga2-standard.png": "e9fba211d25cc4470f32189c65f206187974d91caa2f4175fdbe751632a74f03",
+    "pca__dtlz2-m5__hldbea-full.png": "fd3f11aba352e14853b583fa47622986058f9911e23cca9b422f30e2779b917d",
+    "pca__dtlz2-m5__nsga2-standard.png": "70dd7638a71100beaae0b79fad5f20a0a7835d80d429c6f0a365ca144720b7d1",
+    "radviz__dtlz2-m5__hldbea-full.png": "9400ab9f8ce758e06a5b3e55e493f2023d7b7e61fafbde28dba2fab483ad3b92",
+    "radviz__dtlz2-m5__nsga2-standard.png": "b581f425ccd7560a87af1b8098a67b053bf9a48be706b2a37ba03c6be71af43c"
+  },
+  "rotation_families": {
+    "dtlz2-m3-n12-89c9fb1e": {
+      "angles": [
+        0.0
+      ],
+      "problem_ids": [
+        "dtlz2-m3"
+      ]
+    },
+    "dtlz2-m5-n14-143e2ce6": {
+      "angles": [
+        0.0
+      ],
+      "problem_ids": [
+        "dtlz2-m5"
+      ]
+    },
+    "wfg2-m3-n24-b5fb7336": {
+      "angles": [
+        0.0
+      ],
+      "problem_ids": [
+        "wfg2-m3"
+      ]
+    },
+    "wfg2-m5-n24-eb97770c": {
+      "angles": [
+        0.0
+      ],
+      "problem_ids": [
+        "wfg2-m5"
+      ]
+    }
+  },
+  "schema_version": 1,
+  "selected_problem": "dtlz2-m5",
+  "selected_problem_objectives": 5,
+  "source_run_ids": [
+    "integration-smoke-v1__dtlz2-m3__hldbea-full__s31001__6f014ed2c931",
+    "integration-smoke-v1__dtlz2-m3__hldbea-full__s31002__db11f6a2f4c9",
+    "integration-smoke-v1__dtlz2-m3__nsga2-standard__s31001__8b9a4733944b",
+    "integration-smoke-v1__dtlz2-m3__nsga2-standard__s31002__34a28f24c5e7",
+    "integration-smoke-v1__dtlz2-m5__hldbea-full__s31001__ed5315dbdedb",
+    "integration-smoke-v1__dtlz2-m5__hldbea-full__s31002__84e8582c6af6",
+    "integration-smoke-v1__dtlz2-m5__nsga2-standard__s31001__ac13d6babd08",
+    "integration-smoke-v1__dtlz2-m5__nsga2-standard__s31002__46458da3e6c1",
+    "integration-smoke-v1__wfg2-m3__hldbea-full__s31001__b6382e7182d6",
+    "integration-smoke-v1__wfg2-m3__hldbea-full__s31002__5906696f6ae4",
+    "integration-smoke-v1__wfg2-m3__nsga2-standard__s31001__26208957250e",
+    "integration-smoke-v1__wfg2-m3__nsga2-standard__s31002__7c4602f96feb",
+    "integration-smoke-v1__wfg2-m5__hldbea-full__s31001__da062f94306b",
+    "integration-smoke-v1__wfg2-m5__hldbea-full__s31002__0b1d8f7b021e",
+    "integration-smoke-v1__wfg2-m5__nsga2-standard__s31001__962c17729bd7",
+    "integration-smoke-v1__wfg2-m5__nsga2-standard__s31002__244c65378606"
+  ],
+  "validation_gates": {
+    "analysis": true,
+    "artifacts": true
+  }
+}

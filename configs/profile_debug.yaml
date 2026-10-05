@@ -1,0 +1,10 @@
+# Problem set and run configuration
+name: "debug"
+n_samp: 2
+stop_criterion: "n_gen"
+probs: 
+  - ["ZDT1", 7]
+  - ["ZDT2", 7]
+probs_config:
+  - [30, 100]
+  - [30, 100]

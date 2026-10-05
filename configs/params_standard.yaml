@@ -1,0 +1,25 @@
+# Algorithm-specific internal parameters (paper-compliant defaults)
+# ACT_Ghani_V2-6.pdf
+fitness:
+  fitm: false
+  sc_method: '0'      # fit(A) = -score(A) - lambda*dist(A)  [Section 3.2]
+  lmbda: 0.1          # lambda weight for distance term       [Section 3.2]
+  cone_epsilon: 0.0   # strict excluded-axis comparison; positive only in cone ablations
+infill:
+  inf: 'hybrid'       # elite top-tau individuals -> epsilon-constraint [Algorithm 3]
+  tau: 1              # size of elite set E                   [Algorithm 3]
+  exact_method: 'epsilon'  # epsilon-constraint NLP solver   [Algorithm 3]
+  objective_policy: 'round_robin'  # deterministic main-objective schedule
+  local_search_max_iter: 2
+env_selection:
+  temp_pop: '0'       # standard merge P U P'
+  env_sel_method: 'rank'  # Rank & Crowding tie-breaker     [Algorithm 4 / Section 3.3]
+  sel_pop: '2'        # iterative recalculation when |fit=0| < N
+  selection_mode: 'local'  # raw-score-zero stratum, then rank/crowding
+general:
+  use_restart: false
+  evaluation_budget: 100000
+  restart_theta_zero: 0.95
+  restart_window: 20
+  restart_delta_hv: 0.0001
+  restart_fraction: 0.20

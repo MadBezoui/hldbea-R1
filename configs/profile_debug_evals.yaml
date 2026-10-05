@@ -1,0 +1,10 @@
+# Problem set and run configuration
+name: "debug-evals"
+n_samp: 2
+stop_criterion: "n_eval"
+probs: 
+  - ["ZDT1", 7]
+  - ["ZDT2", 7]
+probs_config:
+  - [1000, 100]
+  - [1000, 100]

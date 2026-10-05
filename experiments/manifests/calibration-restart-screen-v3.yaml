@@ -1,0 +1,90 @@
+schema_version: 1
+manifest_id: calibration-restart-screen-v3
+stage: calibration
+
+seeds: [41001, 41002, 41003]
+
+problems:
+  - id: calibration-zdt3-m2
+    name: zdt3
+    n_obj: 2
+    n_var: 30
+    parameters: {}
+    transform: {kind: identity}
+  - id: calibration-dtlz6-m5
+    name: dtlz6
+    n_obj: 5
+    n_var: 14
+    parameters: {}
+    transform: {kind: identity}
+  - id: calibration-wfg4-m5
+    name: wfg4
+    n_obj: 5
+    n_var: 24
+    parameters: {}
+    transform: {kind: identity}
+
+algorithms:
+  - id: hldbea
+    variant: baseline
+    parameters: &baseline
+      k: 1.0
+      lambda: 0.1
+      cone_epsilon: 0.0
+      selection_mode: local
+      objective_policy: round_robin
+      tau: 1
+      local_search_max_iter: 2
+      local_search_acceptance: feasible_improvement
+      restart: true
+      restart_theta_zero: 0.95
+      restart_window: 20
+      restart_delta_hv: 0.0001
+      restart_fraction: 0.2
+      crossover_probability: 0.9
+      crossover_eta: 20
+      mutation_probability: inverse_n_var
+      mutation_eta: 20
+      mutation_scope: per_variable
+  - id: hldbea
+    variant: no-restart
+    parameters: {<<: *baseline, restart: false}
+  - id: hldbea
+    variant: theta-0p8
+    parameters: {<<: *baseline, restart_theta_zero: 0.8}
+  - id: hldbea
+    variant: theta-0p9
+    parameters: {<<: *baseline, restart_theta_zero: 0.9}
+  - id: hldbea
+    variant: theta-0p99
+    parameters: {<<: *baseline, restart_theta_zero: 0.99}
+  - id: hldbea
+    variant: window-10
+    parameters: {<<: *baseline, restart_window: 10}
+  - id: hldbea
+    variant: window-30
+    parameters: {<<: *baseline, restart_window: 30}
+  - id: hldbea
+    variant: window-50
+    parameters: {<<: *baseline, restart_window: 50}
+  - id: hldbea
+    variant: delta-1e-5
+    parameters: {<<: *baseline, restart_delta_hv: 0.00001}
+  - id: hldbea
+    variant: delta-1e-3
+    parameters: {<<: *baseline, restart_delta_hv: 0.001}
+  - id: hldbea
+    variant: rho-0p1
+    parameters: {<<: *baseline, restart_fraction: 0.1}
+  - id: hldbea
+    variant: rho-0p3
+    parameters: {<<: *baseline, restart_fraction: 0.3}
+  - id: hldbea
+    variant: rho-0p5
+    parameters: {<<: *baseline, restart_fraction: 0.5}
+
+execution:
+  population_size: 100
+  evaluation_budget: 2000
+  checkpoints: [100, 500, 1000, 2000]
+  save_history: false

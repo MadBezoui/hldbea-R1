@@ -1,0 +1,132 @@
+schema_version: 1
+manifest_id: reviewer-manyobjective-validation-v3
+stage: validation
+seeds:
+  - 51001
+  - 51002
+  - 51003
+  - 51004
+  - 51005
+  - 51006
+  - 51007
+  - 51008
+  - 51009
+  - 51010
+  - 51011
+  - 51012
+  - 51013
+  - 51014
+  - 51015
+  - 51016
+  - 51017
+  - 51018
+  - 51019
+  - 51020
+  - 51021
+  - 51022
+  - 51023
+  - 51024
+  - 51025
+  - 51026
+  - 51027
+  - 51028
+  - 51029
+  - 51030
+problems:
+  - id: validation-dtlz2-m10
+    name: dtlz2
+    n_obj: 10
+    n_var: 19
+    parameters: {}
+    transform: {kind: identity}
+  - id: validation-dtlz2-m15
+    name: dtlz2
+    n_obj: 15
+    n_var: 24
+    parameters: {}
+    transform: {kind: identity}
+  - id: validation-wfg2-m10
+    name: wfg2
+    n_obj: 10
+    n_var: 28
+    parameters: {}
+    transform: {kind: identity}
+  - id: validation-wfg2-m15
+    name: wfg2
+    n_obj: 15
+    n_var: 38
+    parameters: {}
+    transform: {kind: identity}
+algorithms:
+  - id: hldbea
+    variant: cone-strict
+    parameters: &hldbea
+      k: 1.0
+      lambda: 0.1
+      cone_epsilon: 0.0
+      neighborhood_mode: axis
+      score_aggregation: sum
+      selection_mode: local
+      objective_policy: round_robin
+      tau: 1
+      local_search_max_iter: 2
+      local_search_acceptance: feasible_improvement
+      restart: true
+      restart_theta_zero: 0.95
+      restart_window: 20
+      restart_delta_hv: 0.0001
+      restart_fraction: 0.2
+      crossover_probability: 0.9
+      crossover_eta: 20
+      mutation_probability: inverse_n_var
+      mutation_eta: 20
+      mutation_scope: per_variable
+  - id: hldbea
+    variant: cone-fixed-0p1
+    parameters:
+      <<: *hldbea
+      cone_epsilon: {kind: fixed, value: 0.1}
+  - id: hldbea
+    variant: cone-linear
+    parameters:
+      <<: *hldbea
+      cone_epsilon: {kind: linear, slope: 0.02, origin: 3, cap: 0.15}
+  - id: hldbea
+    variant: cone-saturating
+    parameters:
+      <<: *hldbea
+      cone_epsilon: {kind: saturating, limit: 0.15, rate: 0.25, origin: 3}
+  - &standard
+    id: nsga3
+    variant: standard
+    parameters: &standard_parameters
+      crossover_probability: 0.9
+      crossover_eta: 20
+      mutation_probability: inverse_n_var
+      mutation_eta: 20
+      mutation_scope: per_variable
+  - <<: *standard
+    id: rvea
+    parameters:
+      <<: *standard_parameters
+      alpha: 2.0
+      adapt_frequency: 0.1
+  - <<: *standard
+    id: maoea_hap
+    variant: upstream-default
+    parameters:
+      <<: *standard_parameters
+      crossover_probability: 1.0
+  - <<: *standard
+    id: fdsea
+    variant: upstream-default
+    parameters:
+      <<: *standard_parameters
+      crossover_probability: 1.0
+      frequency_terms: 5
+      operator: ga
+execution:
+  population_size: 100
+  evaluation_budget: 10000
+  checkpoints: [100, 1000, 5000, 10000]
+  save_history: false

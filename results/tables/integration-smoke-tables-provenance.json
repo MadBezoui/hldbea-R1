@@ -1,0 +1,36 @@
+{
+  "artifact_root": "results/raw",
+  "kind": "tables",
+  "manifest_id": "integration-smoke-v1",
+  "outputs": {
+    "integration-smoke-results-summary.json": "f8463e7f8355949fd5d2fcec99c73d7db4475de2b6a2837f7eb8052294e2623f",
+    "integration-smoke-results.csv": "2316397e08f3f53137e5bb6ed86d569d14d7c0abf08cd82e0f4e28c7392864df",
+    "integration-smoke-results.md": "132151073d2fa31322ff4d272e024d50b10d142f3cefd60822250d14b177eb48",
+    "integration-smoke-results.tex": "d2e62f7742f2b1ea5a7445d6e7731440c8a000cf0c9d234b6a21ba072f8f4c7e"
+  },
+  "schema_version": 1,
+  "source_run_ids": [
+    "integration-smoke-v1__dtlz2-m3__hldbea-full__s31001__6f014ed2c931",
+    "integration-smoke-v1__dtlz2-m3__hldbea-full__s31002__db11f6a2f4c9",
+    "integration-smoke-v1__dtlz2-m3__nsga2-standard__s31001__8b9a4733944b",
+    "integration-smoke-v1__dtlz2-m3__nsga2-standard__s31002__34a28f24c5e7",
+    "integration-smoke-v1__dtlz2-m5__hldbea-full__s31001__ed5315dbdedb",
+    "integration-smoke-v1__dtlz2-m5__hldbea-full__s31002__84e8582c6af6",
+    "integration-smoke-v1__dtlz2-m5__nsga2-standard__s31001__ac13d6babd08",
+    "integration-smoke-v1__dtlz2-m5__nsga2-standard__s31002__46458da3e6c1",
+    "integration-smoke-v1__wfg2-m3__hldbea-full__s31001__b6382e7182d6",
+    "integration-smoke-v1__wfg2-m3__hldbea-full__s31002__5906696f6ae4",
+    "integration-smoke-v1__wfg2-m3__nsga2-standard__s31001__26208957250e",
+    "integration-smoke-v1__wfg2-m3__nsga2-standard__s31002__7c4602f96feb",
+    "integration-smoke-v1__wfg2-m5__hldbea-full__s31001__da062f94306b",
+    "integration-smoke-v1__wfg2-m5__hldbea-full__s31002__0b1d8f7b021e",
+    "integration-smoke-v1__wfg2-m5__nsga2-standard__s31001__962c17729bd7",
+    "integration-smoke-v1__wfg2-m5__nsga2-standard__s31002__244c65378606"
+  ],
+  "statistics_file": "results/reports/integration-smoke-statistics.json",
+  "statistics_sha256": "90033e9efabc1819ba314436c4923adca894cdf7c3e663f4e575a189c46309f9",
+  "validation_gates": {
+    "analysis": true,
+    "artifacts": true
+  }
+}

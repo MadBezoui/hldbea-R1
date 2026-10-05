@@ -1,0 +1,57 @@
+schema_version: 1
+manifest_id: calibration-cone-screen-v1
+stage: calibration
+
+seeds: [41001, 41002, 41003]
+
+problems:
+  - {id: calibration-dtlz1-m5, name: dtlz1, n_obj: 5, n_var: 9, parameters: {}, transform: {kind: identity}}
+  - {id: calibration-dtlz1-m8, name: dtlz1, n_obj: 8, n_var: 12, parameters: {}, transform: {kind: identity}}
+  - {id: calibration-dtlz1-m10, name: dtlz1, n_obj: 10, n_var: 14, parameters: {}, transform: {kind: identity}}
+  - {id: calibration-dtlz1-m15, name: dtlz1, n_obj: 15, n_var: 19, parameters: {}, transform: {kind: identity}}
+  - {id: calibration-wfg1-m5, name: wfg1, n_obj: 5, n_var: 24, parameters: {}, transform: {kind: identity}}
+  - {id: calibration-wfg1-m8, name: wfg1, n_obj: 8, n_var: 24, parameters: {}, transform: {kind: identity}}
+  - {id: calibration-wfg1-m10, name: wfg1, n_obj: 10, n_var: 28, parameters: {}, transform: {kind: identity}}
+  - {id: calibration-wfg1-m15, name: wfg1, n_obj: 15, n_var: 38, parameters: {}, transform: {kind: identity}}
+
+algorithms:
+  - id: hldbea
+    variant: cone-strict
+    parameters: &baseline
+      k: 1.0
+      lambda: 0.1
+      cone_epsilon: {kind: fixed, value: 0.0}
+      selection_mode: local
+      objective_policy: round_robin
+      tau: 1
+      local_search_max_iter: 2
+      restart: true
+      restart_theta_zero: 0.95
+      restart_window: 20
+      restart_delta_hv: 0.0001
+      restart_fraction: 0.2
+      crossover_probability: 0.9
+      crossover_eta: 20
+      mutation_probability: inverse_n_var
+      mutation_eta: 20
+  - id: hldbea
+    variant: cone-fixed-0p1
+    parameters:
+      <<: *baseline
+      cone_epsilon: {kind: fixed, value: 0.1}
+  - id: hldbea
+    variant: cone-linear
+    parameters:
+      <<: *baseline
+      cone_epsilon: {kind: linear, slope: 0.02, origin: 3, cap: 0.15}
+  - id: hldbea
+    variant: cone-saturating
+    parameters:
+      <<: *baseline
+      cone_epsilon: {kind: saturating, limit: 0.15, rate: 0.25, origin: 3}
+
+execution:
+  population_size: 100
+  evaluation_budget: 2000
+  checkpoints: [100, 500, 1000, 2000]
+  save_history: false

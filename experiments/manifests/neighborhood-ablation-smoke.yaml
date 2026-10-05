@@ -1,0 +1,67 @@
+schema_version: 1
+manifest_id: neighborhood-ablation-smoke
+stage: smoke
+seeds:
+- 32002
+problems:
+- id: smoke-dtlz2-m3
+  name: dtlz2
+  n_obj: 3
+  n_var: 12
+  parameters: {}
+  transform:
+    kind: identity
+- id: smoke-wfg3-m3
+  name: wfg3
+  n_obj: 3
+  n_var: 24
+  parameters: {}
+  transform:
+    kind: identity
+algorithms:
+- id: hldbea
+  variant: axis-sum
+  parameters: &baseline
+    k: 1.0
+    lambda: 0.1
+    cone_epsilon: 0.0
+    neighborhood_mode: axis
+    score_aggregation: sum
+    selection_mode: local
+    objective_policy: round_robin
+    tau: 1
+    local_search_max_iter: 0
+    restart: false
+    restart_theta_zero: 0.95
+    restart_window: 20
+    restart_delta_hv: 0.0001
+    restart_fraction: 0.2
+    crossover_probability: 0.9
+    crossover_eta: 20
+    mutation_probability: inverse_n_var
+    mutation_eta: 20
+- id: hldbea
+  variant: axis-union
+  parameters:
+    <<: *baseline
+    score_aggregation: union
+- id: hldbea
+  variant: box-union
+  parameters:
+    <<: *baseline
+    neighborhood_mode: box
+    score_aggregation: union
+- id: hldbea
+  variant: knn-union
+  parameters:
+    <<: *baseline
+    neighborhood_mode: knn
+    score_aggregation: union
+execution:
+  population_size: 20
+  evaluation_budget: 100
+  checkpoints:
+  - 20
+  - 60
+  - 100
+  save_history: false

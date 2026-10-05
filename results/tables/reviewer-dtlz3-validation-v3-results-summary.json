@@ -1,0 +1,15 @@
+{
+  "comparison_count": 24,
+  "manifest_id": "reviewer-dtlz3-validation-v3",
+  "schema_version": 1,
+  "sign_semantics": {
+    "+": "reference significantly better after Holm correction",
+    "-": "reference significantly worse after Holm correction",
+    "=": "no significant corrected difference"
+  },
+  "win_tie_loss": {
+    "losses": 0,
+    "ties": 20,
+    "wins": 4
+  }
+}

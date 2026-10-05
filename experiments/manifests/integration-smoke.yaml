@@ -1,0 +1,75 @@
+schema_version: 1
+manifest_id: integration-smoke-v1
+stage: integration
+
+seeds:
+  - 31001
+  - 31002
+
+problems:
+  - id: dtlz2-m3
+    name: dtlz2
+    n_obj: 3
+    n_var: 12
+    parameters: {}
+    transform:
+      kind: identity
+  - id: dtlz2-m5
+    name: dtlz2
+    n_obj: 5
+    n_var: 14
+    parameters: {}
+    transform:
+      kind: identity
+  - id: wfg2-m3
+    name: wfg2
+    n_obj: 3
+    n_var: 24
+    parameters: {}
+    transform:
+      kind: identity
+  - id: wfg2-m5
+    name: wfg2
+    n_obj: 5
+    n_var: 24
+    parameters: {}
+    transform:
+      kind: identity
+
+algorithms:
+  - id: hldbea
+    variant: full
+    parameters:
+      k: 1.0
+      lambda: 0.1
+      cone_epsilon: 0.0
+      selection_mode: local
+      objective_policy: round_robin
+      tau: 1
+      local_search_max_iter: 2
+      restart: false
+      restart_theta_zero: 0.95
+      restart_window: 20
+      restart_delta_hv: 0.0001
+      restart_fraction: 0.2
+      crossover_probability: 0.9
+      crossover_eta: 20
+      mutation_probability: inverse_n_var
+      mutation_eta: 20
+  - id: nsga2
+    variant: standard
+    parameters:
+      crossover_probability: 0.9
+      crossover_eta: 20
+      mutation_probability: inverse_n_var
+      mutation_eta: 20
+
+execution:
+  population_size: 10
+  evaluation_budget: 80
+  checkpoints:
+    - 10
+    - 20
+    - 40
+    - 80
+  save_history: false
