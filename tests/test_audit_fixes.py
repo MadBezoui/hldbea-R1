@@ -118,3 +118,50 @@ def test_candidate_mode_global_rank_draws_only_nondominated_individuals():
     assert chosen <= {0, 1}
     with pytest.raises(ValueError, match="candidate_mode"):
         _alternative_candidates(holder, "best", 1)
+
+
+def _duplicate_ablation_spec(variant, budget):
+    from dataclasses import replace
+    from pathlib import Path
+
+    from hldbea.run_spec import expand_manifest, load_manifest
+
+    manifest = (
+        Path(__file__).resolve().parents[1]
+        / "experiments/manifests/reviewer-dtlz3-duplicates-v3.yaml"
+    )
+    spec = next(
+        s for s in expand_manifest(load_manifest(manifest))
+        if s.variant == variant and s.seed == 51006
+    )
+    return replace(spec, evaluation_budget=budget, checkpoints=(budget,))
+
+
+def test_dropped_rejection_at_the_end_of_the_budget_terminates_cleanly(tmp_path):
+    """Catches the crash when the last solver call exhausts the budget and is dropped."""
+
+    import json
+
+    from hldbea.runner import execute_run
+
+    outcome = execute_run(_duplicate_ablation_spec("core-with-ls-drop", 437), tmp_path)
+    assert outcome.status == "budget_exhausted", outcome.error_message
+    events = json.loads((outcome.artifact_path / "events.json").read_text())
+    last = events["local_search"][-1]
+    assert last["evaluation_after"] == 437 and not last["accepted"]
+
+
+def test_duplicate_elimination_leaves_no_exact_copy_among_survivors(tmp_path):
+    """Catches duplicates surviving when exact copies are removed from the merged set."""
+
+    import json
+
+    from hldbea.runner import execute_run
+
+    outcome = execute_run(_duplicate_ablation_spec("core-with-ls-eliminate", 2000), tmp_path)
+    metadata = json.loads((outcome.artifact_path / "metadata.json").read_text())
+    summary = metadata["run_metadata"]["duplicate_summary"]
+    assert summary["merged_duplicates"] > 0
+    assert summary["eliminated"] == summary["merged_duplicates"]
+    assert summary["survivor_duplicates"] == 0
+    assert summary["final_population_duplicates"] == 0

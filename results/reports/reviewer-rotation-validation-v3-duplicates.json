@@ -1,0 +1,3008 @@
+{
+  "algorithm": "hldbea",
+  "identical": 150,
+  "manifest_id": "reviewer-rotation-validation-v3",
+  "replayed": 150,
+  "runs": [
+    {
+      "arrays_sha256": "24a14f56922f22b7e9aba066e4d0c734ac203fb99062e0c988e86cb4928dbb5e",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 14,
+        "individuals_with_copies": 189,
+        "merged_duplicates": 108,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2757,
+        "survivor_duplicates": 45
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51001__088178578858",
+      "seed": 51001,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "f14fd772b872e1b29c7b96d92b157c577cd322c1a391aeb87d71d178de49de46",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 17,
+        "individuals_with_copies": 185,
+        "merged_duplicates": 93,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2829,
+        "survivor_duplicates": 29
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51002__0c02efc08e68",
+      "seed": 51002,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "ed47654a5a9569d2fe98390dfe369f2a4ff71641c03cac824d61285d144bf5d1",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 182,
+        "merged_duplicates": 93,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2768,
+        "survivor_duplicates": 29
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51003__52cfe0054574",
+      "seed": 51003,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "0ec7d0e7e58bc2df1960b8963bd66ec69dd9695e42e9867d77bbb1985a99ccf6",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 63,
+        "generations_with_survivor_duplicates": 12,
+        "individuals_with_copies": 159,
+        "merged_duplicates": 87,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2638,
+        "survivor_duplicates": 24
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51004__53b52da6f582",
+      "seed": 51004,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "5d2b91d14b1c359e66a5de21a5f0ef35ede7dd047e25ff763997fb195fe28ade",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 12,
+        "individuals_with_copies": 166,
+        "merged_duplicates": 90,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2735,
+        "survivor_duplicates": 26
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51005__cba052f80d48",
+      "seed": 51005,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "bf404be5d63dd0ca72a79088a715b29b314669b1b7871eac206cb0bec2642e3e",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 14,
+        "individuals_with_copies": 188,
+        "merged_duplicates": 99,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2607,
+        "survivor_duplicates": 36
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51006__42e9080531c4",
+      "seed": 51006,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "7a79d412c07ca9901cd959d86bf7e55f4832c7af6dab6984e4c38bc96ea6a90e",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 14,
+        "individuals_with_copies": 165,
+        "merged_duplicates": 90,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2715,
+        "survivor_duplicates": 27
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51007__d5a6f6d34711",
+      "seed": 51007,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "2c57f61d6d4fce609230c700d3a4aec48681d8989bcae7af7ebcb1871c6a686c",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 11,
+        "individuals_with_copies": 178,
+        "merged_duplicates": 101,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2518,
+        "survivor_duplicates": 38
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51008__a9ebd5d08621",
+      "seed": 51008,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "eb4cd1b11c83d5bd623b995fa5f43a9a9def916c2702526d16f2e368687777fd",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 17,
+        "individuals_with_copies": 179,
+        "merged_duplicates": 99,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2643,
+        "survivor_duplicates": 37
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51009__36e75564d52d",
+      "seed": 51009,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "81e7bbb735dddedbe4f4eb12efc5e3e99f74dde550d5c41c2c3ac0120f6fb6e5",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 178,
+        "merged_duplicates": 103,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2841,
+        "survivor_duplicates": 40
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51010__1f2c7baf1305",
+      "seed": 51010,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "df5de9416319e842a6e75bbabd3d1f863be9f11b7b4bc04b963e339dfc019d13",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 15,
+        "individuals_with_copies": 181,
+        "merged_duplicates": 98,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2667,
+        "survivor_duplicates": 35
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51011__688e104e1592",
+      "seed": 51011,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "fd3afb53b98372b8d452f2a206fbbd881ed1d1794241b5193ee860af6e5c9bf0",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 11,
+        "individuals_with_copies": 149,
+        "merged_duplicates": 80,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2870,
+        "survivor_duplicates": 16
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51012__c7451a718ebe",
+      "seed": 51012,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "a6e724bf1a81678e8ae45015d72b75f0597689e61345fda2f8ae4fbbbd6b9342",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 16,
+        "individuals_with_copies": 170,
+        "merged_duplicates": 90,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2780,
+        "survivor_duplicates": 27
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51013__f36d36345032",
+      "seed": 51013,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "4e540893ed40875243279794f8bbe611ecacb525f7a7bab5b604bb6fbfe25d46",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 164,
+        "merged_duplicates": 89,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2606,
+        "survivor_duplicates": 26
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51014__d66fca74e1f4",
+      "seed": 51014,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "0942abebcaf5dd5deb0e40ca80ea1627cc39b9ffd47b069fb5b376a981b59d4a",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 11,
+        "individuals_with_copies": 166,
+        "merged_duplicates": 95,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2702,
+        "survivor_duplicates": 32
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51015__6a19d9635960",
+      "seed": 51015,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "e6079bb677b6cfc38373614917c021adef865488b3ce719fece9b6bf6e8386bf",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 14,
+        "individuals_with_copies": 165,
+        "merged_duplicates": 86,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2857,
+        "survivor_duplicates": 22
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51016__a0baf8bee556",
+      "seed": 51016,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "0e99424056b06cf6e542a8d83792d6c7c91c014a7d7ac7923ad95d7ebf00e1fa",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 9,
+        "individuals_with_copies": 147,
+        "merged_duplicates": 78,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2735,
+        "survivor_duplicates": 14
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51017__6f6fd03267a2",
+      "seed": 51017,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "ed2d535bedb5852615992970191a987bb03fe6d09ed2a34b28639bbf47804dcc",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 14,
+        "individuals_with_copies": 169,
+        "merged_duplicates": 90,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2779,
+        "survivor_duplicates": 26
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51018__0dbee549aa67",
+      "seed": 51018,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "772dc4dcf698bc0786c6f78eb85b6063bd24112d4bef06efbd4ff15cd17d7375",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 14,
+        "individuals_with_copies": 160,
+        "merged_duplicates": 88,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2852,
+        "survivor_duplicates": 24
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51019__dbcf9a63827b",
+      "seed": 51019,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "6b6f13d78c3b7e7e37b6c4f6edaf264c44ce67418a619855e6fa4920326d6b26",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 63,
+        "generations_with_survivor_duplicates": 10,
+        "individuals_with_copies": 173,
+        "merged_duplicates": 95,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2607,
+        "survivor_duplicates": 32
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51020__222b55a53a90",
+      "seed": 51020,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "227824551e2feb671e44958e44aae396df6f7e90a5a0fb3ce1a7a480307281d3",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 63,
+        "generations_with_merged_duplicates": 63,
+        "generations_with_survivor_duplicates": 14,
+        "individuals_with_copies": 176,
+        "merged_duplicates": 99,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2793,
+        "survivor_duplicates": 37
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51021__6fbed6d3cf60",
+      "seed": 51021,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "b218ac8e7fccf877a53b45c82f8e0bded3d2fa00c8e0dc67b39bdab66abe6fb6",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 63,
+        "generations_with_survivor_duplicates": 7,
+        "individuals_with_copies": 139,
+        "merged_duplicates": 74,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2701,
+        "survivor_duplicates": 11
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51022__e236cf6850f5",
+      "seed": 51022,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "2cf8c60ca6cb97b82f16b49b07731b44cb0f17e0a66b855a39cbe34b7cc1fecd",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 63,
+        "generations_with_merged_duplicates": 63,
+        "generations_with_survivor_duplicates": 12,
+        "individuals_with_copies": 165,
+        "merged_duplicates": 94,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2684,
+        "survivor_duplicates": 32
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51023__a11359d1016e",
+      "seed": 51023,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "8a9cf2d3001d4aa0fcd6eb698fd6c8fe31cb46dca9abb53d94af360a7c57b430",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 11,
+        "individuals_with_copies": 156,
+        "merged_duplicates": 82,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2643,
+        "survivor_duplicates": 18
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51024__fa2083e7571e",
+      "seed": 51024,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "96687425da6e1f73a1081d0b56c33f38361a603ad0ef7e1450ba7ae20ea68971",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 14,
+        "individuals_with_copies": 170,
+        "merged_duplicates": 91,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2852,
+        "survivor_duplicates": 27
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51025__525aa20af34d",
+      "seed": 51025,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "dd0923f08ae47b84fd5e9c47dbb988aa4dbe61b23d5303a5016bd8301db7bcac",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 12,
+        "individuals_with_copies": 157,
+        "merged_duplicates": 84,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2781,
+        "survivor_duplicates": 20
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51026__8726c3610a6c",
+      "seed": 51026,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "20c8492a5f417d2981d22051d7fb2b4c66ae3337d6fa6a16ec1fe4f670e3eada",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 15,
+        "individuals_with_copies": 189,
+        "merged_duplicates": 102,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2940,
+        "survivor_duplicates": 39
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51027__e9119233ad86",
+      "seed": 51027,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "a7de42a864c7adb7062381b451f4b9a501c947896dc264d2d9196855536e6e6d",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 15,
+        "individuals_with_copies": 169,
+        "merged_duplicates": 91,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2740,
+        "survivor_duplicates": 27
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51028__f40a3630d21a",
+      "seed": 51028,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "0f6a34b2e67c8b20e3163834bfee7d69e723e223282061e541a1ef14696f2e38",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 165,
+        "merged_duplicates": 88,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2768,
+        "survivor_duplicates": 24
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51029__d443c08de67d",
+      "seed": 51029,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "e1ee6ab562f3f3b13dfa78f1ce42771ffb0e9a9643c95600dc2347b31fa38c4b",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 170,
+        "merged_duplicates": 90,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2624,
+        "survivor_duplicates": 27
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a0",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a0__hldbea-full__s51030__340311d02fb7",
+      "seed": 51030,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "313d9a72ac68b8b9ea19a3f69b87f67316af9f90abc8250844be269a6d0c78f7",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 12,
+        "individuals_with_copies": 165,
+        "merged_duplicates": 86,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2824,
+        "survivor_duplicates": 22
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51001__8a02bca134e6",
+      "seed": 51001,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "5dd5272c5378e3c38757827ca4744d63cd897b1066bc9de5493192dfd3c8e51f",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 14,
+        "individuals_with_copies": 165,
+        "merged_duplicates": 88,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2929,
+        "survivor_duplicates": 25
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51002__8006a23b0ac2",
+      "seed": 51002,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "c1fd7f910ba21d2b8967358e443b3756838c552fa146e546b94be98dee940fcb",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 14,
+        "individuals_with_copies": 172,
+        "merged_duplicates": 95,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2862,
+        "survivor_duplicates": 32
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51003__c6ff1cdf144d",
+      "seed": 51003,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "95ffa3cf567d7332dc4e7de53b24535a135e2e9b538411c37ad059a37a751db5",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 63,
+        "generations_with_survivor_duplicates": 11,
+        "individuals_with_copies": 149,
+        "merged_duplicates": 79,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2725,
+        "survivor_duplicates": 16
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51004__c7330f02ec4d",
+      "seed": 51004,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "26810eefa42bbfd7c1c6e9d66254cc25888b65e23884cf673b9b69765d127cf5",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 169,
+        "merged_duplicates": 96,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2896,
+        "survivor_duplicates": 33
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51005__edb9bd321325",
+      "seed": 51005,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "dad9e5a9301c96fd58eef1adad2260eea1819ff0bf725cfd0f4e921acd39bc32",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 17,
+        "individuals_with_copies": 171,
+        "merged_duplicates": 89,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2824,
+        "survivor_duplicates": 25
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51006__00db594fca7e",
+      "seed": 51006,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "107fc5198a1f7ca4f110a82fddaf3624ef9fae0b65854b14d0ca09ff5a593b64",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 11,
+        "individuals_with_copies": 173,
+        "merged_duplicates": 92,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2793,
+        "survivor_duplicates": 29
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51007__ac2b7d1fd4ed",
+      "seed": 51007,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "ff95fd276af79cf9cc8bb6b77bdb0122809541dac8a24fd20c8af2f5e1ce7963",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 11,
+        "individuals_with_copies": 171,
+        "merged_duplicates": 92,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2709,
+        "survivor_duplicates": 28
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51008__334975ee9dd5",
+      "seed": 51008,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "6d498387378cf3255e1d015bf26ebc9e20b5f77bba7eb8ff59eb989ee9eed2fa",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 14,
+        "individuals_with_copies": 167,
+        "merged_duplicates": 85,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2850,
+        "survivor_duplicates": 21
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51009__b1dd5efc4be4",
+      "seed": 51009,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "d23888750e4d3836c22c015d7288013774d0927d080ed22d3f3237e86a459611",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 11,
+        "individuals_with_copies": 158,
+        "merged_duplicates": 83,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2869,
+        "survivor_duplicates": 19
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51010__ae2a15c79f56",
+      "seed": 51010,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "1c78a3d847f33cdf14820bd507a9916529139494d24ce2c145a8f06a2e2e72ea",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 11,
+        "individuals_with_copies": 159,
+        "merged_duplicates": 85,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2936,
+        "survivor_duplicates": 22
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51011__89f33d6a59e3",
+      "seed": 51011,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "8ee84cc94874b80897208448d3797ed19edcbb7605a39b26ec71a74e48f73d0f",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 12,
+        "individuals_with_copies": 155,
+        "merged_duplicates": 85,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2790,
+        "survivor_duplicates": 21
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51012__4cb2e99a6a60",
+      "seed": 51012,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "b10127fdc673cef058847927672b55d30d42bcff212d15815da038cc5452b77d",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 12,
+        "individuals_with_copies": 190,
+        "merged_duplicates": 105,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2804,
+        "survivor_duplicates": 42
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51013__3f304131e48e",
+      "seed": 51013,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "a05a4826381dd83bd42085e164cc0d7c97f1c7494fb21c1f03af437d12bd3579",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 12,
+        "individuals_with_copies": 162,
+        "merged_duplicates": 85,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2777,
+        "survivor_duplicates": 21
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51014__cad0867da775",
+      "seed": 51014,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "99e11d41222ed39b214ae6413c44f4bc1d76c317611d4f01320e7fddf2481385",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 11,
+        "individuals_with_copies": 157,
+        "merged_duplicates": 86,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2845,
+        "survivor_duplicates": 23
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51015__4a92e00ac26c",
+      "seed": 51015,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "42971e6b41485418799ba340cc3209eb85d055a6ec745b143a52609928389371",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 163,
+        "merged_duplicates": 84,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2773,
+        "survivor_duplicates": 20
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51016__e542e1d47e1d",
+      "seed": 51016,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "e42c3c38b6cdf5f14bb1c0732a2047b9b50fc69d49d135cdff5eea9aa0ef0b9d",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 155,
+        "merged_duplicates": 82,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2770,
+        "survivor_duplicates": 18
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51017__9a8c8acfed09",
+      "seed": 51017,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "10cba1911f25b0f1f49ee39a133fb968aedebab256a83bd07f4bed533de94dec",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 169,
+        "merged_duplicates": 88,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2918,
+        "survivor_duplicates": 24
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51018__fe75aba0230d",
+      "seed": 51018,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "58078bad179e1e7bc7a1b2c4f817bdc1860af4feb8b746e52fdc8283c23d8db1",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 11,
+        "individuals_with_copies": 165,
+        "merged_duplicates": 87,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2786,
+        "survivor_duplicates": 23
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51019__28993d46d429",
+      "seed": 51019,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "e8d4fd553310e68e155016aa7ae44bcca73567883be7f003742eb1dd4830cf2b",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 14,
+        "individuals_with_copies": 180,
+        "merged_duplicates": 91,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2766,
+        "survivor_duplicates": 27
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51020__a9676d016bc9",
+      "seed": 51020,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "8a12e9e90d812e67e208801b0873183223aacfe6030afb93def3fcf913b2f959",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 164,
+        "merged_duplicates": 88,
+        "positive_only_through_copies": 0,
+        "positive_scores": 3013,
+        "survivor_duplicates": 26
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51021__d1ac27bc0dec",
+      "seed": 51021,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "e0326963a8ccd7c5fc67b77dcd0299bbcfb6fa48a57c15ba45f3614cafc424d1",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 14,
+        "individuals_with_copies": 167,
+        "merged_duplicates": 86,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2838,
+        "survivor_duplicates": 22
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51022__435438fbbcb6",
+      "seed": 51022,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "f3ae6d83d216a5e85818606f4c7e6293ee8b56a5321f8ce5924b534b72359944",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 12,
+        "individuals_with_copies": 172,
+        "merged_duplicates": 91,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2899,
+        "survivor_duplicates": 27
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51023__a8926c154a75",
+      "seed": 51023,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "3fd86a9460d317e53ea2c8517646284f61dff207e8f1023d2ea9cbe27f810b2e",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 11,
+        "individuals_with_copies": 172,
+        "merged_duplicates": 90,
+        "positive_only_through_copies": 0,
+        "positive_scores": 3089,
+        "survivor_duplicates": 26
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51024__013d9711126f",
+      "seed": 51024,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "4a4a87aff7f393d1c727fb9b1d450885a39835e32d89a612a6a94a91c8ec57a8",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 17,
+        "individuals_with_copies": 181,
+        "merged_duplicates": 97,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2839,
+        "survivor_duplicates": 33
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51025__89d6807110f6",
+      "seed": 51025,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "270962133b818454e1bf812a726c00f080c7a370a03dd092ae22744129a11206",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 11,
+        "individuals_with_copies": 148,
+        "merged_duplicates": 80,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2873,
+        "survivor_duplicates": 16
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51026__41e39c0aaa43",
+      "seed": 51026,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "18d95da6cc554afba19c4ac3e0383f92f50d5702775264526f68bb2a25dfecb2",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 16,
+        "individuals_with_copies": 184,
+        "merged_duplicates": 97,
+        "positive_only_through_copies": 0,
+        "positive_scores": 3025,
+        "survivor_duplicates": 34
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51027__e2253f0306bb",
+      "seed": 51027,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "74e99534528717166a7fe8fe9754efda9ac76d6d1b2c350d1c6e6ead5472325b",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 11,
+        "individuals_with_copies": 166,
+        "merged_duplicates": 85,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2785,
+        "survivor_duplicates": 21
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51028__0ad20576482e",
+      "seed": 51028,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "74db20e138fe3710cb04befae596c167550b002fbd49068d352bda7e9bcd87c0",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 11,
+        "individuals_with_copies": 167,
+        "merged_duplicates": 92,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2688,
+        "survivor_duplicates": 29
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51029__125296acda0d",
+      "seed": 51029,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "3dcf02d9125d00816754f7319c245741d0ec25b13fe10f0c130ffe126a7f1777",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 15,
+        "individuals_with_copies": 177,
+        "merged_duplicates": 91,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2878,
+        "survivor_duplicates": 27
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a15",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a15__hldbea-full__s51030__c5017c7bd5b1",
+      "seed": 51030,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "524beb25a0aa63bb5d38a2395cb0a0c2b983ad0715fd5bbf9eae92542dcdef39",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 185,
+        "merged_duplicates": 95,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2906,
+        "survivor_duplicates": 31
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51001__576674f1acba",
+      "seed": 51001,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "15cb62f2bc87dabe2a13f6e2f327f7301d3bdc6b818e612c5730534f5f35058d",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 156,
+        "merged_duplicates": 83,
+        "positive_only_through_copies": 0,
+        "positive_scores": 3134,
+        "survivor_duplicates": 19
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51002__b220713f8929",
+      "seed": 51002,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "033c6e9fb6d4e5f563fd71526e0376c0e25847286802806f98a783366e2840d8",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 160,
+        "merged_duplicates": 83,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2935,
+        "survivor_duplicates": 19
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51003__b286926b9548",
+      "seed": 51003,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "2cf690c8895bbba63b688757faca519e09c1e5a4b6501ddbcd182d3ef8f4a140",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 10,
+        "individuals_with_copies": 153,
+        "merged_duplicates": 80,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2867,
+        "survivor_duplicates": 16
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51004__5511f7b6691d",
+      "seed": 51004,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "a9ad2dcd83917d1b33b4961cdaf1bf58e024f60b36740023caeeafabaa055cde",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 15,
+        "individuals_with_copies": 165,
+        "merged_duplicates": 87,
+        "positive_only_through_copies": 0,
+        "positive_scores": 3307,
+        "survivor_duplicates": 23
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51005__e540ceabc4d8",
+      "seed": 51005,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "d4e6c0d452a836d680e26f4bf91b52b73827c91b85487afea45b3e0cf5b580ee",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 11,
+        "individuals_with_copies": 151,
+        "merged_duplicates": 80,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2818,
+        "survivor_duplicates": 17
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51006__202359b734c9",
+      "seed": 51006,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "9b8c0db69ef4a2251460996a4431004437197f1f6ba583592d7d39bcb3346aab",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 14,
+        "individuals_with_copies": 167,
+        "merged_duplicates": 87,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2815,
+        "survivor_duplicates": 23
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51007__52542b3fbda5",
+      "seed": 51007,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "1d752d4af30e67e7383cf90f291d5ebe1ff976bb7b5177579c0e97bd2fbab342",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 175,
+        "merged_duplicates": 90,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2862,
+        "survivor_duplicates": 26
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51008__ded6e8e0a2ea",
+      "seed": 51008,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "3beddbf9df0a454a0ae380cb68108d46b7d43ed44647dc3fe0ac971f4a8d0515",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 12,
+        "individuals_with_copies": 179,
+        "merged_duplicates": 100,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2854,
+        "survivor_duplicates": 37
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51009__127c2ca800e4",
+      "seed": 51009,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "9288f1cf59aea3f4b4caadf4ef2c83cf65324f11eb78eab9485a670375d197a7",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 169,
+        "merged_duplicates": 90,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2786,
+        "survivor_duplicates": 26
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51010__e2bc861ec557",
+      "seed": 51010,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "54109ef7fc4eeea1fb159aca8c16cc902bbbd3a1912ce36bfc720a3307b2a561",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 12,
+        "individuals_with_copies": 155,
+        "merged_duplicates": 84,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2952,
+        "survivor_duplicates": 22
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51011__3e3e3e3fa552",
+      "seed": 51011,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "ae79beff5a949cb339255c60caad6e9f565f577ef5d25e38353ffc23fe5636ad",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 12,
+        "individuals_with_copies": 163,
+        "merged_duplicates": 86,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2930,
+        "survivor_duplicates": 22
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51012__0bcc7ee23fc4",
+      "seed": 51012,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "26df99b4b05790f4d4dc6929150d133a4cb59c306d2593ff8304180a1dd91ffc",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 16,
+        "individuals_with_copies": 173,
+        "merged_duplicates": 91,
+        "positive_only_through_copies": 0,
+        "positive_scores": 3198,
+        "survivor_duplicates": 28
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51013__8ede0313ff2d",
+      "seed": 51013,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "018de3b8b4bc6b41b18ae679d983c2dcc53a42673837ee772ad118e9e4039c4c",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 9,
+        "individuals_with_copies": 155,
+        "merged_duplicates": 81,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2802,
+        "survivor_duplicates": 17
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51014__3d293c025f90",
+      "seed": 51014,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "9dd14ec30e0a1d08432452d5ad4f16cec4a5f4f600cac12ce960e0e3210d0045",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 15,
+        "individuals_with_copies": 172,
+        "merged_duplicates": 91,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2923,
+        "survivor_duplicates": 27
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51015__b89fdf7e8216",
+      "seed": 51015,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "b28892712b4b7c39f7ac8bd338db997ae197ffabd99208f32e1f8b7783ec11e8",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 177,
+        "merged_duplicates": 94,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2848,
+        "survivor_duplicates": 30
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51016__5c715944f09c",
+      "seed": 51016,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "fffeac2eadf6db433f64e19645fcc72cf00bbfff3e5e5f72735f65b7a5e28e06",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 11,
+        "individuals_with_copies": 158,
+        "merged_duplicates": 80,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2836,
+        "survivor_duplicates": 16
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51017__0001a0b4c1fc",
+      "seed": 51017,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "e9cd64c52ebc0dc63194a6a544f5a1c28d725e4332286c437c154c1a3dd9ef1d",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 14,
+        "individuals_with_copies": 174,
+        "merged_duplicates": 89,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2946,
+        "survivor_duplicates": 25
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51018__b60c31faa510",
+      "seed": 51018,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "be99e00ecd3730e77e384ff7cbfb4918cb7505f779654ad6578a6201f75af377",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 11,
+        "individuals_with_copies": 163,
+        "merged_duplicates": 85,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2987,
+        "survivor_duplicates": 21
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51019__7cd186571407",
+      "seed": 51019,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "08b385af01fa6dc6ce6f9fab8238c45544c92df38fd0520e39234dfdc039a59a",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 10,
+        "individuals_with_copies": 159,
+        "merged_duplicates": 83,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2814,
+        "survivor_duplicates": 19
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51020__f905de4cc7d0",
+      "seed": 51020,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "c008358fac80a1a16f79f5e102320dafcd545d212d1e2799c8c1814611e10dfc",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 185,
+        "merged_duplicates": 101,
+        "positive_only_through_copies": 0,
+        "positive_scores": 3059,
+        "survivor_duplicates": 38
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51021__d75e51465e44",
+      "seed": 51021,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "1be6b793d584a593d1dbf33fa878dcab30f938010c8bcda780568354e496bb88",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 15,
+        "individuals_with_copies": 178,
+        "merged_duplicates": 93,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2948,
+        "survivor_duplicates": 29
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51022__4437fba03bc4",
+      "seed": 51022,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "a7571d34f0c22bfe10f9d97ec156c6ceb9bd9b2a90c9ed80fa2ab6a43b7fc505",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 14,
+        "individuals_with_copies": 167,
+        "merged_duplicates": 88,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2917,
+        "survivor_duplicates": 24
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51023__914d9578c196",
+      "seed": 51023,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "d754a01793d51393a558d2aaf128557dc17cfa435bd3b82cc4d5d0c3ad705a83",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 174,
+        "merged_duplicates": 92,
+        "positive_only_through_copies": 0,
+        "positive_scores": 3055,
+        "survivor_duplicates": 28
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51024__1dd7f0b94cd3",
+      "seed": 51024,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "5dfc14364e8705f4e099499a90f791a5fcabcea7a38271015bf7df61a5eadfd4",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 11,
+        "individuals_with_copies": 164,
+        "merged_duplicates": 87,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2933,
+        "survivor_duplicates": 24
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51025__7ff510d5499b",
+      "seed": 51025,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "f4342d6a77dff84e9957a6373480102b3e43ca268c4a9578d404a3c0c14efb3c",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 15,
+        "individuals_with_copies": 175,
+        "merged_duplicates": 91,
+        "positive_only_through_copies": 0,
+        "positive_scores": 3014,
+        "survivor_duplicates": 27
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51026__bbc1049b5a36",
+      "seed": 51026,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "540a5565e8f3f5591808dd3ef522d2cd7d6e0d04916e2cd8267255e53fe15407",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 14,
+        "individuals_with_copies": 168,
+        "merged_duplicates": 90,
+        "positive_only_through_copies": 0,
+        "positive_scores": 3144,
+        "survivor_duplicates": 27
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51027__635dc392d9d0",
+      "seed": 51027,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "54b8ed2aae12c0d2ef2377208d69e3a46b36fa7d64f6ee2941b841a55d438587",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 12,
+        "individuals_with_copies": 170,
+        "merged_duplicates": 89,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2925,
+        "survivor_duplicates": 25
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51028__17d9fa12f91f",
+      "seed": 51028,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "1b52a0f36d460c7505020efeb1cfb5a10ae39183f60e88a9083d7e1e6e37281b",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 10,
+        "individuals_with_copies": 162,
+        "merged_duplicates": 85,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2904,
+        "survivor_duplicates": 21
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51029__a33719f89ae9",
+      "seed": 51029,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "40632eee2f5a6a737d687f948bda0d58bcf8294d799776a23def01924b848c17",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 63,
+        "generations_with_merged_duplicates": 63,
+        "generations_with_survivor_duplicates": 12,
+        "individuals_with_copies": 180,
+        "merged_duplicates": 100,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2873,
+        "survivor_duplicates": 38
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a30",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a30__hldbea-full__s51030__81faf9402c63",
+      "seed": 51030,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "f6e76fd1db8bafe809b3a49b7e566b580a4cdf7a9c46e816b97b6223630097a5",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 12,
+        "individuals_with_copies": 170,
+        "merged_duplicates": 87,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2807,
+        "survivor_duplicates": 23
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51001__c0566d1f1702",
+      "seed": 51001,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "ad6265c2fcdc3e0e0f21f5b1009c929eca33c07e7c5771e8d6175a77a2d9c020",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 167,
+        "merged_duplicates": 84,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2900,
+        "survivor_duplicates": 20
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51002__3c11b6cf2b00",
+      "seed": 51002,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "c96e06e199c0f3dc4aec20d41749c0fa0c1156548c49e9649d56b569096fffcc",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 15,
+        "individuals_with_copies": 191,
+        "merged_duplicates": 109,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2915,
+        "survivor_duplicates": 46
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51003__88c4bf59dfc5",
+      "seed": 51003,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "73d082bf72c5917bc905302d108e070c565c67edde18f4b1c71133807453e4ce",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 12,
+        "individuals_with_copies": 165,
+        "merged_duplicates": 87,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2798,
+        "survivor_duplicates": 23
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51004__e411fb84bb62",
+      "seed": 51004,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "68778df46f0a84bc0343bb6adc13dffdec5acc05ce38b720776da4a4ef28a99c",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 164,
+        "merged_duplicates": 87,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2791,
+        "survivor_duplicates": 23
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51005__f8254d3391b6",
+      "seed": 51005,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "cd019b7bc7455f47e6bf977c549cb51ccbd1ea2c05d11fb00e1025378064a540",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 14,
+        "individuals_with_copies": 172,
+        "merged_duplicates": 89,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2776,
+        "survivor_duplicates": 25
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51006__213a3ffdcfa5",
+      "seed": 51006,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "e47455b261ad1a9c99a748deab143c8f3a65501530fc4c613b45be4643240b4c",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 164,
+        "merged_duplicates": 85,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2731,
+        "survivor_duplicates": 21
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51007__66608dbaafa7",
+      "seed": 51007,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "5e09173ba9fb8e3e868239f81462a7c873709f96acc79cb826ee8479dc8b8beb",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 173,
+        "merged_duplicates": 88,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2788,
+        "survivor_duplicates": 24
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51008__d3d5625e6e61",
+      "seed": 51008,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "6417e9296023be8316c34b688e3c2834dca265c9361ad3becf5bb801d6075b59",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 159,
+        "merged_duplicates": 84,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2879,
+        "survivor_duplicates": 20
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51009__46de7467d5ea",
+      "seed": 51009,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "455f3c2e0c4ab1aa0d128c34be72b1c7a6a70e39fbd92021542e44a20babc902",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 171,
+        "merged_duplicates": 95,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2776,
+        "survivor_duplicates": 32
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51010__f8b90a488a9b",
+      "seed": 51010,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "b148d57819a7d208b9cd65743efe9cf1dcc1cfcc8683a1e6e8c43e32068f66e7",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 165,
+        "merged_duplicates": 88,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2953,
+        "survivor_duplicates": 24
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51011__a57564273c47",
+      "seed": 51011,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "706dee69d584fef9244c89ab3626a31b884b0f4e065e36151d19da7119b42518",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 12,
+        "individuals_with_copies": 150,
+        "merged_duplicates": 79,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2728,
+        "survivor_duplicates": 16
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51012__85cb9f56ad3b",
+      "seed": 51012,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "fc933c676c8a097768225402f74fb7032750eee4d9106d52d7876e835ff1ba2f",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 16,
+        "individuals_with_copies": 172,
+        "merged_duplicates": 92,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2959,
+        "survivor_duplicates": 28
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51013__7ff6996167d2",
+      "seed": 51013,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "9ec2bfb4c45eced616ebc2a586c19b6292a3b5a9c254cd0f3364e32373c8a032",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 163,
+        "merged_duplicates": 88,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2826,
+        "survivor_duplicates": 24
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51014__b0d8419d6d7e",
+      "seed": 51014,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "525d87023dec1b8073511951f5369dea8c52d9a86dda821b14f78ad6c57014b9",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 181,
+        "merged_duplicates": 94,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2921,
+        "survivor_duplicates": 30
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51015__2a77b6b2d965",
+      "seed": 51015,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "2ea421a620e014a7e90834bfacda3f2ed58a60a6f685849d0f13f81d4818391f",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 14,
+        "individuals_with_copies": 177,
+        "merged_duplicates": 98,
+        "positive_only_through_copies": 0,
+        "positive_scores": 3098,
+        "survivor_duplicates": 34
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51016__dc2251390945",
+      "seed": 51016,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "b70e0438997acb62c54c13b0f619a5159d07c20c3b5a81a19ecce474f9601054",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 15,
+        "individuals_with_copies": 173,
+        "merged_duplicates": 88,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2921,
+        "survivor_duplicates": 24
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51017__e70bbe1a666f",
+      "seed": 51017,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "250847ab7626647b2707dd9527ff388e73effbbdf93151272ca206862e5bd145",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 16,
+        "individuals_with_copies": 184,
+        "merged_duplicates": 100,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2831,
+        "survivor_duplicates": 36
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51018__e02aaba2c537",
+      "seed": 51018,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "aec37d2968244e9c2c4ca5c9f719eeb9f1fde63b42655c27b3c62adc40e5a4ad",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 172,
+        "merged_duplicates": 91,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2884,
+        "survivor_duplicates": 27
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51019__ab83501d3266",
+      "seed": 51019,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "0267f3ebdc7cf99c58d42c5d9be16406b3222b5d66f7f6f04ec4b87c60253499",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 159,
+        "merged_duplicates": 84,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2662,
+        "survivor_duplicates": 20
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51020__8aeb5f1c9959",
+      "seed": 51020,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "67f57ea0d833ef8ac71dc3593703e4110a7da8584de11141da4d4467cc0056ce",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 181,
+        "merged_duplicates": 102,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2705,
+        "survivor_duplicates": 39
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51021__dbc97f5920f1",
+      "seed": 51021,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "d5da5da4b2d127531c82e7f0da73d2a412f92d9ec7c37fef53116eb73cc4f052",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 63,
+        "generations_with_merged_duplicates": 63,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 177,
+        "merged_duplicates": 94,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2979,
+        "survivor_duplicates": 32
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51022__3b87c49f260e",
+      "seed": 51022,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "a981469f0387d073151971b02b2d3e003ee491ea9ae730964bf4c76a836ff00e",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 11,
+        "individuals_with_copies": 176,
+        "merged_duplicates": 94,
+        "positive_only_through_copies": 0,
+        "positive_scores": 3000,
+        "survivor_duplicates": 31
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51023__c4ed157d9995",
+      "seed": 51023,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "5632ca3864bf01b90c2cd00f043f9fce57464ee028623d9079a956c7cfca050a",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 193,
+        "merged_duplicates": 104,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2877,
+        "survivor_duplicates": 41
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51024__b38207f9f0c8",
+      "seed": 51024,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "a0502bfe6421d9397e169ae7a90629cd0885e38f2f09a6886b8d3869f812161b",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 15,
+        "individuals_with_copies": 171,
+        "merged_duplicates": 92,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2885,
+        "survivor_duplicates": 28
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51025__021fb16a5813",
+      "seed": 51025,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "8c452f96b9ac76f68af8f6d4e8972045810a3a75e90c35409d6ec0c70161940d",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 173,
+        "merged_duplicates": 89,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2847,
+        "survivor_duplicates": 25
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51026__8c91a4c661c3",
+      "seed": 51026,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "5d65d21dc0f6e3192303407c339abdab23b1f3abcb6a8e39075041ad552e3375",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 15,
+        "individuals_with_copies": 175,
+        "merged_duplicates": 92,
+        "positive_only_through_copies": 0,
+        "positive_scores": 3047,
+        "survivor_duplicates": 28
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51027__3c647cd5d09e",
+      "seed": 51027,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "1a86602a821b1f13c964a43f653e2a4b62f241cf4b086f5fd6e465c2e26e10e4",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 14,
+        "individuals_with_copies": 162,
+        "merged_duplicates": 84,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2850,
+        "survivor_duplicates": 20
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51028__72dd188bbe22",
+      "seed": 51028,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "87129692e479f0777f7271a339985f6c2bd4bf6eb7df5bc81c64b8aafa58af87",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 12,
+        "individuals_with_copies": 165,
+        "merged_duplicates": 94,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2833,
+        "survivor_duplicates": 31
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51029__b68b8defdf50",
+      "seed": 51029,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "195986bf0361954182856432c62d6017b0abbcc9126955aff1686d06524b7c0d",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 14,
+        "individuals_with_copies": 172,
+        "merged_duplicates": 87,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2825,
+        "survivor_duplicates": 24
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a45",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a45__hldbea-full__s51030__58c83d6b9cc7",
+      "seed": 51030,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "179648a18a0f512e4869a3b7e183d49ff77803e65cb46c19a60aa8aa2876b2f8",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 14,
+        "individuals_with_copies": 171,
+        "merged_duplicates": 86,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2581,
+        "survivor_duplicates": 22
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51001__afb4ea431214",
+      "seed": 51001,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "899d5d461503d7dde6e9ab38661f287675bcf64326e9a83586a7d8e7b278056c",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 14,
+        "individuals_with_copies": 171,
+        "merged_duplicates": 88,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2819,
+        "survivor_duplicates": 25
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51002__163022688684",
+      "seed": 51002,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "638c8f79af09da4a26e22f6e50a27418befec013e484e222cd29275285ab9fd0",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 18,
+        "individuals_with_copies": 186,
+        "merged_duplicates": 94,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2916,
+        "survivor_duplicates": 31
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51003__2b7134b39480",
+      "seed": 51003,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "d07e059fbc69f5ef599dabfb9647038362f599b76ed84245b38858150ee5b60f",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 16,
+        "individuals_with_copies": 178,
+        "merged_duplicates": 94,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2718,
+        "survivor_duplicates": 31
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51004__90b1143269f4",
+      "seed": 51004,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "20bf096632a4737d2bcbdc68d0dc68fab2269105d928196a3ab43de1712c1bde",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 17,
+        "individuals_with_copies": 177,
+        "merged_duplicates": 95,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2754,
+        "survivor_duplicates": 31
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51005__dca229f2bdfa",
+      "seed": 51005,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "0b6c39c84fb7ce69a3e3a09227b32298a3983a16daf377e8c1928343f1805f03",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 16,
+        "individuals_with_copies": 189,
+        "merged_duplicates": 96,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2620,
+        "survivor_duplicates": 33
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51006__77944fd14d22",
+      "seed": 51006,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "cecac61482c0a71ee1d562e3f713ca3025d6f28d6fff50141d2b393d31fab75a",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 16,
+        "individuals_with_copies": 179,
+        "merged_duplicates": 92,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2694,
+        "survivor_duplicates": 29
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51007__fa22a38fd02a",
+      "seed": 51007,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "0b95818a0b3a37dac3f125c2211aa63e07aff0bb082234173f7e238f2fc816fe",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 12,
+        "individuals_with_copies": 173,
+        "merged_duplicates": 91,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2712,
+        "survivor_duplicates": 27
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51008__06ec0899ebc6",
+      "seed": 51008,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "847afdce5ce7eeff364fac2d60a368b64bc0168486d5c63d67ef23fefb0c0420",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 15,
+        "individuals_with_copies": 178,
+        "merged_duplicates": 93,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2806,
+        "survivor_duplicates": 30
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51009__ee8a8de5434a",
+      "seed": 51009,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "8a28564ad021f3ffea954753a4fef23929e82e0eb555d9313167f3d4d9597cbb",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 15,
+        "individuals_with_copies": 176,
+        "merged_duplicates": 93,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2702,
+        "survivor_duplicates": 29
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51010__a223d5ed3b5b",
+      "seed": 51010,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "1a17923db5448bcb7648a7d028ed22111cdc74df09f26375dd91480859f2329e",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 171,
+        "merged_duplicates": 90,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2706,
+        "survivor_duplicates": 26
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51011__f3a5915538ca",
+      "seed": 51011,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "ad465ee289325889790c858a7ec4267be0cbd9bd00ec412ba9f73af4767d9e5b",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 11,
+        "individuals_with_copies": 169,
+        "merged_duplicates": 91,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2719,
+        "survivor_duplicates": 27
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51012__afdd9f7698d1",
+      "seed": 51012,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "3eb17fe93f59227e41e392020cb86b3a546246b06586ed3b49056a85052589ad",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 17,
+        "individuals_with_copies": 176,
+        "merged_duplicates": 94,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2899,
+        "survivor_duplicates": 30
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51013__033f1b73f02c",
+      "seed": 51013,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "48ea7c55c71a86c8125b825ef292b031f6d8dd34fe9ccd0b0538b97d6311d31d",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 16,
+        "individuals_with_copies": 172,
+        "merged_duplicates": 91,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2556,
+        "survivor_duplicates": 28
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51014__82f054ee9199",
+      "seed": 51014,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "d9af21ce6e8360514ca0eb1aca05e686beb43f6df0bb669b33897f250b51cd31",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 14,
+        "individuals_with_copies": 173,
+        "merged_duplicates": 92,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2705,
+        "survivor_duplicates": 28
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51015__a3d431faaf5e",
+      "seed": 51015,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "557ca21fb1a788f8459fdd815875858b08dee2a9d2f986c9da18a38cb6d5dce7",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 15,
+        "individuals_with_copies": 175,
+        "merged_duplicates": 89,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2789,
+        "survivor_duplicates": 25
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51016__3fcf236c5617",
+      "seed": 51016,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "ff992dc5e79ec96269be14f32bae0435a55e4501516cedf34a973bf1a9ef975b",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 12,
+        "individuals_with_copies": 174,
+        "merged_duplicates": 89,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2787,
+        "survivor_duplicates": 25
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51017__0363ca9ec8b8",
+      "seed": 51017,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "432642b113026c56a7cdcb38b0ce6354018c9f4d648de73b88e294c523c8b97d",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 17,
+        "individuals_with_copies": 182,
+        "merged_duplicates": 98,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2903,
+        "survivor_duplicates": 34
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51018__0b222bcd2779",
+      "seed": 51018,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "964b1f3a5a4daab9f66a7d8da08084c4564ee33ba6f656e0ce43abda6ca8fd64",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 17,
+        "individuals_with_copies": 174,
+        "merged_duplicates": 93,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2584,
+        "survivor_duplicates": 29
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51019__7343fffbe092",
+      "seed": 51019,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "717d17b1edbd015cbf448b8cde2800ead25fbd9582c287cccd9f2b1177ab6171",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 18,
+        "individuals_with_copies": 171,
+        "merged_duplicates": 92,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2536,
+        "survivor_duplicates": 28
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51020__ecf3eb2383fb",
+      "seed": 51020,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "a14a9a14747a0a5172dd35a20e0cbe274c800b1762ba0e4306a154425a9273cb",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 16,
+        "individuals_with_copies": 189,
+        "merged_duplicates": 102,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2733,
+        "survivor_duplicates": 38
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51021__fe794fdd41a1",
+      "seed": 51021,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "dfb56ca1269addcb75d9394c4e9282dd473154e85d1dde0270e5cd00010bbfda",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 14,
+        "individuals_with_copies": 173,
+        "merged_duplicates": 88,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2815,
+        "survivor_duplicates": 24
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51022__26871b8a4a71",
+      "seed": 51022,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "71c810190492e0c146d2551954f4923981617563a4fb2977728c5829718ef25b",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 15,
+        "individuals_with_copies": 191,
+        "merged_duplicates": 113,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2736,
+        "survivor_duplicates": 51
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51023__7391e6e364d0",
+      "seed": 51023,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "1c87f4fd0871b13e69a681ce8eb7a4d884e8366362bacbd2ab596f2f3f31dc7e",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 18,
+        "individuals_with_copies": 187,
+        "merged_duplicates": 99,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2799,
+        "survivor_duplicates": 35
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51024__fb92db8fa721",
+      "seed": 51024,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "0454c703b1aa4f8272421fcd1fd7152cfadfdba7e2d0083527ef9e3afc882f0e",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 15,
+        "individuals_with_copies": 173,
+        "merged_duplicates": 89,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2836,
+        "survivor_duplicates": 25
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51025__1a31eeca312a",
+      "seed": 51025,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "d8b93021ac040d0299330611ed0e2d98e7fd64b3eb0bff3319eff5be18518d15",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 15,
+        "individuals_with_copies": 182,
+        "merged_duplicates": 100,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2825,
+        "survivor_duplicates": 36
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51026__1846db1d9b77",
+      "seed": 51026,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "f82143dd6c0a88ecba8506f02ac4c64f7e122542b62906b4e692404829ea02ed",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 16,
+        "individuals_with_copies": 179,
+        "merged_duplicates": 97,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2883,
+        "survivor_duplicates": 33
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51027__ab7e36c77982",
+      "seed": 51027,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "d0c00daa3e7b5a3e74335f6db8bc573bddc2777bf86fa4eb8a2ae0df29883717",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 11,
+        "individuals_with_copies": 155,
+        "merged_duplicates": 80,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2668,
+        "survivor_duplicates": 16
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51028__e7769ce58811",
+      "seed": 51028,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "c10088af2c8e4dab8830a4d9dc2b3d50626ec3447ab1e3ff4d5125adce56fb46",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 15,
+        "individuals_with_copies": 172,
+        "merged_duplicates": 89,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2607,
+        "survivor_duplicates": 25
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51029__2fea54aa7e93",
+      "seed": 51029,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "4d449abdd1b1f615eaafbcf49f1f18ae7cc4d02aa0d3483b47bfaa350613ff47",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 64,
+        "generations_with_merged_duplicates": 64,
+        "generations_with_survivor_duplicates": 13,
+        "individuals_with_copies": 166,
+        "merged_duplicates": 83,
+        "positive_only_through_copies": 0,
+        "positive_scores": 2680,
+        "survivor_duplicates": 19
+      },
+      "identical": true,
+      "problem_id": "validation-rlinear-m3-a60",
+      "run_id": "reviewer-rotation-validation-v3__validation-rlinear-m3-a60__hldbea-full__s51030__482310e0082a",
+      "seed": 51030,
+      "variant": "full"
+    }
+  ]
+}

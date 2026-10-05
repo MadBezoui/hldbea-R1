@@ -1,0 +1,44 @@
+\begin{table}[!htbp]
+\centering
+\caption{Equal-budget IMOP validation with post-2024 and indicator-based baselines (20{,}000 FEs, population 100). Values are medians over 30 paired seeds, and bold marks the best median. Signs compare each row with the reference row (ref.) by paired Wilcoxon tests with Holm correction at $\alpha=0.05$: $+$ significantly better, $-$ significantly worse, $\approx$ no significant difference.}
+\label{tab:imop_recent}
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{|l|l|r|c|r|c|}
+\hline
+\textbf{Problem} & \textbf{Algorithm} & \textbf{HV} & \textbf{vs ref.} & \textbf{IGD$^+$} & \textbf{vs ref.} \\ \hline
+IMOP3 ($m=2$) & HLDBEA & 0.2233 & ref. & 0.4646 & ref. \\
+ & MaOEA-HAP & \textbf{0.7770} & $+$ & \textbf{0.0124} & $+$ \\
+ & FDSEA & 0.6074 & $+$ & 0.1021 & $+$ \\
+ & NSGA-II & 0.4574 & $+$ & 0.2564 & $+$ \\
+ & NSGA-III & 0.3243 & $+$ & 0.3755 & $+$ \\
+ & SPEA2 & 0.4601 & $+$ & 0.2541 & $+$ \\
+ & RVEA & 0.4867 & $+$ & 0.2345 & $+$ \\
+ & MOEA/D & 0.5600 & $+$ & 0.1773 & $+$ \\
+ & SMS-EMOA & 0.3405 & $+$ & 0.3615 & $+$ \\
+ & AGE-MOEA & 0.4614 & $+$ & 0.2542 & $+$ \\
+\hline
+IMOP4 ($m=3$) & HLDBEA & 0.2904 & ref. & 0.1867 & ref. \\
+ & MaOEA-HAP & \textbf{0.5734} & $+$ & \textbf{6.90e-03} & $+$ \\
+ & FDSEA & 0.5377 & $+$ & 0.0197 & $+$ \\
+ & NSGA-II & 0.3753 & $+$ & 0.1091 & $+$ \\
+ & NSGA-III & 0.3262 & $+$ & 0.1724 & $+$ \\
+ & SPEA2 & 0.4035 & $+$ & 0.0896 & $+$ \\
+ & RVEA & 0.4267 & $+$ & 0.0801 & $+$ \\
+ & MOEA/D & 0.2901 & $\approx$ & 0.1869 & $\approx$ \\
+ & SMS-EMOA & 0.3063 & $\approx$ & 0.1753 & $\approx$ \\
+ & AGE-MOEA & 0.3353 & $+$ & 0.1608 & $+$ \\
+\hline
+IMOP7 ($m=3$) & HLDBEA & 0.1284 & ref. & 0.3167 & ref. \\
+ & MaOEA-HAP & 0.2709 & $+$ & 0.2074 & $+$ \\
+ & FDSEA & \textbf{0.5844} & $+$ & \textbf{0.0481} & $+$ \\
+ & NSGA-II & 0.3550 & $+$ & 0.1499 & $+$ \\
+ & NSGA-III & 0.1272 & $\approx$ & 0.3176 & $\approx$ \\
+ & SPEA2 & 0.2487 & $+$ & 0.2266 & $+$ \\
+ & RVEA & 0.1452 & $\approx$ & 0.3050 & $\approx$ \\
+ & MOEA/D & 0.1210 & $-$ & 0.3221 & $-$ \\
+ & SMS-EMOA & 0.1267 & $\approx$ & 0.3180 & $\approx$ \\
+ & AGE-MOEA & 0.1496 & $+$ & 0.3020 & $+$ \\
+\hline
+\end{tabular}
+\end{table}

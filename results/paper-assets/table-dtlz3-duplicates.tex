@@ -1,0 +1,23 @@
+\begin{table}[!htbp]
+\centering
+\caption{DTLZ3 ablation of duplicate handling (46{,}000 FEs). Copies are \emph{kept} by default. With \emph{no copy}, $Q_{nlp}$ receives only moved points, so a rejected call or the core without local search adds no copy and the genetic track fills the freed slot. When duplicates are \emph{removed}, exact copies are deleted from the merged set before scoring. Values are medians over 30 paired seeds. Signs compare each configuration with the core without local search under the same handling, by paired Wilcoxon tests with Holm correction over the six comparisons of each indicator: $+$ significantly better, $-$ significantly worse, $\approx$ no significant difference. The last column gives the mean number of exact duplicates among the survivors of a generation.}
+\label{tab:dtlz3_duplicates}
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{|l|l|r|c|r|c|r|r|}
+\hline
+\textbf{Copies} & \textbf{Variant} & \textbf{HV} & \textbf{vs core} & \textbf{IGD$^+$} & \textbf{vs core} & \textbf{HV$>0$} & \textbf{Dup. kept} \\ \hline
+Kept & core, no LS & 0.6099 & ref. & 0.0748 & ref. & 20/30 & 2.69 \\
+ & core + LS & 0 & $-$ & 1.107 & $-$ & 7/30 & 1.47 \\
+ & HLDBEA & 0 & $\approx$ & 1.039 & $-$ & 12/30 & 1.19 \\
+\hline
+No copy & core, no LS & 0.5955 & ref. & 0.0757 & ref. & 22/30 & 0.00 \\
+ & core + LS & 0 & $-$ & 1.130 & $-$ & 9/30 & 0.01 \\
+ & HLDBEA & 0 & $-$ & 1.054 & $-$ & 10/30 & 0.00 \\
+\hline
+Removed & core, no LS & 0.6494 & ref. & 0.0584 & ref. & 25/30 & 0.00 \\
+ & core + LS & 0 & $-$ & 1.030 & $-$ & 13/30 & 0.00 \\
+ & HLDBEA & 0 & $-$ & 1.022 & $-$ & 12/30 & 0.00 \\
+\hline
+\end{tabular}
+\end{table}

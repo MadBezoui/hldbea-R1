@@ -1,0 +1,47 @@
+\begin{table}[!htbp]
+\centering
+\caption{Many-objective validation at $m\in\{10,15\}$ (10{,}000 FEs, population 100). HV is estimated with a fixed 65{,}536-point scrambled Sobol sample. Values are medians over 30 paired seeds, and bold marks the best median. Signs compare each row with the reference row (ref.) by paired Wilcoxon tests with Holm correction at $\alpha=0.05$: $+$ significantly better, $-$ significantly worse, $\approx$ no significant difference.}
+\label{tab:manyobjective}
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{|l|l|r|c|r|c|}
+\hline
+\textbf{Problem} & \textbf{Algorithm} & \textbf{HV} & \textbf{vs ref.} & \textbf{IGD$^+$} & \textbf{vs ref.} \\ \hline
+DTLZ2 ($m=10$) & HLDBEA fixed $0.10$ & 6.63e-03 & ref. & 1.184 & ref. \\
+ & HLDBEA strict & 0.1567 & $+$ & 0.8265 & $+$ \\
+ & HLDBEA linear & 7.74e-03 & $\approx$ & 1.159 & $\approx$ \\
+ & HLDBEA saturating & 4.14e-03 & $\approx$ & 1.173 & $\approx$ \\
+ & NSGA-III & 2.256 & $+$ & 0.2180 & $+$ \\
+ & RVEA & \textbf{2.349} & $+$ & \textbf{0.1876} & $+$ \\
+ & MaOEA-HAP & 2.055 & $+$ & 0.2521 & $+$ \\
+ & FDSEA & 0.1872 & $+$ & 0.7859 & $+$ \\
+\hline
+DTLZ2 ($m=15$) & HLDBEA fixed $0.10$ & 3.41e-03 & ref. & 1.345 & ref. \\
+ & HLDBEA strict & 0.2268 & $+$ & 0.9049 & $+$ \\
+ & HLDBEA linear & 1.98e-03 & $\approx$ & 1.303 & $\approx$ \\
+ & HLDBEA saturating & 2.77e-03 & $\approx$ & 1.336 & $\approx$ \\
+ & NSGA-III & 3.810 & $+$ & \textbf{0.1823} & $+$ \\
+ & RVEA & \textbf{3.910} & $+$ & 0.1829 & $+$ \\
+ & MaOEA-HAP & 3.312 & $+$ & 0.4002 & $+$ \\
+ & FDSEA & 0.1256 & $+$ & 0.9121 & $+$ \\
+\hline
+WFG2 ($m=10$) & HLDBEA fixed $0.10$ & 1.202 & ref. & 0.3590 & ref. \\
+ & HLDBEA strict & 1.305 & $\approx$ & 0.3427 & $\approx$ \\
+ & HLDBEA linear & 1.249 & $\approx$ & 0.3359 & $\approx$ \\
+ & HLDBEA saturating & 1.266 & $\approx$ & 0.3482 & $\approx$ \\
+ & NSGA-III & \textbf{2.203} & $+$ & \textbf{0.1016} & $+$ \\
+ & RVEA & 1.548 & $+$ & 0.2038 & $+$ \\
+ & MaOEA-HAP & 2.179 & $+$ & 0.1075 & $+$ \\
+ & FDSEA & 2.149 & $+$ & 0.1128 & $+$ \\
+\hline
+WFG2 ($m=15$) & HLDBEA fixed $0.10$ & 1.610 & ref. & 0.3549 & ref. \\
+ & HLDBEA strict & 1.658 & $\approx$ & 0.3538 & $\approx$ \\
+ & HLDBEA linear & 1.580 & $\approx$ & 0.3486 & $\approx$ \\
+ & HLDBEA saturating & 1.605 & $\approx$ & 0.3749 & $\approx$ \\
+ & NSGA-III & 3.061 & $+$ & 0.1104 & $+$ \\
+ & RVEA & 1.705 & $\approx$ & 0.2584 & $+$ \\
+ & MaOEA-HAP & 3.341 & $+$ & 0.1094 & $+$ \\
+ & FDSEA & \textbf{3.622} & $+$ & \textbf{0.0995} & $+$ \\
+\hline
+\end{tabular}
+\end{table}

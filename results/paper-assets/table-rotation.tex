@@ -1,0 +1,31 @@
+\begin{table}[!htbp]
+\centering
+\caption{Rotated linear front ($m=3$, 10{,}000 FEs). The angle rotates the triangular Pareto front rigidly within its own plane, so the Pareto set and the shape of the front are the same at every angle. Values are medians over 30 paired seeds, and bold marks the best median. Signs compare each row with the reference row (ref.) by paired Wilcoxon tests with Holm correction at $\alpha=0.05$: $+$ significantly better, $-$ significantly worse, $\approx$ no significant difference.}
+\label{tab:rotation}
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{|l|l|r|c|r|c|}
+\hline
+\textbf{Problem} & \textbf{Algorithm} & \textbf{HV} & \textbf{vs ref.} & \textbf{IGD$^+$} & \textbf{vs ref.} \\ \hline
+Rotated linear $0^\circ$ & HLDBEA & 1.073 & ref. & 0.0466 & ref. \\
+ & NSGA-II & 1.083 & $+$ & 0.0429 & $+$ \\
+ & NSGA-III & \textbf{1.115} & $+$ & \textbf{0.0221} & $+$ \\
+\hline
+Rotated linear $15^\circ$ & HLDBEA & 0.7763 & ref. & 0.0447 & ref. \\
+ & NSGA-II & 0.8031 & $+$ & 0.0423 & $+$ \\
+ & NSGA-III & \textbf{0.8212} & $+$ & \textbf{0.0303} & $+$ \\
+\hline
+Rotated linear $30^\circ$ & HLDBEA & 0.5876 & ref. & 0.0463 & ref. \\
+ & NSGA-II & 0.6033 & $+$ & 0.0458 & $\approx$ \\
+ & NSGA-III & \textbf{0.6212} & $+$ & \textbf{0.0326} & $+$ \\
+\hline
+Rotated linear $45^\circ$ & HLDBEA & 0.4249 & ref. & 0.0465 & ref. \\
+ & NSGA-II & 0.4395 & $+$ & 0.0439 & $+$ \\
+ & NSGA-III & \textbf{0.4513} & $+$ & \textbf{0.0359} & $+$ \\
+\hline
+Rotated linear $60^\circ$ & HLDBEA & 0.2633 & ref. & 0.0495 & ref. \\
+ & NSGA-II & 0.2695 & $+$ & 0.0446 & $+$ \\
+ & NSGA-III & \textbf{0.2742} & $+$ & \textbf{0.0405} & $+$ \\
+\hline
+\end{tabular}
+\end{table}

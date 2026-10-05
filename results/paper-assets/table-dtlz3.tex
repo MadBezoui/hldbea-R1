@@ -1,0 +1,19 @@
+\begin{table}[!htbp]
+\centering
+\caption{Audited DTLZ3 component validation (46{,}000 FEs). Values are medians over 30 paired seeds, and bold marks the best median. Signs compare each row with the reference row (ref.) by paired Wilcoxon tests with Holm correction at $\alpha=0.05$: $+$ significantly better, $-$ significantly worse, $\approx$ no significant difference.}
+\label{tab:dtlz3_remedy}
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{|l|l|r|c|r|c|r|}
+\hline
+\textbf{Problem} & \textbf{Algorithm} & \textbf{HV} & \textbf{vs ref.} & \textbf{IGD$^+$} & \textbf{vs ref.} & \textbf{HV$>0$} \\ \hline
+DTLZ3 ($m=3$) & core, no LS & 0.6099 & ref. & 0.0748 & ref. & 20/30 \\
+ & core + LS & 0 & $-$ & 1.107 & $-$ & 7/30 \\
+ & augmented, no LS & 0.6000 & $\approx$ & 0.0788 & $\approx$ & 23/30 \\
+ & augmented + LS & 0 & $\approx$ & 1.016 & $\approx$ & 13/30 \\
+ & augmented + restart, no LS & 0.6024 & $\approx$ & 0.0792 & $\approx$ & 28/30 \\
+ & HLDBEA & 0 & $\approx$ & 1.039 & $-$ & 12/30 \\
+ & NSGA-III & \textbf{0.6729} & $\approx$ & \textbf{0.0493} & $\approx$ & 24/30 \\
+\hline
+\end{tabular}
+\end{table}

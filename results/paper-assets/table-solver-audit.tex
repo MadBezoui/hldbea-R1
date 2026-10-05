@@ -1,0 +1,17 @@
+\begin{table}[!htbp]
+\centering
+\caption{Audited deterministic-track activity. \emph{Runs} counts only the HLDBEA runs that use SLSQP, and the FE share is relative to their charged budget. \emph{Moved} counts accepted iterates whose objective vector differs from the starting point. Each rejected call reinserts an unchanged copy of its parent, and the last column gives the mean number of exact duplicates among the survivors of a generation.}
+\label{tab:solver_audit}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{|l|r|r|r|r|r|r|r|}
+\hline
+\textbf{Block} & \textbf{Runs} & \textbf{Calls} & \textbf{FE share} & \textbf{Accepted} & \textbf{Moved} & \textbf{Rejected} & \textbf{Dup. kept} \\ \hline
+Recent baselines & 90 & 12{,}813 & 29.2\% & 601 & 543 & 12{,}212 & 0.46 \\
+Component ablation & 960 & 105{,}494 & 45.5\% & 22{,}785 & 22{,}666 & 82{,}709 & 0.23 \\
+Many objectives & 480 & 23{,}401 & 51.6\% & 7{,}051 & 7{,}051 & 16{,}350 & 0.02 \\
+Rotation & 150 & 9{,}596 & 36.6\% & 40 & 40 & 9{,}556 & 0.42 \\
+DTLZ3 audit & 90 & 27{,}770 & 38.8\% & 11{,}101 & 11{,}082 & 16{,}669 & 1.23 \\
+\hline
+\end{tabular}
+\end{table}

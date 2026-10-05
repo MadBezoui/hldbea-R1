@@ -1,0 +1,1808 @@
+{
+  "algorithm": "hldbea",
+  "identical": 90,
+  "manifest_id": "reviewer-modern-benchmarks-validation-v3",
+  "replayed": 90,
+  "runs": [
+    {
+      "arrays_sha256": "586474f3f42befc0cdd0d5c88be417837fab6b44e11344d4b666c2aa2858e0cf",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 134,
+        "generations_with_merged_duplicates": 131,
+        "generations_with_survivor_duplicates": 32,
+        "individuals_with_copies": 355,
+        "merged_duplicates": 208,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6762,
+        "survivor_duplicates": 78
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51001__4194aaba7d9f",
+      "seed": 51001,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "21b357cae4dc4a398a70000a92f0792d9dc1c28928225d6fb7f2e39946810547",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 134,
+        "generations_with_merged_duplicates": 128,
+        "generations_with_survivor_duplicates": 32,
+        "individuals_with_copies": 340,
+        "merged_duplicates": 189,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7161,
+        "survivor_duplicates": 62
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51002__8692c727b3f1",
+      "seed": 51002,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "25cf2b72896c85853088796fa316fc2910071adc56754332a310c5ab5c84a8c3",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 134,
+        "generations_with_merged_duplicates": 129,
+        "generations_with_survivor_duplicates": 27,
+        "individuals_with_copies": 364,
+        "merged_duplicates": 207,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6865,
+        "survivor_duplicates": 79
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51003__bed24d086b4f",
+      "seed": 51003,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "9410990eb567f1af331badc705aa5cbb4812754d10fa5f78d1ac38a4c7cffc13",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 134,
+        "generations_with_merged_duplicates": 129,
+        "generations_with_survivor_duplicates": 32,
+        "individuals_with_copies": 350,
+        "merged_duplicates": 207,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7068,
+        "survivor_duplicates": 78
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51004__4cda2de0a69e",
+      "seed": 51004,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "1080bd265204e8ce557b43305b56ce34cc2daae3e11ae5a3ae47ec31ae9133b0",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 134,
+        "generations_with_merged_duplicates": 129,
+        "generations_with_survivor_duplicates": 25,
+        "individuals_with_copies": 361,
+        "merged_duplicates": 206,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6886,
+        "survivor_duplicates": 77
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51005__c44445c79539",
+      "seed": 51005,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "67cd4ceca037d3b31738f06ed48773a5b532996a87238f78e82012e37c98a0ce",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 134,
+        "generations_with_merged_duplicates": 133,
+        "generations_with_survivor_duplicates": 32,
+        "individuals_with_copies": 408,
+        "merged_duplicates": 223,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7124,
+        "survivor_duplicates": 92
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51006__a7cf25eb8358",
+      "seed": 51006,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "891dad165ad80503aca818c94745208df13694d3fcd9564e5b63793c4fe6fcdf",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 134,
+        "generations_with_merged_duplicates": 129,
+        "generations_with_survivor_duplicates": 30,
+        "individuals_with_copies": 352,
+        "merged_duplicates": 197,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6889,
+        "survivor_duplicates": 69
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51007__d9d8ed288531",
+      "seed": 51007,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "d688392951328f0e07ef181fa139e26a1106d73541bf5f66a38031ea8b266d85",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 134,
+        "generations_with_merged_duplicates": 129,
+        "generations_with_survivor_duplicates": 37,
+        "individuals_with_copies": 361,
+        "merged_duplicates": 216,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7116,
+        "survivor_duplicates": 87
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51008__145a3819d618",
+      "seed": 51008,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "ca1e8ad1e5235375376522312f3066b0f3c48725db91be056b0c60a3892d9a86",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 138,
+        "generations_with_merged_duplicates": 133,
+        "generations_with_survivor_duplicates": 91,
+        "individuals_with_copies": 537,
+        "merged_duplicates": 303,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7454,
+        "survivor_duplicates": 173
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51009__fbda04b4bd2a",
+      "seed": 51009,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "c62155d91fdef63ab6fe35bafb7b9d256b6f8f546b343fcabc5c522557050035",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 134,
+        "generations_with_merged_duplicates": 131,
+        "generations_with_survivor_duplicates": 34,
+        "individuals_with_copies": 381,
+        "merged_duplicates": 228,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7061,
+        "survivor_duplicates": 98
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51010__e36606df4917",
+      "seed": 51010,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "0f7d44f7e91987bcd425a321a318eb51745589c3cb4862cee360c244d3e6f0ac",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 134,
+        "generations_with_merged_duplicates": 129,
+        "generations_with_survivor_duplicates": 47,
+        "individuals_with_copies": 418,
+        "merged_duplicates": 234,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7100,
+        "survivor_duplicates": 106
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51011__b49d58bf9a9b",
+      "seed": 51011,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "d1efecbd49157a5df3552c9da04f29dea00844a814b8450e36230356dbce2f4c",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 137,
+        "generations_with_merged_duplicates": 132,
+        "generations_with_survivor_duplicates": 33,
+        "individuals_with_copies": 406,
+        "merged_duplicates": 229,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7817,
+        "survivor_duplicates": 100
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51012__e0a644ecd0af",
+      "seed": 51012,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "d2f9856f28379aed442a479f2866484e9904847c9197ee2f35f52047309a6404",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 139,
+        "generations_with_merged_duplicates": 135,
+        "generations_with_survivor_duplicates": 31,
+        "individuals_with_copies": 369,
+        "merged_duplicates": 214,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7313,
+        "survivor_duplicates": 79
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51013__62dae4d84a0c",
+      "seed": 51013,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "044a63a13426d9b044526c8d40c7d6336560cebfc4d55af04b3fde4cf123ab59",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 134,
+        "generations_with_merged_duplicates": 131,
+        "generations_with_survivor_duplicates": 28,
+        "individuals_with_copies": 347,
+        "merged_duplicates": 202,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7196,
+        "survivor_duplicates": 71
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51014__eba68ffd8551",
+      "seed": 51014,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "de2b494929977a0f07f9ee160ae870452b33bc6d4dbf0f603505c6a950426f7b",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 134,
+        "generations_with_merged_duplicates": 128,
+        "generations_with_survivor_duplicates": 32,
+        "individuals_with_copies": 347,
+        "merged_duplicates": 196,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7333,
+        "survivor_duplicates": 69
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51015__aa19d501cded",
+      "seed": 51015,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "29810a3d6dc88976ab5de39ce0d7acf3d5fe6ee79ce2fdaa54f5fb43a016e6b2",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 134,
+        "generations_with_merged_duplicates": 127,
+        "generations_with_survivor_duplicates": 40,
+        "individuals_with_copies": 380,
+        "merged_duplicates": 220,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6973,
+        "survivor_duplicates": 93
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51016__3f11d1fa982b",
+      "seed": 51016,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "f1271bad54511f128a852e27c2de3576db1984acd95c5465e75c04f53c9f1790",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 134,
+        "generations_with_merged_duplicates": 131,
+        "generations_with_survivor_duplicates": 32,
+        "individuals_with_copies": 343,
+        "merged_duplicates": 193,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6824,
+        "survivor_duplicates": 62
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51017__ad4bfefcfeaa",
+      "seed": 51017,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "2c6607064a0aee49916fafd44f159ce809658391ce228fb865455bf659d18643",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 134,
+        "generations_with_merged_duplicates": 131,
+        "generations_with_survivor_duplicates": 32,
+        "individuals_with_copies": 359,
+        "merged_duplicates": 194,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7341,
+        "survivor_duplicates": 65
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51018__f455f6477cd2",
+      "seed": 51018,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "d04d06d37e5063d0c522daf56bf51a113ed180d3c0cb601766e1c752942fcae2",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 134,
+        "generations_with_merged_duplicates": 128,
+        "generations_with_survivor_duplicates": 29,
+        "individuals_with_copies": 363,
+        "merged_duplicates": 206,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7008,
+        "survivor_duplicates": 79
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51019__88d294a703c0",
+      "seed": 51019,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "8aeeb59f58a0dc3a466fd03c6beff897dc06cab303f3014779608684c486fcf8",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 134,
+        "generations_with_merged_duplicates": 132,
+        "generations_with_survivor_duplicates": 31,
+        "individuals_with_copies": 376,
+        "merged_duplicates": 217,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7152,
+        "survivor_duplicates": 85
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51020__d08be5aea958",
+      "seed": 51020,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "db17187e61f0c8a0fd118c3f24bcb47830d96838126acf18d1fbfba6647804fc",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 140,
+        "generations_with_merged_duplicates": 137,
+        "generations_with_survivor_duplicates": 42,
+        "individuals_with_copies": 459,
+        "merged_duplicates": 265,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7416,
+        "survivor_duplicates": 131
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51021__4a1f35015a5e",
+      "seed": 51021,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "59e2c1b1362d64e630e385af86b791351d79086d28fd866ac91a17b9dff4f175",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 139,
+        "generations_with_merged_duplicates": 130,
+        "generations_with_survivor_duplicates": 33,
+        "individuals_with_copies": 400,
+        "merged_duplicates": 234,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7606,
+        "survivor_duplicates": 105
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51022__3bf1238cd81a",
+      "seed": 51022,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "3333565f5bb1e7409de5a0c3d7ee22516eae79a3efbf3ff7513969ea76580754",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 136,
+        "generations_with_merged_duplicates": 133,
+        "generations_with_survivor_duplicates": 56,
+        "individuals_with_copies": 472,
+        "merged_duplicates": 278,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7451,
+        "survivor_duplicates": 148
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51023__40c618d97448",
+      "seed": 51023,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "d6247531a23820835cea87db2148234102f124f7806511ffa85d15d7320c9820",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 134,
+        "generations_with_merged_duplicates": 131,
+        "generations_with_survivor_duplicates": 30,
+        "individuals_with_copies": 346,
+        "merged_duplicates": 196,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6794,
+        "survivor_duplicates": 65
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51024__402b679757ad",
+      "seed": 51024,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "a2b3bfdd48a52a62805d01f4b51c8f114dc80c4b8f02f6ea52fffdad7f946ae1",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 134,
+        "generations_with_merged_duplicates": 128,
+        "generations_with_survivor_duplicates": 35,
+        "individuals_with_copies": 396,
+        "merged_duplicates": 230,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7245,
+        "survivor_duplicates": 103
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51025__e17738b6b5bd",
+      "seed": 51025,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "a5b0220547b34e1480a44662aeef0c2f594e8ac0862342d4d4f55ca79ab2729f",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 134,
+        "generations_with_merged_duplicates": 131,
+        "generations_with_survivor_duplicates": 32,
+        "individuals_with_copies": 360,
+        "merged_duplicates": 207,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6732,
+        "survivor_duplicates": 76
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51026__721de2866fb2",
+      "seed": 51026,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "9ce52b646ccf80f881a1cf427bb0cd8621ea3e9d37f29e4088a9669a4acaddf7",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 142,
+        "generations_with_merged_duplicates": 141,
+        "generations_with_survivor_duplicates": 44,
+        "individuals_with_copies": 422,
+        "merged_duplicates": 223,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7317,
+        "survivor_duplicates": 87
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51027__3d328716aeb4",
+      "seed": 51027,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "a7a539a8b433fcff5c59592a22a328ab8f658f956fa4c3333df15c6525495958",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 138,
+        "generations_with_merged_duplicates": 133,
+        "generations_with_survivor_duplicates": 49,
+        "individuals_with_copies": 440,
+        "merged_duplicates": 263,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7550,
+        "survivor_duplicates": 133
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51028__278d22ad583b",
+      "seed": 51028,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "3709c7395711dbfa123f10f85fd63a04b7373f54d9cd42be7a59b57a5a11e503",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 137,
+        "generations_with_merged_duplicates": 134,
+        "generations_with_survivor_duplicates": 53,
+        "individuals_with_copies": 464,
+        "merged_duplicates": 268,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7139,
+        "survivor_duplicates": 136
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51029__26eef339df57",
+      "seed": 51029,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "bdc87091e6330f70c299d96a4c57efb276b98c12d72f3f6c181aee07d3fa95d2",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 134,
+        "generations_with_merged_duplicates": 129,
+        "generations_with_survivor_duplicates": 28,
+        "individuals_with_copies": 357,
+        "merged_duplicates": 199,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6794,
+        "survivor_duplicates": 71
+      },
+      "identical": true,
+      "problem_id": "validation-imop3-m2",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop3-m2__hldbea-full__s51030__5c160301c4f5",
+      "seed": 51030,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "28297981bcca35a76570b3008176f3a0f6373410fd64000ecfd1305b8fda6df7",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 135,
+        "generations_with_merged_duplicates": 133,
+        "generations_with_survivor_duplicates": 31,
+        "individuals_with_copies": 677,
+        "merged_duplicates": 183,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6332,
+        "survivor_duplicates": 51
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51001__1330132bc702",
+      "seed": 51001,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "dcbefdc0db6bb6523f9269573daa3538a9efa074724ae64d04ec2f4f164f919e",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 134,
+        "generations_with_merged_duplicates": 132,
+        "generations_with_survivor_duplicates": 26,
+        "individuals_with_copies": 602,
+        "merged_duplicates": 176,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6235,
+        "survivor_duplicates": 46
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51002__92392bf9c4eb",
+      "seed": 51002,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "465a81bccc06cc5002894ab00bcc6adb6cf5020fc708228ac310ccbfc039715e",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 135,
+        "generations_with_merged_duplicates": 134,
+        "generations_with_survivor_duplicates": 43,
+        "individuals_with_copies": 713,
+        "merged_duplicates": 197,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7163,
+        "survivor_duplicates": 64
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51003__fdc25617d88c",
+      "seed": 51003,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "4fa8cc1b52e1bc0bc009ec0c6524f8141087dab2e68423d427602358fa8b490a",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 135,
+        "generations_with_merged_duplicates": 135,
+        "generations_with_survivor_duplicates": 32,
+        "individuals_with_copies": 689,
+        "merged_duplicates": 182,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6852,
+        "survivor_duplicates": 47
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51004__fc22755d3229",
+      "seed": 51004,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "57e54ad101a5fd1ae9b5084c54e0d4dd4f449c51dcd72d5e4768791241ccef1c",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 134,
+        "generations_with_merged_duplicates": 134,
+        "generations_with_survivor_duplicates": 26,
+        "individuals_with_copies": 693,
+        "merged_duplicates": 178,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6561,
+        "survivor_duplicates": 45
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51005__0bc1421d0ff2",
+      "seed": 51005,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "aa47c1593bf1cca1ae0a1db7f6dcc5455dabedc652443c62cd96498b7f534fbb",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 135,
+        "generations_with_merged_duplicates": 135,
+        "generations_with_survivor_duplicates": 35,
+        "individuals_with_copies": 703,
+        "merged_duplicates": 198,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7080,
+        "survivor_duplicates": 64
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51006__81d364e1ef59",
+      "seed": 51006,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "35c04d33bee44c777154e716c78dfdc3a4ceb9aeab33827d0731cd1f5d7729b1",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 135,
+        "generations_with_merged_duplicates": 134,
+        "generations_with_survivor_duplicates": 36,
+        "individuals_with_copies": 728,
+        "merged_duplicates": 193,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7109,
+        "survivor_duplicates": 61
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51007__24dc11c53eb7",
+      "seed": 51007,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "adc3a38f915008d629257198aef87c6ed6730df9cd8d3ae80329de98d0bb25f5",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 135,
+        "generations_with_merged_duplicates": 135,
+        "generations_with_survivor_duplicates": 32,
+        "individuals_with_copies": 637,
+        "merged_duplicates": 187,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7047,
+        "survivor_duplicates": 54
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51008__99b8595e48dc",
+      "seed": 51008,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "33ad237f3f848e7b70f0d3b3b9274c17393bbe495049eaad7fe9b640ffacd95d",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 135,
+        "generations_with_merged_duplicates": 135,
+        "generations_with_survivor_duplicates": 34,
+        "individuals_with_copies": 698,
+        "merged_duplicates": 182,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6905,
+        "survivor_duplicates": 47
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51009__6442ef623c0b",
+      "seed": 51009,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "a794297d4433cb4b402ef92ee48bce15b0c969c3c8136a9fd2dd105609067658",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 134,
+        "generations_with_merged_duplicates": 132,
+        "generations_with_survivor_duplicates": 34,
+        "individuals_with_copies": 921,
+        "merged_duplicates": 186,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6217,
+        "survivor_duplicates": 54
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51010__76296faaf305",
+      "seed": 51010,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "8da728810801f0efe7e1f21650e499a477f738522a095778d2d00b9124e949a9",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 135,
+        "generations_with_merged_duplicates": 135,
+        "generations_with_survivor_duplicates": 41,
+        "individuals_with_copies": 661,
+        "merged_duplicates": 195,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6710,
+        "survivor_duplicates": 61
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51011__1f97e1b3c37b",
+      "seed": 51011,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "f65ecf46ff16b3491e1672b11c4ac52cc950a4f6f22c15f780b6960e7a62c7a6",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 135,
+        "generations_with_merged_duplicates": 134,
+        "generations_with_survivor_duplicates": 43,
+        "individuals_with_copies": 689,
+        "merged_duplicates": 194,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7227,
+        "survivor_duplicates": 61
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51012__a38b39354098",
+      "seed": 51012,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "16e334834732e01acf2cc5355e978c93919c6da8006abf9be1f53c1ad6c4a731",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 135,
+        "generations_with_merged_duplicates": 133,
+        "generations_with_survivor_duplicates": 28,
+        "individuals_with_copies": 656,
+        "merged_duplicates": 178,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6444,
+        "survivor_duplicates": 46
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51013__75b8f63d2dd4",
+      "seed": 51013,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "4e8baa7ef84c3c720901933f6360873850051975cd6b3c62ebce19f1a0e36eef",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 135,
+        "generations_with_merged_duplicates": 134,
+        "generations_with_survivor_duplicates": 36,
+        "individuals_with_copies": 655,
+        "merged_duplicates": 184,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7063,
+        "survivor_duplicates": 50
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51014__d051836ae789",
+      "seed": 51014,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "e9dd82d699f28e3294628b0f09f01b18eb4b699d3aa514bf4eb094d40d85c355",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 135,
+        "generations_with_merged_duplicates": 134,
+        "generations_with_survivor_duplicates": 29,
+        "individuals_with_copies": 656,
+        "merged_duplicates": 174,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6976,
+        "survivor_duplicates": 42
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51015__b2365ec944cc",
+      "seed": 51015,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "152837e138dbcabd0c8eaf27f9d709cf5274e59939d5ae2d1d33bc9e6f2f009b",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 2,
+        "generations": 135,
+        "generations_with_merged_duplicates": 135,
+        "generations_with_survivor_duplicates": 31,
+        "individuals_with_copies": 622,
+        "merged_duplicates": 181,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6853,
+        "survivor_duplicates": 48
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51016__b6d490fb77ca",
+      "seed": 51016,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "c890c71ad8da9e5e86cdbde632c13775f4bc78a25116fd269f6b5e58783da8a4",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 135,
+        "generations_with_merged_duplicates": 133,
+        "generations_with_survivor_duplicates": 26,
+        "individuals_with_copies": 717,
+        "merged_duplicates": 188,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6423,
+        "survivor_duplicates": 56
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51017__648071f7cb91",
+      "seed": 51017,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "7454ddc58b0f9b7307145de8b3e04c4ec288e5902fae0014127220da4e56e178",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 134,
+        "generations_with_merged_duplicates": 132,
+        "generations_with_survivor_duplicates": 31,
+        "individuals_with_copies": 693,
+        "merged_duplicates": 185,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6349,
+        "survivor_duplicates": 54
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51018__ed27356bf10e",
+      "seed": 51018,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "a0f2cade105ba222076828a3d6dfe668037b6f29a533586f87163dffdb273f97",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 135,
+        "generations_with_merged_duplicates": 135,
+        "generations_with_survivor_duplicates": 37,
+        "individuals_with_copies": 732,
+        "merged_duplicates": 193,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6627,
+        "survivor_duplicates": 58
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51019__6c79de843cf3",
+      "seed": 51019,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "8fa64599acce5be7ebfc8cd40fffc8cdbfea1f057942feba153a02683dabea60",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 135,
+        "generations_with_merged_duplicates": 134,
+        "generations_with_survivor_duplicates": 35,
+        "individuals_with_copies": 620,
+        "merged_duplicates": 176,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6755,
+        "survivor_duplicates": 45
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51020__5915173064a6",
+      "seed": 51020,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "ec607773534883e83de06f8518653818656e6b4135d2d40a25fe528e472faee8",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 135,
+        "generations_with_merged_duplicates": 133,
+        "generations_with_survivor_duplicates": 40,
+        "individuals_with_copies": 670,
+        "merged_duplicates": 188,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6226,
+        "survivor_duplicates": 56
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51021__2b00ab857875",
+      "seed": 51021,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "6c2fc89772402f97951a2e56ae4e52cf4886f1fb81a77f51bca6e7f82fe22aaa",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 134,
+        "generations_with_merged_duplicates": 132,
+        "generations_with_survivor_duplicates": 33,
+        "individuals_with_copies": 717,
+        "merged_duplicates": 184,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6586,
+        "survivor_duplicates": 52
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51022__a43e51d7edfc",
+      "seed": 51022,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "fed2f9b1da5568dd91040733f2d62d013962eefcee08d0d7f0e39468dacd77e1",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 135,
+        "generations_with_merged_duplicates": 135,
+        "generations_with_survivor_duplicates": 30,
+        "individuals_with_copies": 700,
+        "merged_duplicates": 182,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6885,
+        "survivor_duplicates": 51
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51023__dd25724e9ab3",
+      "seed": 51023,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "1e2bfee1b3ba0c2fba19cc59bb4ee98e160d81e00550149b4f36e34ab272e7f3",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 135,
+        "generations_with_merged_duplicates": 134,
+        "generations_with_survivor_duplicates": 30,
+        "individuals_with_copies": 707,
+        "merged_duplicates": 179,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6824,
+        "survivor_duplicates": 46
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51024__440697490f99",
+      "seed": 51024,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "b15cc01457eca6932ecb2f5c6ee598802a58860f01d4e2145951460c976a7d15",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 135,
+        "generations_with_merged_duplicates": 133,
+        "generations_with_survivor_duplicates": 34,
+        "individuals_with_copies": 715,
+        "merged_duplicates": 184,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6554,
+        "survivor_duplicates": 51
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51025__20298ee2afb7",
+      "seed": 51025,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "8fd802d75b76f8b87a91e143eb8d02dff5e7d9d086e0342fbd5399612b86f122",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 135,
+        "generations_with_merged_duplicates": 135,
+        "generations_with_survivor_duplicates": 34,
+        "individuals_with_copies": 691,
+        "merged_duplicates": 188,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6747,
+        "survivor_duplicates": 53
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51026__f96da771545f",
+      "seed": 51026,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "e3179a9ce1be9a5eec8ea3facc98f886d1e841cf31fc66cc2c78d463d84efc92",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 134,
+        "generations_with_merged_duplicates": 134,
+        "generations_with_survivor_duplicates": 27,
+        "individuals_with_copies": 606,
+        "merged_duplicates": 184,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6534,
+        "survivor_duplicates": 51
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51027__d92dd0b19787",
+      "seed": 51027,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "aa893109271d065b47cb2d79b404fff84a1cd0d23883eacc93aceabfb981de5a",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 135,
+        "generations_with_merged_duplicates": 135,
+        "generations_with_survivor_duplicates": 34,
+        "individuals_with_copies": 654,
+        "merged_duplicates": 199,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6297,
+        "survivor_duplicates": 66
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51028__7583a1d00f33",
+      "seed": 51028,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "38547666acd9ee4d8ce79276b24e01a619ae4ff67b14760eb3d555eec1daaf9f",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 135,
+        "generations_with_merged_duplicates": 133,
+        "generations_with_survivor_duplicates": 38,
+        "individuals_with_copies": 720,
+        "merged_duplicates": 186,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6094,
+        "survivor_duplicates": 54
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51029__bcb63431248d",
+      "seed": 51029,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "43b27acde4f223e2948ea59797133c1762fb1abc28bd33060e511753862d772a",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 135,
+        "generations_with_merged_duplicates": 135,
+        "generations_with_survivor_duplicates": 33,
+        "individuals_with_copies": 687,
+        "merged_duplicates": 187,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7093,
+        "survivor_duplicates": 53
+      },
+      "identical": true,
+      "problem_id": "validation-imop4-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop4-m3__hldbea-full__s51030__14013ca0a559",
+      "seed": 51030,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "fb24226b371687b2884cfb805c2e5de014c112620c391bc6a8b851a17b1a4100",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 158,
+        "generations_with_merged_duplicates": 153,
+        "generations_with_survivor_duplicates": 32,
+        "individuals_with_copies": 368,
+        "merged_duplicates": 205,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7823,
+        "survivor_duplicates": 58
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51001__fd48a4e361d9",
+      "seed": 51001,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "9da321e1dbcef4d3e83c85bc7a89860c50c57fedbf7a6b9c53880fbb8ed32bc3",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 156,
+        "generations_with_merged_duplicates": 139,
+        "generations_with_survivor_duplicates": 27,
+        "individuals_with_copies": 313,
+        "merged_duplicates": 166,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7389,
+        "survivor_duplicates": 31
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51002__9a398717b953",
+      "seed": 51002,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "8f868f8e4eb8df1230946b927914fb7b72a546f41bce0b9b6867ac9e7666df7d",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 157,
+        "generations_with_merged_duplicates": 150,
+        "generations_with_survivor_duplicates": 18,
+        "individuals_with_copies": 334,
+        "merged_duplicates": 170,
+        "positive_only_through_copies": 0,
+        "positive_scores": 8416,
+        "survivor_duplicates": 26
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51003__a84f40b1a36c",
+      "seed": 51003,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "5738a84e95d3a8e7aefbe516ad704c3b95f908ef99a3c0775470c666e74fd51c",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 155,
+        "generations_with_merged_duplicates": 140,
+        "generations_with_survivor_duplicates": 56,
+        "individuals_with_copies": 371,
+        "merged_duplicates": 212,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7504,
+        "survivor_duplicates": 77
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51004__b6627a66c6d1",
+      "seed": 51004,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "c13554108541eabd6125b18e7df1672a1d904f90d93cf4f42824f0285685cdd5",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 158,
+        "generations_with_merged_duplicates": 157,
+        "generations_with_survivor_duplicates": 35,
+        "individuals_with_copies": 357,
+        "merged_duplicates": 192,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7853,
+        "survivor_duplicates": 45
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51005__522a949f204a",
+      "seed": 51005,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "7dde3762010d740dafa7bebe003bac5dfe405dfad4b1b978db37c6be07020f00",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 157,
+        "generations_with_merged_duplicates": 147,
+        "generations_with_survivor_duplicates": 19,
+        "individuals_with_copies": 345,
+        "merged_duplicates": 187,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7442,
+        "survivor_duplicates": 44
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51006__a78155b495cc",
+      "seed": 51006,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "41ab29138ea22296cc734a95a622f58d8e37f81ec8b42c6b95d48e4ac7f78321",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 157,
+        "generations_with_merged_duplicates": 151,
+        "generations_with_survivor_duplicates": 28,
+        "individuals_with_copies": 348,
+        "merged_duplicates": 189,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7972,
+        "survivor_duplicates": 44
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51007__2328337ca037",
+      "seed": 51007,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "a8739becd10e275ab2f4e92075c98127d25116a84836fc71213f532aa3c75fb7",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 159,
+        "generations_with_merged_duplicates": 155,
+        "generations_with_survivor_duplicates": 25,
+        "individuals_with_copies": 364,
+        "merged_duplicates": 199,
+        "positive_only_through_copies": 0,
+        "positive_scores": 8867,
+        "survivor_duplicates": 49
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51008__bf5f8be9cd31",
+      "seed": 51008,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "3c513ea00ad623ee07cb74a94e4bdbbe68d9dfdf59978edd470a7e1effda1189",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 157,
+        "generations_with_merged_duplicates": 152,
+        "generations_with_survivor_duplicates": 62,
+        "individuals_with_copies": 393,
+        "merged_duplicates": 225,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7380,
+        "survivor_duplicates": 80
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51009__790f24ff3e53",
+      "seed": 51009,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "453265ffa8c0b615943105b91219df4707e9bbfb7325388f7384b8f9ebd9e2b3",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 156,
+        "generations_with_merged_duplicates": 145,
+        "generations_with_survivor_duplicates": 51,
+        "individuals_with_copies": 385,
+        "merged_duplicates": 223,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7928,
+        "survivor_duplicates": 85
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51010__4311816708bf",
+      "seed": 51010,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "c32048362cc41de1b7ef3e6db93bb90dd2e499efc6cc7711fcf3ba3bc2b23801",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 159,
+        "generations_with_merged_duplicates": 155,
+        "generations_with_survivor_duplicates": 36,
+        "individuals_with_copies": 376,
+        "merged_duplicates": 205,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7655,
+        "survivor_duplicates": 56
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51011__f66c10fea414",
+      "seed": 51011,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "0757b59f814467c24ba30ad97ff200870c5d2f38334e5d1c942cfe530ce065cc",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 157,
+        "generations_with_merged_duplicates": 151,
+        "generations_with_survivor_duplicates": 22,
+        "individuals_with_copies": 345,
+        "merged_duplicates": 191,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7790,
+        "survivor_duplicates": 47
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51012__c4b01405c669",
+      "seed": 51012,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "48e0fb0a6011000abb5f5543b985ffad176c496e04ba8dd6b3b81b00c6a89602",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 157,
+        "generations_with_merged_duplicates": 149,
+        "generations_with_survivor_duplicates": 24,
+        "individuals_with_copies": 351,
+        "merged_duplicates": 186,
+        "positive_only_through_copies": 0,
+        "positive_scores": 8040,
+        "survivor_duplicates": 43
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51013__4a36b0ce1368",
+      "seed": 51013,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "78a5578fd9c30b137419e8750d8c99b23959046e3c2747438c7db33c44ad2898",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 159,
+        "generations_with_merged_duplicates": 157,
+        "generations_with_survivor_duplicates": 28,
+        "individuals_with_copies": 364,
+        "merged_duplicates": 199,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7688,
+        "survivor_duplicates": 48
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51014__26a475f44423",
+      "seed": 51014,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "bbdb5c6562a4b3bd3c9117e1f8c2296a3461719b90d4b41720b0036baaa6839b",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 159,
+        "generations_with_merged_duplicates": 155,
+        "generations_with_survivor_duplicates": 23,
+        "individuals_with_copies": 361,
+        "merged_duplicates": 196,
+        "positive_only_through_copies": 0,
+        "positive_scores": 8133,
+        "survivor_duplicates": 45
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51015__91d9e5ea7816",
+      "seed": 51015,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "8641046f8149cb42fa8df1b62c4b2d4635f28100ae8dbf8fd1b63c13eafd8911",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 157,
+        "generations_with_merged_duplicates": 151,
+        "generations_with_survivor_duplicates": 29,
+        "individuals_with_copies": 351,
+        "merged_duplicates": 189,
+        "positive_only_through_copies": 0,
+        "positive_scores": 6918,
+        "survivor_duplicates": 42
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51016__9a8f5749f6bc",
+      "seed": 51016,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "48b1a04ba430822025f94a4b141278de3eb6c115579388d7b9f85a472b44f343",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 154,
+        "generations_with_merged_duplicates": 141,
+        "generations_with_survivor_duplicates": 53,
+        "individuals_with_copies": 349,
+        "merged_duplicates": 190,
+        "positive_only_through_copies": 0,
+        "positive_scores": 8484,
+        "survivor_duplicates": 63
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51017__fe10c1d663fb",
+      "seed": 51017,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "33cb9a48401242511f48d57ca7709ccd3599b0c46357d00429a919dec7a85c81",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 154,
+        "generations_with_merged_duplicates": 138,
+        "generations_with_survivor_duplicates": 36,
+        "individuals_with_copies": 325,
+        "merged_duplicates": 174,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7291,
+        "survivor_duplicates": 44
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51018__72e036786298",
+      "seed": 51018,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "573bfec3c8c178a3e538f69aeb80eb6a410a552b0d7fd5fe87cd2ee7e6979e2b",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 157,
+        "generations_with_merged_duplicates": 150,
+        "generations_with_survivor_duplicates": 95,
+        "individuals_with_copies": 411,
+        "merged_duplicates": 249,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7016,
+        "survivor_duplicates": 104
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51019__3cf3c011bfe4",
+      "seed": 51019,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "e5a04eb972e33d544d7c40c9e75e7f44f0ec4c062c21e0e038f2d2c432e0e07f",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 156,
+        "generations_with_merged_duplicates": 146,
+        "generations_with_survivor_duplicates": 52,
+        "individuals_with_copies": 351,
+        "merged_duplicates": 196,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7267,
+        "survivor_duplicates": 57
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51020__3aae2051232a",
+      "seed": 51020,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "da349f0bb9e533b361ee3e0fde3afd96e52ba16e5dedb22ee1bc7dc8931eae41",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 157,
+        "generations_with_merged_duplicates": 151,
+        "generations_with_survivor_duplicates": 27,
+        "individuals_with_copies": 353,
+        "merged_duplicates": 183,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7424,
+        "survivor_duplicates": 40
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51021__d916a465276a",
+      "seed": 51021,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "40dea61151e556f73bc0682951c772f5fbc1228e071e693a4cdab19411fb4093",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 156,
+        "generations_with_merged_duplicates": 148,
+        "generations_with_survivor_duplicates": 18,
+        "individuals_with_copies": 331,
+        "merged_duplicates": 168,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7313,
+        "survivor_duplicates": 28
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51022__30a70ef35c1d",
+      "seed": 51022,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "80cc2836aa771d8ecfdceccfba5637f823007007e44a509d7cc3800386431c4c",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 158,
+        "generations_with_merged_duplicates": 151,
+        "generations_with_survivor_duplicates": 22,
+        "individuals_with_copies": 350,
+        "merged_duplicates": 183,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7900,
+        "survivor_duplicates": 37
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51023__1985fecf546f",
+      "seed": 51023,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "ffe63a7ac0168f0a954321e4bded03aec8a8c7649c28ba95dcd403b53983ba1c",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 150,
+        "generations_with_merged_duplicates": 118,
+        "generations_with_survivor_duplicates": 20,
+        "individuals_with_copies": 267,
+        "merged_duplicates": 137,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7498,
+        "survivor_duplicates": 26
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51024__efabf653ef76",
+      "seed": 51024,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "335188d7ab2efe5ed413e4c5d1814892b8756eaa77bfd384055e3661b44b4b1e",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 1,
+        "generations": 158,
+        "generations_with_merged_duplicates": 152,
+        "generations_with_survivor_duplicates": 20,
+        "individuals_with_copies": 366,
+        "merged_duplicates": 191,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7948,
+        "survivor_duplicates": 44
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51025__4aabf475b348",
+      "seed": 51025,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "8d75f391d52f62380393255cc8beb83bfd860d88c89751cd7624ec4081db9455",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 158,
+        "generations_with_merged_duplicates": 150,
+        "generations_with_survivor_duplicates": 21,
+        "individuals_with_copies": 362,
+        "merged_duplicates": 203,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7547,
+        "survivor_duplicates": 57
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51026__543184a150af",
+      "seed": 51026,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "64be65840552e79b1ccac5a9ca2284751121a9b9acc555ed96dc8aa801d9af09",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 158,
+        "generations_with_merged_duplicates": 155,
+        "generations_with_survivor_duplicates": 24,
+        "individuals_with_copies": 382,
+        "merged_duplicates": 211,
+        "positive_only_through_copies": 0,
+        "positive_scores": 8968,
+        "survivor_duplicates": 59
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51027__942670aef2b0",
+      "seed": 51027,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "2626b2a2b5004df8af0264aa036d46bf0fa5872055e9da9958323cc46a3e775d",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 158,
+        "generations_with_merged_duplicates": 152,
+        "generations_with_survivor_duplicates": 17,
+        "individuals_with_copies": 380,
+        "merged_duplicates": 205,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7310,
+        "survivor_duplicates": 55
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51028__46f758913442",
+      "seed": 51028,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "77ce7606b1fc33536833b542ed20e5b600721d919dfb661168e0d0b103889bca",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 158,
+        "generations_with_merged_duplicates": 156,
+        "generations_with_survivor_duplicates": 20,
+        "individuals_with_copies": 364,
+        "merged_duplicates": 204,
+        "positive_only_through_copies": 0,
+        "positive_scores": 9040,
+        "survivor_duplicates": 53
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51029__60f5b4f3a689",
+      "seed": 51029,
+      "variant": "full"
+    },
+    {
+      "arrays_sha256": "12a9b52d367ee9256203f7d3f66d6de980f7cf4fb13bd2922ce9818d40327978",
+      "duplicate_summary": {
+        "eliminated": 0,
+        "final_population_duplicates": 0,
+        "generations": 159,
+        "generations_with_merged_duplicates": 157,
+        "generations_with_survivor_duplicates": 44,
+        "individuals_with_copies": 420,
+        "merged_duplicates": 239,
+        "positive_only_through_copies": 0,
+        "positive_scores": 7427,
+        "survivor_duplicates": 86
+      },
+      "identical": true,
+      "problem_id": "validation-imop7-m3",
+      "run_id": "reviewer-modern-benchmarks-validation-v3__validation-imop7-m3__hldbea-full__s51030__781fc08de592",
+      "seed": 51030,
+      "variant": "full"
+    }
+  ]
+}

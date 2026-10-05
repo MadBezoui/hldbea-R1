@@ -41,6 +41,19 @@ def artifact_path(root: str | Path, spec: RunSpec) -> Path:
     return Path(root) / spec.manifest_id / spec.run_id
 
 
+def arrays_digest(run_dir: str | Path) -> str:
+    """SHA-256 of the final decision and objective arrays of a run."""
+
+    with np.load(Path(run_dir) / "arrays.npz", allow_pickle=False) as archive:
+        digest = hashlib.sha256()
+        for name in ("X", "F"):
+            values = np.ascontiguousarray(archive[name], dtype=np.float64)
+            digest.update(name.encode("ascii"))
+            digest.update(str(values.shape).encode("ascii"))
+            digest.update(values.tobytes())
+    return digest.hexdigest()
+
+
 def _sha256_file(path: Path) -> str:
     digest = hashlib.sha256()
     with path.open("rb") as stream:

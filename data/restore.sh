@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Reassemble the raw outputs of the confirmatory runs and unpack them into results/raw.
+# Reassemble the raw outputs of the v3 runs and unpack them into results/raw.
 set -euo pipefail
 cd "$(dirname "$0")"
 cat hldbea-v3-raw-runs.tar.gz.part-* > hldbea-v3-raw-runs.tar.gz

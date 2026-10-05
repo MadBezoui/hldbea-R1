@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 
 import numpy as np
+import pytest
 
 from hldbea.artifacts import artifact_status, validate_run_artifact
 from hldbea.run_spec import expand_manifest, load_manifest
@@ -54,8 +55,13 @@ def test_single_run_writes_complete_valid_artifact(tmp_path):
     assert run["evaluations"] == {"total": 20, "evolutionary": 20, "solver": 0}
     assert run["environment"]["python"]
     assert run["environment"]["pymoo"] == "0.6.1.3"
-    assert len(run["git"]["commit"]) == 40
-    assert isinstance(run["git"]["dirty"], bool)
+    assert len(run["git"]["source_sha256"]) == 64
+    if run["git"]["commit"] == "unavailable":
+        # Source archive without Git metadata: still a valid, fingerprinted run.
+        assert run["git"]["dirty"] is None and run["git"]["error"]
+    else:
+        assert len(run["git"]["commit"]) == 40
+        assert isinstance(run["git"]["dirty"], bool)
     assert run["history_saved"] is False
     assert run["history_length"] == 0
     assert np.all(np.isfinite(arrays["X"]))
@@ -161,3 +167,31 @@ def test_failed_run_is_captured_without_complete_artifact(tmp_path):
     assert outcome.error_type == "ValueError"
     assert artifact_status(tmp_path, spec) == "failed"
     assert not (tmp_path / spec.manifest_id / spec.run_id).exists()
+
+
+def test_git_metadata_keeps_source_digest_without_git(monkeypatch):
+    import subprocess
+
+    from hldbea import runner
+
+    def no_git(*args, **kwargs):
+        raise OSError("git unavailable")
+
+    monkeypatch.setattr(subprocess, "run", no_git)
+    meta = runner._git_metadata()
+    assert meta["commit"] == "unavailable"
+    assert meta["source_sha256"] == runner._source_digest()
+
+
+@pytest.mark.skipif(
+    __import__("shutil").which("git") is None
+    or not (Path(__file__).resolve().parents[1] / ".git").exists(),
+    reason="checkout-specific Git metadata",
+)
+def test_git_metadata_in_a_checkout_records_commit_and_diff():
+    from hldbea import runner
+
+    meta = runner._git_metadata()
+    assert len(meta["commit"]) == 40
+    assert isinstance(meta["tracked_sources_modified"], bool)
+    assert len(meta["source_diff_sha256"]) == 64

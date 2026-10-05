@@ -51,6 +51,10 @@ LABELS = {
 }
 
 
+# No creation date, so that regenerated figures are byte-identical.
+FIGURE_METADATA = {"CreationDate": None}
+
+
 def _label(key: str) -> str:
     return LABELS.get(key, key)
 
@@ -75,6 +79,11 @@ def _fmt(value: float) -> str:
     return f"{value:.4f}" if magnitude >= 0.01 else f"{value:.2e}"
 
 
+def _final_duplicates(run_dir: Path) -> int:
+    decisions = np.load(run_dir / "arrays.npz")["X"]
+    return int(len(decisions) - len(np.unique(decisions, axis=0)))
+
+
 def load_runs(artifact_root: Path, manifest: str) -> list[dict]:
     runs = []
     for metadata_path in sorted((artifact_root / manifest).glob("*/metadata.json")):
@@ -97,6 +106,8 @@ def load_runs(artifact_root: Path, manifest: str) -> list[dict]:
                     **{k: float(v) for k, v in run["score_diagnostics"].items()},
                 },
                 "budget": int(spec["execution"]["evaluation_budget"]),
+                "final_duplicates": _final_duplicates(metadata_path.parent),
+                "duplicate_summary": run.get("duplicate_summary"),
                 "geometry": run["geometry"],
                 "solver_calls": len(local),
                 "solver_fe": int(sum(int(e["evaluations"]) for e in local)),
@@ -142,15 +153,17 @@ def load_validated_block(manifest_path: Path, artifact_root: Path, statistics_pa
     if len(runs) != report.planned:
         raise AssetError(f"{manifest_path.stem}: run inventory does not match the manifest")
     verify_statistics(runs, statistics, statistics_path.name)
-    return runs
+    # The tables use this verified object, never a second read of the file.
+    return runs, statistics
 
 
 def verify_statistics(runs, statistics, name):
     """Check that a statistical report was computed from exactly these runs.
 
     The observation digest binds the report to the analysed values, and the
-    medians, paired Wilcoxon p-values and Holm decisions used by the tables are
-    recomputed from the runs and compared with the report.
+    medians, paired Wilcoxon p-values, Holm decisions and effect sizes used by
+    the tables are recomputed from the runs and compared with the report. The
+    effect size matters because it sets the direction of each published sign.
     """
 
     from hldbea.statistics import holm_step_down, observations_digest, paired_wilcoxon
@@ -185,9 +198,73 @@ def verify_statistics(runs, statistics, name):
     for family, values in families.items():
         for hypothesis, outcome in holm_step_down(values, family=family, alpha=statistics["alpha"]).items():
             decisions[(family, hypothesis)] = outcome.reject
+    from hldbea.statistics import matched_pairs_rank_biserial, vargha_delaney_a12
+
     for test in statistics["paired_tests"]:
         if decisions[(test["family"], test["hypothesis"])] != test["reject_holm"]:
             raise AssetError(f"{name}: Holm decision of {test['hypothesis']} differs")
+        # The direction of each published sign comes from the effect size, so it
+        # is recomputed as well rather than trusted.
+        seeds = sorted(seed for (p, l, seed) in by_key
+                       if p == test["problem_id"] and l == test["reference"])
+        first = [by_key[(test["problem_id"], test["reference"], s)][test["metric"]] for s in seeds]
+        second = [by_key[(test["problem_id"], test["competitor"], s)][test["metric"]] for s in seeds]
+        effect = vargha_delaney_a12(first, second, direction=test["direction"])
+        reported = test.get("effect_size", {})
+        if (not np.isclose(effect.a12, reported.get("a12", np.nan), rtol=0, atol=1e-12)
+                or effect.interpretation != reported.get("interpretation")):
+            raise AssetError(f"{name}: effect size of {test['hypothesis']} differs")
+        if "paired_rank_biserial" in test and not np.isclose(
+            matched_pairs_rank_biserial(first, second, direction=test["direction"]),
+            test["paired_rank_biserial"], rtol=0, atol=1e-12,
+        ):
+            raise AssetError(f"{name}: paired effect size of {test['hypothesis']} differs")
+
+
+def load_duplicate_report(path: Path, runs: list[dict]) -> dict:
+    """Read a duplicate replay report and bind it to the validated HLDBEA runs.
+
+    The report must cover exactly these runs, every replay must have matched
+    the archive, and the archived arrays must still have the recorded digest.
+    """
+
+    from hldbea.artifacts import arrays_digest
+
+    if not path.exists():
+        raise AssetError(f"missing duplicate replay report {path}")
+    report = json.loads(path.read_text())
+    own = {run["run_id"]: run for run in runs if run["label"].startswith("hldbea:")}
+    entries = {entry["run_id"]: entry for entry in report["runs"]}
+    if set(entries) != set(own):
+        raise AssetError(f"{path.name} does not cover the validated HLDBEA runs")
+    for run_id, entry in entries.items():
+        if not entry.get("identical"):
+            raise AssetError(f"{path.name}: replay of {run_id} differs from the archive")
+        if entry["arrays_sha256"] != arrays_digest(own[run_id]["dir"]):
+            raise AssetError(f"{path.name}: archived arrays of {run_id} changed")
+    return entries
+
+
+def duplicate_rates(summaries) -> dict:
+    """Pool duplicate counters over runs, per generation."""
+
+    totals = defaultdict(int)
+    for summary in summaries:
+        for key, value in summary.items():
+            totals[key] += int(value)
+    generations = max(totals["generations"], 1)
+    return {
+        "runs": len(summaries),
+        "generations": totals["generations"],
+        "merged_per_generation": totals["merged_duplicates"] / generations,
+        "survivors_per_generation": totals["survivor_duplicates"] / generations,
+        "final_duplicates": totals["final_population_duplicates"],
+        "positive_only_through_copies": totals["positive_only_through_copies"],
+        "positive_scores": totals["positive_scores"],
+        "share_of_positive_scores_from_copies": (
+            totals["positive_only_through_copies"] / max(totals["positive_scores"], 1)
+        ),
+    }
 
 
 def publish(staging: Path, final: Path) -> None:
@@ -207,10 +284,9 @@ def publish(staging: Path, final: Path) -> None:
         staging.rename(final)
 
 
-def load_signs(statistics_path: Path) -> tuple[str, dict]:
+def load_signs(report: dict) -> tuple[str, dict]:
     """Map (problem, competitor, metric) -> sign of the competitor vs reference."""
 
-    report = json.loads(statistics_path.read_text())
     reference = f"{report['reference_algorithm']}:{report['reference_variant']}"
     signs = {}
     for test in report["paired_tests"]:
@@ -243,8 +319,8 @@ def medians(runs: list[dict]) -> dict:
     return summary
 
 
-def comparison_table(runs, statistics_path, order, caption, label, positive=False):
-    reference, signs = load_signs(statistics_path)
+def comparison_table(runs, statistics, order, caption, label, positive=False):
+    reference, signs = load_signs(statistics)
     summary = medians(runs)
     problems = sorted({problem for problem, _ in summary})
     columns = "|l|l|r|c|r|c|" + ("r|" if positive else "")
@@ -294,20 +370,23 @@ def comparison_table(runs, statistics_path, order, caption, label, positive=Fals
     return "\n".join(lines)
 
 
-def mechanism_rows(blocks: dict[str, list[dict]]) -> tuple[str, dict]:
+def mechanism_rows(blocks: dict[str, list[dict]], duplicates: dict[str, dict]) -> tuple[str, dict]:
     lines = [
         "\\begin{table}[!htbp]",
         "\\centering",
-        "\\caption{Audited deterministic-track activity of every HLDBEA configuration in the "
-        "confirmatory blocks (30 paired seeds per configuration). \\emph{Moved} counts accepted "
-        "SLSQP iterates whose objective vector differs from the starting point, and the FE share is "
-        "relative to the total charged budget.}",
+        "\\caption{Audited deterministic-track activity. \\emph{Runs} counts only the HLDBEA "
+        "runs that use SLSQP, and the FE share is relative to their charged budget. "
+        "\\emph{Moved} counts accepted iterates whose objective vector differs from the "
+        "starting point. Each rejected call reinserts an unchanged copy of its parent, and the "
+        "last column gives the mean number of exact duplicates among the survivors of a "
+        "generation.}",
         "\\label{tab:solver_audit}",
-        "\\small",
-        "\\begin{tabular}{|l|r|r|r|r|r|}",
+        "\\footnotesize",
+        "\\setlength{\\tabcolsep}{4pt}",
+        "\\begin{tabular}{|l|r|r|r|r|r|r|r|}",
         "\\hline",
-        "\\textbf{Block} & \\textbf{Runs} & \\textbf{SLSQP calls} & \\textbf{FE share} & "
-        "\\textbf{Accepted} & \\textbf{Moved} \\\\ \\hline",
+        "\\textbf{Block} & \\textbf{Runs} & \\textbf{Calls} & \\textbf{FE share} & "
+        "\\textbf{Accepted} & \\textbf{Moved} & \\textbf{Rejected} & \\textbf{Dup. kept} \\\\ \\hline",
     ]
     numbers = {}
     for name, runs in blocks.items():
@@ -319,16 +398,26 @@ def mechanism_rows(blocks: dict[str, list[dict]]) -> tuple[str, dict]:
         budget = sum(run["budget"] for run in own)
         accepted = sum(run["solver_accepted"] for run in own)
         moved = sum(run["solver_moved"] for run in own)
+        rejected = calls - accepted
+        rates = duplicate_rates(
+            [duplicates[name][run["run_id"]]["duplicate_summary"] for run in own]
+        )
         numbers[name] = {
             "runs": len(own),
             "calls": calls,
             "fe_share": fe / budget,
             "accepted": accepted,
             "moved": moved,
+            "rejected": rejected,
+            "duplicates": rates,
+            "duplicates_all_hldbea": duplicate_rates(
+                [entry["duplicate_summary"] for entry in duplicates[name].values()]
+            ),
         }
         lines.append(
             f"{name} & {len(own)} & {calls:,} & {100 * fe / budget:.1f}\\% & "
-            f"{accepted:,} & {moved:,} \\\\".replace(",", "{,}")
+            f"{accepted:,} & {moved:,} & {rejected:,} & "
+            f"{rates['survivors_per_generation']:.2f} \\\\".replace(",", "{,}")
         )
     lines += ["\\hline", "\\end{tabular}", "\\end{table}", ""]
     return "\n".join(lines), numbers
@@ -366,7 +455,7 @@ def rotation_figure(runs, output: Path) -> dict:
     axes[1].set_yscale("log")
     axes[0].legend(fontsize=7, frameon=False)
     fig.tight_layout()
-    fig.savefig(output)
+    fig.savefig(output, metadata=FIGURE_METADATA)
     plt.close(fig)
     return {"angles": angles, "medians": values}
 
@@ -376,7 +465,7 @@ def rotation_invariant_table(runs, output: Path) -> dict:
 
     from hldbea.metrics import build_reference_geometry
     from hldbea.problems import ProblemSpec
-    from hldbea.statistics import holm_step_down, paired_wilcoxon
+    from hldbea.statistics import holm_step_down, matched_pairs_rank_biserial, paired_wilcoxon
 
     references = {}
     igd = {}
@@ -403,7 +492,10 @@ def rotation_invariant_table(runs, output: Path) -> dict:
                                      failure_policy="raise", alternative="two-sided")
             hypothesis = f"{problem}|{competitor}"
             pvalues[hypothesis] = result.p_value
-            directions[hypothesis] = np.median(list(second.values())) - np.median(list(first.values()))
+            # Positive paired effect: HLDBEA is better than the baseline.
+            directions[hypothesis] = matched_pairs_rank_biserial(
+                [first[s] for s in seeds], [second[s] for s in seeds], direction="lower"
+            )
     holm = holm_step_down(pvalues, family="rotation-euclidean-igd", alpha=0.05)
     def median(problem, label):
         return float(np.median([v for (p, l, _), v in igd.items() if p == problem and l == label]))
@@ -428,7 +520,7 @@ def rotation_invariant_table(runs, output: Path) -> dict:
             if not holm[hypothesis].reject:
                 sign = "\\approx"
             else:
-                sign = "+" if directions[hypothesis] < 0 else "-"
+                sign = "-" if directions[hypothesis] > 0 else "+"
             cells += [_fmt(median(problem, competitor)), f"${sign}$"]
             numbers[angle][competitor] = median(problem, competitor)
             numbers[angle][competitor + "|p_holm"] = holm[hypothesis].p_adjusted
@@ -436,6 +528,197 @@ def rotation_invariant_table(runs, output: Path) -> dict:
     lines += ["\\hline", "\\end{tabular}", "\\end{table}", ""]
     output.write_text("\n".join(lines))
     return numbers
+
+
+DUPLICATE_HANDLING = (
+    ("", "Kept"),
+    ("-drop", "No copy"),
+    ("-eliminate", "Removed"),
+)
+
+
+def duplicate_ablation_table(runs, output: Path) -> dict:
+    """DTLZ3 ablation of duplicate handling, compared within each handling rule."""
+
+    from hldbea.statistics import holm_step_down, matched_pairs_rank_biserial, paired_wilcoxon
+
+    values = defaultdict(dict)
+    for run in runs:
+        values[run["label"]][run["seed"]] = run
+    configurations = (("core-no-ls", "core, no LS"), ("core-with-ls", "core + LS"), ("full", "HLDBEA"))
+    families = {"hv": {}, "igd_plus": {}}
+    effects = {}
+    for suffix, _ in DUPLICATE_HANDLING:
+        reference = f"hldbea:core-no-ls{suffix}"
+        for variant, _ in configurations[1:]:
+            competitor = f"hldbea:{variant}{suffix}"
+            seeds = sorted(values[reference])
+            for metric, direction in (("hv", "higher"), ("igd_plus", "lower")):
+                first = {s: values[reference][s][metric] for s in seeds}
+                second = {s: values[competitor][s][metric] for s in seeds}
+                result = paired_wilcoxon(first, second, direction=direction, zero_method="wilcox",
+                                         failure_policy="raise", alternative="two-sided")
+                families[metric][competitor] = result.p_value
+                effects[(competitor, metric)] = matched_pairs_rank_biserial(
+                    [first[s] for s in seeds], [second[s] for s in seeds], direction=direction
+                )
+    holm = {metric: holm_step_down(p, family=f"dtlz3-duplicates-{metric}", alpha=0.05)
+            for metric, p in families.items()}
+
+    def sign(label, metric):
+        if label not in families[metric]:
+            return "ref."
+        if not holm[metric][label].reject:
+            return "$\\approx$"
+        # Positive paired effect: the core without local search is better.
+        return "$-$" if effects[(label, metric)] > 0 else "$+$"
+
+    lines = [
+        "\\begin{table}[!htbp]", "\\centering",
+        "\\caption{DTLZ3 ablation of duplicate handling (46{,}000 FEs). Copies are \\emph{kept} "
+        "by default. With \\emph{no copy}, $Q_{nlp}$ receives only moved points, so a rejected "
+        "call or the core without local search adds no copy and the genetic track fills the "
+        "freed slot. When duplicates are \\emph{removed}, exact copies are deleted from the "
+        "merged set before scoring. Values are medians over 30 paired seeds. Signs compare each "
+        "configuration with the core without local search under the same handling, by paired "
+        "Wilcoxon tests with Holm correction over the six comparisons of each indicator: $+$ "
+        "significantly better, $-$ significantly worse, $\\approx$ no significant difference. "
+        "The last column gives the mean number of exact duplicates among the survivors of a "
+        "generation.}",
+        "\\label{tab:dtlz3_duplicates}", "\\small", "\\setlength{\\tabcolsep}{3pt}",
+        "\\begin{tabular}{|l|l|r|c|r|c|r|r|}", "\\hline",
+        "\\textbf{Copies} & \\textbf{Variant} & \\textbf{HV} & \\textbf{vs core} & "
+        "\\textbf{IGD$^+$} & \\textbf{vs core} & \\textbf{HV$>0$} & \\textbf{Dup. kept} \\\\ \\hline",
+    ]
+    numbers = {}
+    for suffix, handling in DUPLICATE_HANDLING:
+        for index, (variant, name) in enumerate(configurations):
+            label = f"hldbea:{variant}{suffix}"
+            items = list(values[label].values())
+            hv = float(np.median([r["hv"] for r in items]))
+            igd = float(np.median([r["igd_plus"] for r in items]))
+            positive = sum(r["hv"] > 0 for r in items)
+            rates = duplicate_rates([r["duplicate_summary"] for r in items])
+            numbers[label] = {
+                "hv_median": hv, "igd_plus_median": igd, "hv_positive": positive,
+                "duplicates": rates,
+                **{f"{metric}|p_holm": holm[metric][label].p_adjusted
+                   for metric in families if label in families[metric]},
+                **{f"{metric}|rank_biserial": effects[(label, metric)]
+                   for metric in families if (label, metric) in effects},
+            }
+            lines.append(
+                f"{handling if index == 0 else ''} & {name} & {_fmt(hv)} & {sign(label, 'hv')} & "
+                f"{_fmt(igd)} & {sign(label, 'igd_plus')} & {positive}/{len(items)} & "
+                f"{rates['survivors_per_generation']:.2f} \\\\"
+            )
+        lines.append("\\hline")
+    lines += ["\\end{tabular}", "\\end{table}", ""]
+    output.write_text("\n".join(lines))
+    return numbers
+
+
+def generation_matched(path: Path, runs) -> dict:
+    """Compare each SLSQP run with the run without it at the same generation count.
+
+    The dense replays are bound to the validated ablation runs through the
+    digest of their final arrays.
+    """
+
+    from hldbea.artifacts import arrays_digest
+
+    if not path.exists():
+        raise AssetError(f"missing generation replay report {path}")
+    report = json.loads(path.read_text())
+    by_id = {run["run_id"]: run for run in runs}
+    trajectories = {}
+    for entry in report["runs"]:
+        run = by_id.get(entry["run_id"])
+        if run is None or not entry.get("identical") or entry["arrays_sha256"] != arrays_digest(run["dir"]):
+            raise AssetError(f"{path.name}: {entry['run_id']} is not bound to a validated run")
+        trajectories[(entry["variant"], entry["seed"])] = entry["trajectory"]
+    numbers = {}
+    for suffix in ("", "-eliminate"):
+        with_ls, without = [], []
+        generations = []
+        for (variant, seed), trajectory in trajectories.items():
+            if variant != f"core-with-ls{suffix}":
+                continue
+            evaluation, generation, hv, igd = trajectory[-1]
+            other = [row for row in trajectories[(f"core-no-ls{suffix}", seed)] if row[1] <= generation]
+            with_ls.append((hv, igd))
+            without.append((other[-1][2], other[-1][3]))
+            generations.append(generation)
+        numbers[suffix or "keep"] = {
+            "runs": len(with_ls),
+            "generations_median": float(np.median(generations)),
+            "with_ls_hv_positive": sum(hv > 0 for hv, _ in with_ls),
+            "without_ls_hv_positive": sum(hv > 0 for hv, _ in without),
+            "with_ls_igd_plus_median": float(np.median([igd for _, igd in with_ls])),
+            "without_ls_igd_plus_median": float(np.median([igd for _, igd in without])),
+        }
+    return numbers
+
+
+def dtlz3_budget(runs) -> dict:
+    """Generations, solver share and runs with positive HV at each checkpoint."""
+
+    numbers = {}
+    for label in sorted({run["label"] for run in runs if run["label"].startswith("hldbea:")}):
+        own = [run for run in runs if run["label"] == label]
+        records = [json.loads((run["dir"] / "checkpoints.json").read_text()) for run in own]
+        numbers[label] = {
+            "solver_share": float(sum(r["solver_fe"] for r in own) / sum(r["budget"] for r in own)),
+            "final_generation_median": float(np.median([rec[-1]["generation"] for rec in records])),
+            "hv_positive_by_checkpoint": {
+                str(int(point["target_evaluation"])): sum(
+                    rec[i]["hv"] > 0 for rec in records
+                )
+                for i, point in enumerate(records[0])
+            },
+            "generation_by_checkpoint": {
+                str(int(point["target_evaluation"])): float(
+                    np.median([rec[i]["generation"] for rec in records])
+                )
+                for i, point in enumerate(records[0])
+            },
+        }
+    return numbers
+
+
+def rotation_geometry(runs) -> dict:
+    """Ideal point, nadir point and raw HV reference point of every rotation angle."""
+
+    geometry = {}
+    for run in runs:
+        angle = run["problem"].rsplit("-a", 1)[-1]
+        if angle in geometry:
+            continue
+        ideal = np.asarray(run["geometry"]["ideal"], dtype=float)
+        nadir = np.asarray(run["geometry"]["nadir"], dtype=float)
+        normalized = np.asarray(run["geometry"]["hv_reference_point"], dtype=float)
+        geometry[angle] = {
+            "ideal": ideal.tolist(),
+            "nadir": nadir.tolist(),
+            "hv_reference_normalized": normalized.tolist(),
+            "hv_reference_raw": (ideal + normalized * (nadir - ideal)).tolist(),
+        }
+    return dict(sorted(geometry.items(), key=lambda item: int(item[0])))
+
+
+def nonzero_trajectory(runs, label) -> dict:
+    """Mean fraction of nonzero scores at each checkpoint for one configuration."""
+
+    trajectory = defaultdict(lambda: defaultdict(list))
+    for run in runs:
+        if run["label"] != label:
+            continue
+        for record in json.loads((run["dir"] / "checkpoints.json").read_text()):
+            trajectory[run["problem"]][int(record["target_evaluation"])].append(float(record["phi_nz"]))
+    return {
+        problem: {str(t): float(np.mean(v)) for t, v in sorted(points.items())}
+        for problem, points in sorted(trajectory.items())
+    }
 
 
 def dtlz3_figures(runs, convergence_output: Path, distribution_output: Path) -> None:
@@ -469,7 +752,7 @@ def dtlz3_figures(runs, convergence_output: Path, distribution_output: Path) -> 
     axis.grid(alpha=0.3)
     axis.legend(fontsize=6, frameon=False, ncol=2)
     fig.tight_layout()
-    fig.savefig(convergence_output)
+    fig.savefig(convergence_output, metadata=FIGURE_METADATA)
     plt.close(fig)
     fig, axis = plt.subplots(figsize=(6.0, 3.6))
     axis.boxplot([finals[key] for key in order], showfliers=True)
@@ -479,7 +762,7 @@ def dtlz3_figures(runs, convergence_output: Path, distribution_output: Path) -> 
     axis.set_ylabel("Final IGD$^+$")
     axis.grid(alpha=0.3, axis="y")
     fig.tight_layout()
-    fig.savefig(distribution_output)
+    fig.savefig(distribution_output, metadata=FIGURE_METADATA)
     plt.close(fig)
 
 
@@ -526,7 +809,7 @@ def manyobjective_figure(runs, output: Path) -> dict:
             )
     fig.supxlabel("Objective index", fontsize=8)
     fig.tight_layout()
-    fig.savefig(output)
+    fig.savefig(output, metadata=FIGURE_METADATA)
     plt.close(fig)
     return chosen
 
@@ -618,32 +901,63 @@ def main(argv=None) -> int:
         ),
     ]
     for block, order, caption, label, positive in specs:
-        runs = load_validated_block(
+        runs, statistics = load_validated_block(
             args.manifests / f"{manifest(block)}.yaml",
             args.artifact_root,
             stats(block),
         )
         blocks[block] = runs
-        table = comparison_table(runs, stats(block), order, caption, label, positive)
+        table = comparison_table(runs, statistics, order, caption, label, positive)
         (out / f"table-{block}.tex").write_text(table)
         numbers[block] = {
             f"{problem}|{key}": value
             for (problem, key), value in medians(runs).items()
         }
     names = {
-        "dtlz3": "DTLZ3 components",
-        "modern-benchmarks": "IMOP baselines",
-        "geometry-ablation": "Geometry ablation",
-        "manyobjective": "Many-objective",
+        "dtlz3": "DTLZ3 audit",
+        "modern-benchmarks": "Recent baselines",
+        "geometry-ablation": "Component ablation",
+        "manyobjective": "Many objectives",
         "rotation": "Rotation",
     }
+    duplicates = {
+        names[block]: load_duplicate_report(
+            args.reports / f"{manifest(block)}-duplicates.json", runs
+        )
+        for block, runs in blocks.items()
+    }
     solver_table, solver_numbers = mechanism_rows(
-        {names[block]: runs for block, runs in blocks.items()}
+        {names[block]: runs for block, runs in blocks.items()}, duplicates
     )
     (out / "table-solver-audit.tex").write_text(solver_table)
     numbers["solver_audit"] = solver_numbers
     numbers["rotation_euclidean_igd"] = rotation_invariant_table(
         blocks["rotation"], out / "table-rotation-igd.tex"
+    )
+    numbers["rotation_geometry"] = rotation_geometry(blocks["rotation"])
+    numbers["geometry_nonzero_trajectory"] = nonzero_trajectory(
+        blocks["geometry-ablation"], "hldbea:axis-sum"
+    )
+    numbers["manyobjective_duplicates"] = {
+        label: duplicate_rates([
+            duplicates["Many objectives"][run["run_id"]]["duplicate_summary"]
+            for run in blocks["manyobjective"] if run["label"] == label
+        ])
+        for label in sorted({r["label"] for r in blocks["manyobjective"]})
+        if label.startswith("hldbea:")
+    }
+    ablation_stem = f"reviewer-dtlz3-duplicates-{version}"
+    ablation_runs, _ = load_validated_block(
+        args.manifests / f"{ablation_stem}.yaml",
+        args.artifact_root,
+        args.reports / f"{ablation_stem}-statistics.json",
+    )
+    numbers["dtlz3_duplicates"] = duplicate_ablation_table(
+        ablation_runs, out / "table-dtlz3-duplicates.tex"
+    )
+    numbers["dtlz3_budget"] = dtlz3_budget(blocks["dtlz3"])
+    numbers["dtlz3_generation_matched"] = generation_matched(
+        args.reports / f"{ablation_stem}-generations.json", ablation_runs
     )
     if "rotation" in blocks:
         numbers["rotation_figure"] = rotation_figure(

@@ -1,0 +1,47 @@
+\begin{table}[!htbp]
+\centering
+\caption{Controlled neighborhood, objective-policy and survivor-selection ablation (20{,}000 FEs). Each row changes one component of the default. Values are medians over 30 paired seeds, and bold marks the best median. Signs compare each row with the reference row (ref.) by paired Wilcoxon tests with Holm correction at $\alpha=0.05$: $+$ significantly better, $-$ significantly worse, $\approx$ no significant difference.}
+\label{tab:geometry_ablation}
+\small
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{|l|l|r|c|r|c|}
+\hline
+\textbf{Problem} & \textbf{Algorithm} & \textbf{HV} & \textbf{vs ref.} & \textbf{IGD$^+$} & \textbf{vs ref.} \\ \hline
+DTLZ2 ($m=3$) & HLDBEA (axis-sum, default) & 0.6961 & ref. & 0.0408 & ref. \\
+ & axis-union & 0.6996 & $\approx$ & 0.0396 & $\approx$ \\
+ & box-union & 0.6960 & $\approx$ & 0.0414 & $\approx$ \\
+ & kNN-union & 0.6977 & $\approx$ & 0.0403 & $\approx$ \\
+ & adaptive objective & 0.6974 & $\approx$ & 0.0406 & $\approx$ \\
+ & global-rank survival & \textbf{0.7009} & $\approx$ & \textbf{0.0394} & $\approx$ \\
+ & global-rank candidates & 0.6977 & $\approx$ & 0.0407 & $\approx$ \\
+ & random candidates & 0.6986 & $\approx$ & 0.0403 & $\approx$ \\
+\hline
+DTLZ7 ($m=3$) & HLDBEA (axis-sum, default) & 0.5327 & ref. & 0.0365 & ref. \\
+ & axis-union & \textbf{0.5345} & $\approx$ & 0.0360 & $\approx$ \\
+ & box-union & 0.5306 & $\approx$ & 0.0374 & $\approx$ \\
+ & kNN-union & 0.5312 & $\approx$ & 0.0369 & $\approx$ \\
+ & adaptive objective & 0.5113 & $\approx$ & 0.0446 & $\approx$ \\
+ & global-rank survival & 0.5220 & $\approx$ & 0.0426 & $\approx$ \\
+ & global-rank candidates & 0.5338 & $\approx$ & \textbf{0.0355} & $\approx$ \\
+ & random candidates & 0.5302 & $\approx$ & 0.0374 & $\approx$ \\
+\hline
+WFG3 ($m=3$) & HLDBEA (axis-sum, default) & 0.3046 & ref. & 0.1641 & ref. \\
+ & axis-union & 0.3071 & $\approx$ & 0.1734 & $\approx$ \\
+ & box-union & 0.3120 & $\approx$ & 0.1699 & $\approx$ \\
+ & kNN-union & 0.3207 & $\approx$ & 0.1575 & $\approx$ \\
+ & adaptive objective & 0.3076 & $\approx$ & 0.1656 & $\approx$ \\
+ & global-rank survival & 0.3130 & $\approx$ & 0.1635 & $\approx$ \\
+ & global-rank candidates & 0.3186 & $\approx$ & 0.1618 & $\approx$ \\
+ & random candidates & \textbf{0.3326} & $\approx$ & \textbf{0.1561} & $\approx$ \\
+\hline
+WFG9 ($m=3$) & HLDBEA (axis-sum, default) & 0.5707 & ref. & 0.0893 & ref. \\
+ & axis-union & 0.5697 & $\approx$ & 0.0888 & $\approx$ \\
+ & box-union & 0.5656 & $\approx$ & 0.0912 & $\approx$ \\
+ & kNN-union & 0.5628 & $\approx$ & 0.0916 & $\approx$ \\
+ & adaptive objective & 0.5621 & $\approx$ & 0.0925 & $\approx$ \\
+ & global-rank survival & 0.5654 & $\approx$ & 0.0908 & $\approx$ \\
+ & global-rank candidates & 0.5706 & $\approx$ & 0.0895 & $\approx$ \\
+ & random candidates & \textbf{0.5748} & $\approx$ & \textbf{0.0873} & $\approx$ \\
+\hline
+\end{tabular}
+\end{table}

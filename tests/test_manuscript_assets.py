@@ -27,6 +27,15 @@ def _runs_and_report():
     second = {r["seed"]: r["values"]["hv"] for r in runs if r["label"] == "b:y"}
     p = paired_wilcoxon(first, second, direction="higher").p_value
     holm = holm_step_down({"h": p}, family="final-hv")["h"]
+    from dataclasses import asdict
+
+    from hldbea.statistics import matched_pairs_rank_biserial, vargha_delaney_a12
+
+    ordered = sorted(first)
+    effect = vargha_delaney_a12([first[s] for s in ordered], [second[s] for s in ordered],
+                                direction="higher")
+    paired = matched_pairs_rank_biserial([first[s] for s in ordered],
+                                         [second[s] for s in ordered], direction="higher")
     report = {
         "metric_directions": {"hv": "higher"},
         "alpha": 0.05,
@@ -40,7 +49,8 @@ def _runs_and_report():
         ],
         "paired_tests": [{"problem_id": "p", "reference": "a:x", "competitor": "b:y",
                           "metric": "hv", "direction": "higher", "family": "final-hv",
-                          "hypothesis": "h", "p_raw": p, "reject_holm": holm.reject}],
+                          "hypothesis": "h", "p_raw": p, "reject_holm": holm.reject,
+                          "effect_size": asdict(effect), "paired_rank_biserial": paired}],
     }
     return runs, report
 
@@ -51,7 +61,9 @@ def test_matching_report_is_accepted():
     module.verify_statistics(runs, report, "report")
 
 
-@pytest.mark.parametrize("tamper", ["median", "decision", "observation"])
+@pytest.mark.parametrize(
+    "tamper", ["median", "decision", "observation", "interpretation", "a12", "paired"]
+)
 def test_report_of_same_size_but_different_content_is_rejected(tamper):
     module = _module()
     runs, report = _runs_and_report()
@@ -59,6 +71,16 @@ def test_report_of_same_size_but_different_content_is_rejected(tamper):
         report["summaries"][0]["median"] = 123456789.0
     elif tamper == "decision":
         report["paired_tests"][0]["reject_holm"] = not report["paired_tests"][0]["reject_holm"]
+    elif tamper == "interpretation":
+        # Only the field that sets the sign of a published comparison is altered.
+        effect = report["paired_tests"][0]["effect_size"]
+        effect["interpretation"] = (
+            "first_better" if effect["interpretation"] != "first_better" else "second_better"
+        )
+    elif tamper == "a12":
+        report["paired_tests"][0]["effect_size"]["a12"] = 0.5
+    elif tamper == "paired":
+        report["paired_tests"][0]["paired_rank_biserial"] *= -1
     else:
         runs[0]["values"]["hv"] += 1e-6
     with pytest.raises(module.AssetError):
