@@ -142,6 +142,88 @@ def _check_and_apply_restart(algorithm):
     event["evaluation_after"] = int(ledger.used)
 
 
+def _duplicate_count(population) -> int:
+    decisions = np.asarray(population.get("X"), dtype=float)
+    if len(decisions) == 0:
+        return 0
+    return int(len(decisions) - len(np.unique(decisions, axis=0)))
+
+
+def _duplicate_stats(algorithm) -> dict:
+    stats = getattr(algorithm, "duplicate_stats", None)
+    if stats is None:
+        stats = {
+            "generations": 0,
+            "merged_duplicates": 0,
+            "generations_with_merged_duplicates": 0,
+            "eliminated": 0,
+            "survivor_duplicates": 0,
+            "generations_with_survivor_duplicates": 0,
+            "individuals_with_copies": 0,
+            "positive_scores": 0,
+            "positive_only_through_copies": 0,
+        }
+        algorithm.duplicate_stats = stats
+    return stats
+
+
+def _record_and_remove_duplicates(algorithm):
+    """Count exact duplicates in the merged multiset R and remove them if asked."""
+
+    stats = _duplicate_stats(algorithm)
+    count = _duplicate_count(algorithm.pop)
+    stats["generations"] += 1
+    stats["merged_duplicates"] += count
+    stats["generations_with_merged_duplicates"] += int(count > 0)
+    if count and getattr(algorithm, "refinement_duplicates", "keep") == "eliminate":
+        decisions = np.asarray(algorithm.pop.get("X"), dtype=float)
+        _, first = np.unique(decisions, axis=0, return_index=True)
+        algorithm.pop = algorithm.pop[np.sort(first)]
+        stats["eliminated"] += count
+
+
+def _record_copy_scores(algorithm):
+    """Count members of R whose positive raw score comes only from identical copies.
+
+    Under strict bands an identical objective vector never enters a band of
+    its twin. Under cone relaxation it enters every band whose excluded
+    bandwidths are positive, so both copies leave the zero-score stratum.
+    """
+
+    stats = _duplicate_stats(algorithm)
+    objectives = np.asarray(algorithm.pop.get("F"), dtype=float)
+    raw = np.asarray(algorithm.pop.get("ScoreRaw"), dtype=int)
+    _, inverse, counts = np.unique(
+        objectives, axis=0, return_inverse=True, return_counts=True
+    )
+    copies = counts[np.ravel(inverse)] - 1
+    twin = np.zeros(len(objectives), dtype=int)
+    epsilon = float(getattr(algorithm, "cone_epsilon", 0.0))
+    if (
+        epsilon > 0
+        and getattr(algorithm, "neighborhood_mode", "axis") == "axis"
+        and np.any(copies)
+    ):
+        steps = float(getattr(algorithm, "K", 1.0)) * np.ptp(objectives, axis=0) / len(objectives)
+        bands = sum(
+            bool(np.all(np.delete(steps, axis) > 0)) for axis in range(objectives.shape[1])
+        )
+        if getattr(algorithm, "score_aggregation", "sum") == "sum":
+            twin = copies * bands
+        else:
+            twin = copies * int(bands > 0)
+    stats["individuals_with_copies"] += int(np.count_nonzero(copies))
+    stats["positive_scores"] += int(np.count_nonzero(raw > 0))
+    stats["positive_only_through_copies"] += int(np.count_nonzero((raw > 0) & (raw == twin)))
+
+
+def _record_survivor_duplicates(algorithm):
+    stats = _duplicate_stats(algorithm)
+    count = _duplicate_count(algorithm.pop)
+    stats["survivor_duplicates"] += count
+    stats["generations_with_survivor_duplicates"] += int(count > 0)
+
+
 def _apply_environmental_selection(algorithm):
     """Select exactly N survivors from raw scores or the global ablation."""
 
@@ -340,6 +422,12 @@ class Advance4Common(Advance4Base):
         infills       : offspring P'
         '''
 
+        if infills is None or len(infills) == 0:
+            # The budget ran out inside the last refinement call and the
+            # rejected parent was dropped, so there is nothing to merge. The
+            # population is left unchanged and the run terminates.
+            return
+
         # the current population; backup copy.
         pop = algorithm.pop
         # Bug-fix (line 181 original): was 'fills' (NameError), must be 'infills'
@@ -353,6 +441,7 @@ class Advance4Common(Advance4Base):
         # Intermediate pop: merge (P + infills) — Step 1
         cls._temp_pop(algorithm, infills, tech='2')
         #Now algorithm.pop = merge (P + infills)
+        _record_and_remove_duplicates(algorithm)
 
         _F = algorithm.pop.get("F") # After the merge (see pop for the original) 
         # Step 2: Calculate fit(A) = -score(A) - λ·dist(A) for the merged population
@@ -365,6 +454,7 @@ class Advance4Common(Advance4Base):
         if algorithm.fitm:
             algorithm.pop.set("FitMin", Ff)
         algorithm.pop.set("Fit", Ff)
+        _record_copy_scores(algorithm)
 
 
 
@@ -375,6 +465,7 @@ class Advance4Common(Advance4Base):
         #   • If their count > N: trim using Rank & Crowding (env_sel, paper Section 3.3).
 
         _apply_environmental_selection(algorithm)
+        _record_survivor_duplicates(algorithm)
 
         # Step 4: Stagnation detection + restart (paper Section 3.4)
         if getattr(algorithm, "use_restart", True):

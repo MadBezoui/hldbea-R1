@@ -61,7 +61,13 @@ def _refine_elite(algorithm, elite_pop):
 
     decisions = np.asarray(elite_pop.get("X"), dtype=float)
     objectives = np.asarray(elite_pop.get("F"), dtype=float)
+    drop_unchanged = getattr(algorithm, "refinement_duplicates", "keep") == "drop_rejected"
     if int(getattr(algorithm, "local_search_max_iter", 2)) == 0:
+        # Without local search the elite is copied unchanged into Q_nlp,
+        # unless unchanged copies are dropped.
+        if drop_unchanged:
+            decisions = decisions[:0]
+            objectives = objectives[:0]
         refined = Population.new("X", decisions.copy(), "F", objectives.copy())
         evaluated_keys = getattr(
             getattr(algorithm, "evaluator", None), "evaluate_values_of", ["F"]
@@ -141,7 +147,14 @@ def _refine_elite(algorithm, elite_pop):
     ):
         algorithm.evaluator.sync_from_ledger()
 
-    refined = Population.new("X", np.asarray(refined_x), "F", np.asarray(refined_f))
+    refined_x = np.asarray(refined_x, dtype=float).reshape(len(refined_x), -1)
+    refined_f = np.asarray(refined_f, dtype=float).reshape(len(refined_f), -1)
+    if drop_unchanged:
+        # A rejected call returns the parent unchanged; it produces no offspring.
+        moved = np.any(refined_x != decisions[: len(refined_x)], axis=1)
+        refined_x = refined_x[moved]
+        refined_f = refined_f[moved]
+    refined = Population.new("X", refined_x, "F", refined_f)
     evaluated_keys = getattr(
         getattr(algorithm, "evaluator", None),
         "evaluate_values_of",

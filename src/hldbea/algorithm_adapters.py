@@ -50,6 +50,7 @@ OPTIONAL_FIELDS = {
         "score_aggregation",
         "local_search_acceptance",
         "candidate_mode",
+        "refinement_duplicates",
     },
 }
 MUTATION_SCOPES = {"individual", "per_variable"}
@@ -288,6 +289,7 @@ def build_hldbea(spec: RunSpec, problem, ledger: EvaluationLedger):
             "local_search_acceptance", "converged"
         ),
         candidate_mode=parameters.get("candidate_mode", "fitness"),
+        refinement_duplicates=parameters.get("refinement_duplicates", "keep"),
         seed=spec.seed,
         save_history=spec.save_history,
     )

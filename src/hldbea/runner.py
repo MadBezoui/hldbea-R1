@@ -109,18 +109,51 @@ class MetricCheckpointCallback(Callback):
             )
 
 
-def _source_digest(source_root: Path) -> str:
+EXECUTED_MODULES = (
+    "hldbea",
+    "ibea",
+    "ibea_callbacks",
+    "ibea_recorder",
+    "ibea_selection",
+    "ibea_stats",
+    "idea1_util",
+    "ibeas",
+    "util",
+)
+
+
+def _source_digest() -> str:
+    """SHA-256 of the Python sources actually imported, checkout or installed.
+
+    Files are located through the import system, so the digest is the same for
+    a source checkout and for an installed package built from it.
+    """
+
+    import importlib.util
+
     digest = hashlib.sha256()
-    for path in sorted(source_root.rglob("*.py")):
-        if "__pycache__" in path.parts:
+    for name in EXECUTED_MODULES:
+        spec = importlib.util.find_spec(name)
+        if spec is None or spec.origin is None and not spec.submodule_search_locations:
+            digest.update(f"{name}:missing".encode("utf-8"))
             continue
-        digest.update(str(path.relative_to(source_root)).encode("utf-8"))
-        digest.update(path.read_bytes())
+        if spec.submodule_search_locations:
+            files = []
+            for location in spec.submodule_search_locations:
+                base = Path(location)
+                files += [(f"{name}/{path.relative_to(base).as_posix()}", path)
+                          for path in base.rglob("*.py") if "__pycache__" not in path.parts]
+        else:
+            files = [(f"{name}.py", Path(spec.origin))]
+        for relative, path in sorted(files):
+            digest.update(relative.encode("utf-8"))
+            digest.update(path.read_bytes())
     return digest.hexdigest()
 
 
 def _git_metadata() -> dict[str, Any]:
     root = Path(__file__).resolve().parents[2]
+    executed = {"source_sha256": _source_digest()}
     try:
         commit = subprocess.run(
             ["git", "rev-parse", "HEAD"],
@@ -139,7 +172,7 @@ def _git_metadata() -> dict[str, Any]:
             ).stdout.strip()
         )
         # Untracked outputs also make a tree dirty. Record whether tracked
-        # sources differ from the commit and a digest of the executed code.
+        # sources differ from the commit.
         source_diff = subprocess.run(
             ["git", "diff", "HEAD", "--", "src", "experiments", "analysis"],
             cwd=root,
@@ -152,10 +185,10 @@ def _git_metadata() -> dict[str, Any]:
             "dirty": dirty,
             "tracked_sources_modified": bool(source_diff.strip()),
             "source_diff_sha256": hashlib.sha256(source_diff.encode("utf-8")).hexdigest(),
-            "source_sha256": _source_digest(root / "src"),
+            **executed,
         }
     except (OSError, subprocess.CalledProcessError) as exc:
-        return {"commit": "unavailable", "dirty": None, "error": str(exc)}
+        return {"commit": "unavailable", "dirty": None, "error": str(exc), **executed}
 
 
 def _dependency_versions() -> dict[str, str]:
@@ -309,6 +342,12 @@ def execute_run(spec: RunSpec, artifact_root: str | Path) -> RunOutcome:
                 "replacements": sum(
                     int(event.get("replacement_count", 0))
                     for event in restart_events
+                ),
+            },
+            "duplicate_summary": {
+                **_jsonable(getattr(algorithm, "duplicate_stats", {})),
+                "final_population_duplicates": int(
+                    len(decisions) - len(np.unique(decisions, axis=0))
                 ),
             },
             "population_size_final": len(objectives),

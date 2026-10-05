@@ -54,6 +54,7 @@ class IBEA(GeneticAlgorithm):
                  local_search_max_iter=2,
                  local_search_acceptance="converged",
                  candidate_mode="fitness",
+                 refinement_duplicates="keep",
                  **kwargs):
         """
         Parameters
@@ -129,6 +130,9 @@ class IBEA(GeneticAlgorithm):
         if candidate_mode not in {"fitness", "global_rank", "random"}:
             raise ValueError("candidate_mode must be 'fitness', 'global_rank' or 'random'")
         self.candidate_mode = candidate_mode
+        if refinement_duplicates not in {"keep", "drop_rejected", "eliminate"}:
+            raise ValueError("refinement_duplicates must be 'keep', 'drop_rejected' or 'eliminate'")
+        self.refinement_duplicates = refinement_duplicates
         self.restart_events = []
         self.local_search_events = []
         #Save eliminated points in each iteration
